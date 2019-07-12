@@ -1,9 +1,6 @@
-<button class="button palette-primary" [luPopoverTriggerFor]="above">Au dessus</button>
-<button class="button palette-primary" [luPopoverTriggerFor]="below">En dessous (defaut)</button>
-<button class="button palette-primary" [luPopoverTriggerFor]="after">A droite</button>
-<button class="button palette-primary" [luPopoverTriggerFor]="before">A gauche</button>
+<button class="button palette-primary" [luPopover]="popover" position="above">Au dessus</button>
+<button class="button palette-primary" [luPopover]="popover" position="below">En dessous (defaut)</button>
+<button class="button palette-primary" [luPopover]="popover" position="after">A droite</button>
+<button class="button palette-primary" [luPopover]="popover" position="before">A gauche</button>
 
-<lu-popover #above position="above">👆</lu-popover>
-<lu-popover #below position="below">👇</lu-popover>
-<lu-popover #after position="after">👉</lu-popover>
-<lu-popover #before position="before">👈</lu-popover>
+<lu-popover #popover position="above">popover</lu-popover>
