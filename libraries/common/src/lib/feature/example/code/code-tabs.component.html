@@ -1,0 +1,22 @@
+<div class="codeTabs-preview" [ngClass]="mod">
+	<ng-container #display></ng-container>
+</div>
+
+<nav class="codeTabs-menu" *ngIf="tabsQL?.length > 1">
+	<a class="codeTabs-menu-entry" *ngFor="let tab of tabsQL" (click)="selectTab(tab)" [class.is-active]="tab.active">
+		{{tab.tabTitle}}
+	</a>
+</nav>
+
+<div class="codeTabs-code">
+	<pri-code-tab tabTitle="HTML" [active]="true" class="html-tab">
+		<div class="codeTabs-code-content">
+			<pre><code [innerHTML]="code" class="language-markup"></code></pre>
+		</div>
+	</pri-code-tab>
+	<pri-code-tab class="ts-tab" tabTitle="Typescript" *ngIf="tsCode">
+		<div class="codeTabs-code-content">
+			<pre><code [innerHTML]="tsCode" class="language-typescript"></code></pre>
+		</div>
+	</pri-code-tab>
+</div>

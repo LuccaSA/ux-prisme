@@ -1,0 +1,285 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "applications",
+  "projects": {
+    "common": {
+      "root": "libraries/common",
+      "sourceRoot": "./",
+      "projectType": "library",
+      "prefix": "pri",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libraries/common/tsconfig.lib.json",
+            "project": "libraries/common/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libraries/common/src/test.ts",
+            "tsConfig": "libraries/common/tsconfig.spec.json",
+            "karmaConfig": "libraries/common/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libraries/common/tsconfig.lib.json",
+              "libraries/common/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "prisme": {
+      "root": "applications/prisme/",
+      "sourceRoot": "applications/prisme/src",
+      "projectType": "application",
+      "prefix": "pri",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/prisme",
+            "index": "applications/prisme/src/index.html",
+            "main": "applications/prisme/src/main.ts",
+            "polyfills": "applications/prisme/src/polyfills.ts",
+            "tsConfig": "applications/prisme/tsconfig.app.json",
+            "assets": [
+              "applications/prisme/src/assets",
+              "applications/prisme/src/guidelines"
+            ],
+            "styles": [
+              "applications/prisme/src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "libraries",
+                "theming",
+                "node_modules/@lucca-front/scss/src/overrides",
+                "node_modules/@lucca-front/ng/style/overrides"
+              ]
+            },
+            "scripts": [
+              "node_modules/marked/lib/marked.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "applications/prisme/src/environments/environment.ts",
+                  "with": "applications/prisme/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "prisme:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "prisme:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "prisme:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "applications/prisme/src/test.ts",
+            "polyfills": "applications/prisme/src/polyfills.ts",
+            "tsConfig": "applications/prisme/tsconfig.spec.json",
+            "karmaConfig": "applications/prisme/karma.conf.js",
+            "styles": [
+              "applications/prisme/src/styles.scss"
+            ],
+            "scripts": [],
+            "assets": [
+              "applications/prisme/src/favicon.ico",
+              "applications/prisme/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "applications/prisme/tsconfig.app.json",
+              "applications/prisme/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "reference": {
+      "root": "applications/reference/",
+      "sourceRoot": "applications/reference/src",
+      "projectType": "application",
+      "prefix": "pri",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/reference",
+            "index": "applications/reference/src/index.html",
+            "main": "applications/reference/src/main.ts",
+            "polyfills": "applications/reference/src/polyfills.ts",
+            "tsConfig": "applications/reference/tsconfig.app.json",
+            "assets": [
+              "applications/reference/src/favicon.ico",
+              "applications/reference/src/assets"
+            ],
+            "styles": [
+              "applications/reference/src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "libraries",
+                "theming",
+                "node_modules/@lucca-front/scss/src/overrides",
+                "node_modules/@lucca-front/ng/style/overrides"
+              ]
+            },
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "applications/reference/src/environments/environment.ts",
+                  "with": "applications/reference/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "reference:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "reference:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "reference:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "applications/reference/src/test.ts",
+            "polyfills": "applications/reference/src/polyfills.ts",
+            "tsConfig": "applications/reference/tsconfig.spec.json",
+            "karmaConfig": "applications/reference/karma.conf.js",
+            "styles": [
+              "applications/reference/src/styles.scss"
+            ],
+            "scripts": [],
+            "assets": [
+              "applications/reference/src/favicon.ico",
+              "applications/reference/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "applications/reference/tsconfig.app.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "prisme",
+  "schematics": {
+    "@schematics/angular:component": {
+      "prefix": "pri",
+      "styleext": "scss"
+    },
+    "@schematics/angular:directive": {
+      "prefix": "pri"
+    },
+    "@prisme/schematics:feature": {
+      "project": "prisme"
+    },
+    "@prisme/schematics:example": {
+      "project": "prisme"
+    }
+  },
+  "cli": {
+    "defaultCollection": "@prisme/schematics",
+    "packageManager": "npm"
+  }
+}

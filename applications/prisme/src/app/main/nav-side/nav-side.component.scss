@@ -1,0 +1,14 @@
+@import "~@lucca-front/scss/src/theming.overridable";
+
+:host {
+	width: 17rem;
+	position: fixed;
+	top: 4rem;
+	bottom: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	left: 0;
+	z-index: 10;
+	background: _theme("commons.background.base");
+	padding: 1.5rem;
+}

@@ -1,0 +1,66 @@
+<section class="feature-content">
+	<div class="grid">
+		<div class="grid-xxl8">
+
+			<section id="examples" class="contentSection" *ngIf="infos.examples && infos.examples.length">
+				<h1>Design</h1>
+				<ng-container>
+					<pri-examples [examples]="infos.examples"></pri-examples>
+				</ng-container>
+			</section>
+
+			<section id="guidelines" class="contentSection" *ngIf="infos.guidelines">
+				<h1>Règles d’usage</h1>
+				<ng-container>
+					<markdown [priMarkdownSrc]="infos.guidelines"></markdown>
+				</ng-container>
+			</section>
+
+			<section id="theme" class="contentSection" *ngIf="infos.theme">
+				<h1>Thème</h1>
+				<ng-container>
+					<pri-theme [documentation]="infos.theme"></pri-theme>
+				</ng-container>
+			</section>
+
+			<section id="directive" class="contentSection" *ngIf="infos.directive">
+				<h1>Directive</h1>
+				<ng-container>
+					<pri-directive [documentation]="infos.directive"></pri-directive>
+				</ng-container>
+			</section>
+
+			<section id="component" class="contentSection" *ngIf="infos.component">
+				<h1>Composant</h1>
+				<ng-container>
+					<pri-component [documentation]="infos.component"></pri-component>
+				</ng-container>
+			</section>
+
+			<section id="pipe" class="contentSection" *ngIf="infos.pipe">
+				<h1>Pipe</h1>
+				<ng-container>
+					<pri-pipe [documentation]="infos.pipe"></pri-pipe>
+				</ng-container>
+			</section>
+
+		</div>
+		<div class="grid-xxl4 u-paddingLeftBig">
+			<nav class="feature-quickNav">
+				<a class="feature-quickNav-item" *ngIf="infos.examples && infos.examples.length" routerLink="./"
+					fragment="examples" preserveQueryParams="true">Design</a>
+				<a class="feature-quickNav-item" *ngIf="infos.guidelines" routerLink="./" fragment="guidelines"
+					preserveQueryParams="true">Règles d’usage</a>
+				<!-- <a class="feature-quickNav-item">Composants similaires</a> -->
+				<a class="feature-quickNav-item" *ngIf="infos.theme" routerLink="./" fragment="theme"
+					preserveQueryParams="true">Thème</a>
+				<a class="feature-quickNav-item" *ngIf="infos.directive" routerLink="./" fragment="directive"
+					preserveQueryParams="true">Directive</a>
+				<a class="feature-quickNav-item" *ngIf="infos.component" routerLink="./" fragment="component"
+					preserveQueryParams="true">Component</a>
+				<a class="feature-quickNav-item" *ngIf="infos.pipe" routerLink="./" fragment="pipe"
+					preserveQueryParams="true">Pipe</a>
+			</nav>
+		</div>
+	</div>
+</section>

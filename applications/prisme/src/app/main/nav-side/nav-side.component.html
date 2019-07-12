@@ -1,0 +1,8 @@
+<ng-container *ngFor="let page of pages">
+	<pri-nav-side-item *ngIf="!page.children || !page.children.length; else group" link="/{{page.fullPath}}">{{page.title}}</pri-nav-side-item>
+	<ng-template #group>
+		<pri-nav-side-group [page]="page"></pri-nav-side-group>
+  </ng-template>
+</ng-container>
+
+

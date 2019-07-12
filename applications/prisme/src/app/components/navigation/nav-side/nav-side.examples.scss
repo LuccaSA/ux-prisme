@@ -1,0 +1,52 @@
+@import "~@lucca-front/scss/src/theming.overridable";
+@import "~@lucca-front/scss/src/mixins";
+.navSide {
+	position: relative;
+	height: 35vh;
+}
+
+.grid .navSide-item, .grid .navSide-item-placeholder {
+	background: _component("navSide.fullwidth-palette.bg-color");
+	width: _component("navSide.width");
+}
+
+.grid .mod-compact {
+	.navSide-item, .navSide-item-placeholder {
+		background: _component("navSide.compact-palette.bg-color");
+		width: _component("navSide.compact.width");
+		text-align: center;
+	}
+
+	.navSide-item-link {
+		color: _component("navSide.compact-palette.text");
+		flex-direction: column;
+		font-size: _component("navSide.compact.font-size");
+		justify-content: center;
+		position: relative;
+
+		.navSide-item-link-title {
+			margin: .8em 0 0;
+		}
+	}
+
+	.navSide-item-alert {
+		padding: 0 .4em;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+	.navSide-item-placeholder {
+		flex-direction: column;
+		&::before {
+			height: 1.5em;
+			width: 1.5em;
+		}
+		&::after {
+			margin-left: 0;
+			margin-top: .8em;
+			width: 100%;
+		}
+	}
+}
+

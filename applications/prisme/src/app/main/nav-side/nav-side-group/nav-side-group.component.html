@@ -1,0 +1,6 @@
+<div class="navSideGroup-title" (click)="toggleMenu()">{{ page.title }}</div>
+<div *ngIf="expanded">
+	<pri-nav-side-item *ngFor="let subpage of page.children" link="/{{subpage.fullPath}}">
+		{{subpage.title}}
+	</pri-nav-side-item>
+</div>

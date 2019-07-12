@@ -1,0 +1,46 @@
+@import '~@lucca-front/scss/src/_theming.overridable';
+
+:host {
+	border: 1px solid _theme("commons.divider.color");
+	display: block;
+	border-radius: _theme("commons.border.radius");
+	overflow: hidden;
+	margin-bottom: _theme("spacings.small");
+}
+
+.codeTabs-preview {
+	background: _theme("commons.background.base");
+	padding: _theme("spacings.standard");
+	border-bottom: 1px solid _theme("commons.divider.color");
+
+	&.mod-white {
+		background: white;
+	}
+
+	&.mod-dark {
+		background: #6a6e75;
+	}
+}
+
+.codeTabs-menu {
+	border-bottom: 1px solid _theme("commons.divider.color");
+	padding-left: _theme("spacings.small");
+}
+
+.codeTabs-menu-entry {
+	padding: _theme("spacings.small");
+	display: inline-block;
+	color: _color("text.default");
+
+	&.is-active {
+		font-weight: 600;
+	}
+}
+
+.codeTabs-code-content {
+	padding: _theme("spacings.small") _theme("spacings.standard");
+
+	pre {
+		margin: 0;
+	}
+}

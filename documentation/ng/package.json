@@ -1,0 +1,5 @@
+{
+  "name": "@prisme/documentation/ng",
+	"version": "0.0.1",
+	"main": "ng-docs.js"
+}

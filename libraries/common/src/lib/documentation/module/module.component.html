@@ -1,0 +1,30 @@
+<section class="card">
+	<section class="card-content">
+		<h3>{{documentation.name}} <span class="label">{{documentation.type}}</span></h3>
+		<p>{{documentation.description}}</p>
+	</section>
+	<ng-template [ngIf]="documentation.declarations?.length">
+		<section class="contentSection">
+			<div class="card-content u-paddingBottomReset">
+				<h3>Declarations</h3>
+				<div *ngFor="let declaration of documentation.declarations"><code>{{declaration.name}}</code> <span class="label">{{declaration.type}}</span></div>
+			</div>
+		</section>
+	</ng-template>
+	<ng-template [ngIf]="documentation.exports?.length">
+		<section class="contentSection">
+			<div class="card-content u-paddingBottomReset">
+				<h3>Exports</h3>
+				<div *ngFor="let export of documentation.exports"><code>{{export.name}}</code> <span class="label">{{export.type}}</span></div>
+			</div>
+		</section>
+	</ng-template>
+	<!-- <ng-template [ngIf]="documentation.providers?.length">
+		<section class="contentSection">
+			<div class="card-content u-paddingBottomReset">
+				<h3>Providers</h3>
+				<div *ngFor="let provider of documentation.providers"><code>{{provider.name}}</code> <span class="label">{{provider.type}}</span></div>
+			</div>
+		</section>
+	</ng-template> -->
+</section>

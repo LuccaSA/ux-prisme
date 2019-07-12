@@ -1,0 +1,124 @@
+@import
+	"~@lucca-front/scss/src/_theming.overridable",
+	"~@lucca-front/scss/src/_mixins",
+	"~@lucca-front/icons/src/_mixins";
+
+:host {
+	box-shadow: inset 0 -1px 0 0 _theme("commons.divider.color");
+	background: white;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4rem;
+	z-index: 200;
+	min-width: 30rem;
+}
+
+.header-logo {
+	height: 4rem;
+	line-height: 4rem;
+	width: 9rem;
+	padding: 0 1.5rem;
+	text-decoration: none;
+	font-weight: 600;
+	margin: 0 7.5rem 0 .5rem;
+	background: url(/assets/prisme.png) no-repeat center;
+	background-size: 7rem;
+	transition: all 150ms ease;
+
+	&:hover {
+		opacity: .9;
+	}
+
+	@include media_smaller_than("xl") {
+		margin-right: 0;
+	}
+}
+
+.header-toggleNav {
+	margin-left: auto;
+	margin-right: _theme("spacings.small");
+	height: 3rem;
+	width: 3rem;
+	display: none;
+	border-radius: 50%;
+	border: 0;
+	background: transparent;
+	transition: background 150ms ease;
+	cursor: pointer;
+
+	&:hover {
+		background: _theme("commons.background.base");
+	}
+
+	&::before {
+		@include makeIcon("menu");
+		font-size: 1.5rem;
+		color: _color("primary");
+	}
+
+	@include media_smaller_than("lg") {
+		display: inline-block;
+	}
+}
+
+.header-nav {
+	display: block;
+	margin-left: auto;
+
+	@include media_smaller_than("lg") {
+		display: none;
+		background: white;
+		width: 100%;
+		height: auto;
+		padding: 0;
+		@include elevate(3);
+
+		&.is-open {
+			display: block;
+			position: absolute;
+			top: 4rem;
+			left: 0;
+		}
+	}
+}
+
+.header-nav-item {
+  display: inline-block;
+  height: calc(4rem - 1px);
+  font-weight: 600;
+  font-size: .95rem;
+  line-height: 4rem;
+	outline: none;
+  padding: 0 1.5rem;
+  position: relative;
+  text-decoration: none;
+  color: _color("text.light");
+  transition: background 150ms ease;
+
+	@include media_smaller_than("lg") {
+		display: block;
+	}
+
+  &:hover, &:focus, &:active {
+    background: _theme("commons.background.base");
+  }
+
+  &.is-active {
+    color: _color("text.dark");
+	}
+
+	&.is-disabled {
+		pointer-events: none;
+		opacity: .3;
+	}
+}
+
+:host(.mod-splash) {
+	pri-search {
+		display: none;
+	}
+}

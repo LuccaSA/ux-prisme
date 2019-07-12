@@ -1,0 +1,22 @@
+@import "~@lucca-front/scss/src/theming.overridable";
+
+:host {
+	display: block;
+	border: 1px solid _theme("commons.divider.color");
+	border-radius: _theme("commons.border.radius");
+	overflow: hidden;
+}
+
+.table {
+	border: 0;
+}
+
+.table-body-row-cell {
+	&:nth-child(2) {
+		width: 100%;
+	}
+
+	&:nth-child(3) {
+		min-width: 200px;
+	}
+}

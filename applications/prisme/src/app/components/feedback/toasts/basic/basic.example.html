@@ -1,0 +1,10 @@
+<div class="toasts">
+	<div #toastsBox></div>
+</div>
+<ng-template class="toasts-item" let-text="text" #toast>
+	<div class="toasts-item">
+		<button class="toasts-item-kill" (click)="toastKill($event.target)"></button>
+		<span [innerHTML]="text"></span>
+	</div>
+</ng-template>
+<button class="button palette-primary" (click)="generateToast()">Générer un toast</button>

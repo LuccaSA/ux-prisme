@@ -1,0 +1,19 @@
+<div class="textfield mod-long" *ngIf="examples.length > 1">
+	<lu-select [(ngModel)]="selectedExample" (ngModelChange)="onModelChange()" class="textfield-input">
+		<div *luDisplayer="let value">{{value.title}}</div>
+		<lu-option-picker>
+			<lu-option *ngFor="let example of examples" [value]="example">{{example.title}}</lu-option>
+		</lu-option-picker>
+	</lu-select>
+</div>
+
+<div class="example-display" *ngIf="selectedExample">
+	<p class="description" *ngIf="selectedExample.description" [innerHtml]="selectedExample.description | priSafeContent: 'html'"></p>
+	<pri-code-tabs [example]="selectedExample"></pri-code-tabs>
+	<div class="callout mod-icon palette-info" *ngIf="selectedExample.extra != null">
+		<div class="callout-icon">
+			<i class="lucca-icon">info</i>
+		</div>
+		<span class="extra-infos" [innerHtml]="selectedExample.extra | priSafeContent: 'html'"></span>
+	</div>
+</div>

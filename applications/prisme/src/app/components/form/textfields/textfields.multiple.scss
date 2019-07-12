@@ -1,0 +1,11 @@
+:host {
+	display: inline-flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.textfield {
+	flex: 1;
+	margin: 0 2rem 0 0;
+}

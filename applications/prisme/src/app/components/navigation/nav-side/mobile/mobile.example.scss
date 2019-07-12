@@ -1,0 +1,47 @@
+.navSide {
+	position: relative;
+	width: 500px;
+	min-height: auto;
+	max-height: auto;
+
+	&.mod-withBanner {
+		margin-top: _theme("commons.banner-height");
+	}
+}
+
+.navSide-scrollWrapper {
+	width: 100%;
+}
+
+.navSide-item:not(.mod-mobileToggle), .navSide-item-placeholder {
+	position: absolute;
+	visibility: hidden;
+	transform: translateX(-15px);
+	opacity: 0;
+	top: 0;
+	bottom: 100%;
+	overflow: hidden;
+}
+
+.navSide-item.mod-mobileToggle {
+	display: block;
+	height: _component("navSide.mobile.toggle-height");
+	cursor: pointer;
+}
+
+.navSide.is-open {
+	height: 300px;
+
+	.navSide-item:not(.mod-mobileToggle), .navSide-item-placeholder {
+		position: static;
+		visibility: visible;
+		transform: translateX(0);
+		opacity: 1;
+		transition: all .2s cubic-bezier(.25, .8, .25, 1);
+		@for $i from 0 through 10 {
+			&:nth-child(#{$i+2}) {
+				transition-delay: $i*.05s;
+			}
+		}
+	}
+}

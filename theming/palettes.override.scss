@@ -1,0 +1,91 @@
+$palettes: (
+	"primary": (
+		"color": #88a0c3,
+		"text": #FFFFFF,
+		"dark": darken(#88a0c3, 10%),
+		"darker": darken(#88a0c3, 15%),
+		"light": lighten(#88a0c3, 10%),
+		"lighter": lighten(#88a0c3, 20%),
+		"lightest": lighten(#88a0c3, 45%),
+		"see-through": rgba(#88a0c3, .15)
+	),
+	"secondary": (
+		"color": #FFB900,
+		"text": #FFFFFF,
+		"dark": darken(#FFB900, 7%),
+		"darker": darken(#FFB900, 20%),
+		"light": lighten(#FFB900, 10%),
+		"lighter": lighten(#FFB900, 20%),
+		"lightest": lighten(#FFB900, 45%),
+		"see-through": rgba(#FFB900, .15)
+	),
+	"lucca": (
+		"color": #FFB900,
+		"text": #FFFFFF,
+		"dark": darken(#FFB900, 7%),
+		"darker": darken(#FFB900, 20%),
+		"light": lighten(#FFB900, 10%),
+		"lighter": lighten(#FFB900, 20%),
+		"lightest": lighten(#FFB900, 45%),
+		"see-through": rgba(#FFB900, .15)
+	),
+	"info": (
+		"color": #42A5F5,
+		"text": #FFFFFF,
+		"dark": darken(#42A5F5, 7%),
+		"darker": darken(#42A5F5, 20%),
+		"light": lighten(#42A5F5, 10%),
+		"lighter": lighten(#42A5F5, 20%),
+		"lightest": lighten(#42A5F5, 45%),
+		"see-through": rgba(#42A5F5, .15)
+	),
+	"success": (
+		"color": #64C442,
+		"text": #FFFFFF,
+		"dark": darken(#64C442, 5%),
+		"darker": darken(#64C442, 20%),
+		"light": lighten(#64C442, 10%),
+		"lighter": lighten(#64C442, 20%),
+		"lightest": lighten(#64C442, 42%),
+		"see-through": rgba(#64C442, .15)
+	),
+	"warning": (
+		"color": #FF7A1A,
+		"text": #FFFFFF,
+		"dark": darken(#FF7A1A, 5%),
+		"darker": darken(#FF7A1A, 20%),
+		"light": lighten(#FF7A1A, 10%),
+		"lighter": lighten(#FF7A1A, 20%),
+		"lightest": lighten(#FF7A1A, 42%),
+		"see-through": rgba(#FF7A1A, .15)
+	),
+	"error": (
+		"color": #F42144,
+		"text": #FFFFFF,
+		"dark": darken(#F42144, 5%),
+		"darker": darken(#F42144, 20%),
+		"light": lighten(#F42144, 10%),
+		"lighter": lighten(#F42144, 20%),
+		"lightest": lighten(#F42144, 42%),
+		"see-through": rgba(#F42144, .15)
+	)
+);
+
+$colors: (
+	text: (
+		"dark": (
+			color: desaturate(darken(#88a0c3, 37%), 25%)
+		),
+		"default": (
+			color: desaturate(darken(#88a0c3, 23%), 25%)
+		),
+		"light": (
+			color: desaturate(lighten(#88a0c3, 2%), 20%)
+		),
+		"placeholder": (
+			color: desaturate(lighten(#88a0c3, 10%), 20%)
+		),
+	),
+);
+$theme: _set($theme, "palettes", $palettes);
+$theme: _set($theme, "colors", $colors);

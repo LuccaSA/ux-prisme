@@ -1,0 +1,22 @@
+.code {
+  display: inline-block;
+
+  &.mod-block {
+    margin-bottom: 1.5rem;
+
+    pre {
+      margin: 0;
+    }
+  }
+}
+
+hr {
+	border: 1px solid _theme("commons.divider.color");
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.callout {
+  background: _theme("commons.background.dark");
+}

@@ -1,0 +1,95 @@
+@import
+  "~@lucca-front/scss/src/theming.overridable",
+  "~@lucca-front/scss/src/mixins";
+
+:host {
+  background: _color("lucca");
+  background: linear-gradient(30deg, #E66078 20%, #F48B16 100%);
+  color: white;
+  display: block;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.card {
+  min-height: 13rem;
+  box-shadow: 0 6px 8px rgba(0,0,0,.1);
+
+  &:hover {
+    box-shadow: 0 12px 20px rgba(0,0,0,.1);
+  }
+
+  &.mod-principles {
+    .splash-card-icon {
+      background: linear-gradient(30deg, #E66078 0%, #7E8DC7 100%);
+    }
+  }
+
+  &.mod-identity {
+    .splash-card-icon {
+      background: linear-gradient(30deg, #0F98D0 0%, #9ACD32 100%);
+    }
+  }
+
+  &.mod-components {
+    .splash-card-icon {
+      background: linear-gradient(30deg, #FFB900 0%, #FF9900 100%);
+    }
+  }
+}
+
+.splash-content {
+  max-width: 28rem;
+  margin: _theme("spacings.big") 0 _theme("spacings.bigger");
+}
+
+.splash-title {
+  color: white;
+}
+
+.splash-description {
+  font-size: _theme("sizes.big.font-size");
+  line-height: _theme("sizes.big.line-height");
+  margin-bottom: _theme("spacings.standard");
+}
+
+.splash-card-icon {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  background: _color("lucca");
+  color: white;
+  text-decoration: none;
+  margin-bottom: _theme("spacings.small");
+
+  .lucca-icon {
+    text-decoration: none;
+  }
+}
+
+.splash-illu {
+  position: absolute;
+  top: -7rem;
+  right: -2rem;
+  width: 35rem;
+  height: 35rem;
+  background: url(/assets/splash.svg) no-repeat right top;
+  background-size: contain;
+
+  @include media_smaller_than("xl") {
+      right: -8rem;
+  }
+
+  @include media_smaller_than("lg") {
+      right: -20rem;
+  }
+
+  @include media_smaller_than("md") {
+      right: -24rem;
+  }
+}

@@ -1,0 +1,20 @@
+$commons: (
+	background: (
+		base: lighten(#88a0c3, 32%),
+		dark: lighten(#88a0c3, 28%),
+		darker: lighten(#88a0c3, 24%),
+		darkest: lighten(#88a0c3, 20%)
+	),
+	divider: (
+		color: lighten(#88a0c3, 23%),
+	),
+	elevations: (
+		elevation-1: unquote("0 1px 3px rgba(136, 160, 195, .25), 0 1px 2px rgba(136, 160, 195, .5)"),
+		elevation-2: unquote("0 3px 6px rgba(136, 160, 195, .25), 0 3px 6px rgba(136, 160, 195, .5)"),
+		elevation-3: unquote("0 10px 20px rgba(136, 160, 195, .25), 0 6px 6px rgba(136, 160, 195, .5)"),
+		elevation-4: unquote("0 14px 28px rgba(136, 160, 195, .25), 0 10px 10px rgba(136, 160, 195, .5)"),
+		elevation-5: unquote("0 19px 38px rgba(136, 160, 195, .25), 0 15px 12px rgba(136, 160, 195, .5)")
+	)
+);
+
+$theme: _set($theme, "commons", $commons);

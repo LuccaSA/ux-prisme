@@ -1,0 +1,48 @@
+<pri-feature-header [infos]="infos"></pri-feature-header>
+
+<section class="page-content">
+	<section class="contentSection">
+		<h2>Icônes</h2>
+		<p>Vous pouvez générer une icône grâce à la mixin makeIcon.</p>
+<code class="code mod-block"><pre>
+@import "~@lucca-front/icons/src/mixins";
+@include makeIcon("heart");
+</pre></code>
+
+<div class="callout mod-icon palette-info">
+	<div class="callout-icon">
+		<i class="lucca-icon">info</i>
+	</div>
+	Il est très souvent utile d'utiliser la mixin makeIcon dans un ::before
+</div>
+	</section>
+
+	<section class="contentSection">
+		<h2>Ombrages</h2>
+		<p>Vous pouvez ajouter de l'ombre à un composant grâce à la mixin elevated(1~5).</p>
+<code class="code mod-block"><pre>
+@import "~@lucca-front/scss/src/mixins";
+@include elevate(1);
+</pre></code>
+	</section>
+
+	<section class="contentSection">
+		<h2>Loader</h2>
+		<p>Vous pouvez ajouter un loader via la mixing loading.</p>
+<code class="code mod-block"><pre>
+@import "~@lucca-front/scss/src/mixins";
+@include loading($size);
+</pre></code>
+	</section>
+
+	<section class="contentSection">
+		<h2>Media queries</h2>
+		<p>Vous pouvez utiliser les breakpoints de votre <a href="https://github.com/LuccaSA/lucca-front/#breakpoints" target="_blank">thème</a> dans vos media queries :</p>
+<code class="code mod-block"><pre>
+@import "~@lucca-front/scss/src/mixins";
+@include media_smaller_than("nom_breakpoint") &#123;&#125;
+@include media_larger_than("nom_breakpoint") &#123;&#125;
+@include media_between("nom_breakpoint1", "nom_breakpoint2") &#123;&#125;
+</pre></code>
+	</section>
+</section>

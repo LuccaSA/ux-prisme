@@ -1,0 +1,24 @@
+<table class="table mod-alignTop" *ngIf="flatTheme">
+	<thead class="table-head">
+		<tr class="table-head-row">
+			<th class="table-head-row-cell">Option</th>
+			<th class="table-head-row-cell">Valeur par défaut</th>
+		</tr>
+	</thead>
+	<tbody class="table-body">
+		<tr class="table-body-row" *ngFor="let prop of flatTheme">
+			<td class="table-body-row-cell u-nowrap">{{prop.name}}</td>
+			<td class="table-body-row-cell" *ngIf="!prop.realValue else withRealValue">{{prop.value}}</td>
+			<ng-template #withRealValue>
+				<td class="table-body-row-cell" *ngIf="prop.propertyType === type.COLOR else simpleVar">
+					<span class="label palette-secondary">{{prop.value}}</span> {{prop.realValue}}
+				</td>
+			</ng-template>
+			<ng-template #simpleVar>
+				<td class="table-body-row-cell">
+					<span class="label">{{prop.value}}</span> {{prop.realValue}}
+				</td>
+			</ng-template>
+		</tr>
+	</tbody>
+</table>

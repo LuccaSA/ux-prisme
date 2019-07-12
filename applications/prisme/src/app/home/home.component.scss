@@ -1,0 +1,9 @@
+@import "~@lucca-front/scss/src/_theming.overridable";
+@import "~@lucca-front/scss/src/_mixins";
+
+.card.mod-visual {
+  min-height: 17.5rem;
+  @include media_between("lg", "xl") {
+    min-height: 21rem;
+  }
+}

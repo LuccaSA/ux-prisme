@@ -1,0 +1,5 @@
+@import "~@lucca-front/scss/src/_theming.overridable";
+
+.textfield {
+	margin-bottom: _theme("spacings.small");
+}

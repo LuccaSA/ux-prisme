@@ -1,0 +1,31 @@
+@import "~@lucca-front/scss/src/theming.overridable";
+
+.navSideItem-link {
+  border-radius: _theme("commons.border.radius");
+  display: block;
+	color: _color("text.default");
+	text-decoration: none;
+  cursor: pointer;
+  padding: .5rem .5rem .5rem 1.5rem;
+  position: relative;
+  transition: all 150ms ease;
+  text-indent: _theme("spacings.smaller");
+
+  &:hover, &:focus, &:active {
+    outline: none;
+    background: _theme('commons.background.dark');
+  }
+
+  &.is-active {
+    background: _theme('commons.background.dark');
+
+    .navSide-sub {
+      display: block;
+    }
+  }
+
+  &[disabled] {
+    opacity: .5;
+    pointer-events: none;
+  }
+}

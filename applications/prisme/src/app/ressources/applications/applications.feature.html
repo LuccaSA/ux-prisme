@@ -1,0 +1,35 @@
+<pri-feature-header [infos]="infos"></pri-feature-header>
+<section class="page-content">
+	<div class="grid">
+		<div *ngFor="let picto of pictos" class="grid-md logo-box">
+			<a href="{{picto.href}}">
+				<div class="image-wrapper"><img [src]="picto.href"></div>
+				<p>{{picto.name}}</p>
+			</a>
+		</div>
+	</div>
+	<div class="grid">
+		<div *ngFor="let illu of illus" class="grid-md logo-box">
+			<a href="{{illu.href}}">
+				<div class="image-wrapper"><img [src]="illu.href"></div>
+				<p>{{illu.name}}</p>
+			</a>
+		</div>
+	</div>
+	<div class="grid">
+		<div *ngFor="let banner of banners" class="grid-md logo-box">
+			<a href="{{banner.href}}">
+				<div class="image-wrapper"><img [src]="banner.href"></div>
+				<p>{{banner.name}}</p>
+			</a>
+		</div>
+	</div>
+	<div class="grid">
+		<div *ngFor="let favicon of favicons" class="grid-md logo-box">
+			<a href="{{favicon.href}}">
+				<div class="image-wrapper mod-small"><img [src]="favicon.href"></div>
+				<p>{{favicon.name}}</p>
+			</a>
+		</div>
+	</div>
+</section>

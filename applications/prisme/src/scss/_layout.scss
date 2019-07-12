@@ -1,0 +1,29 @@
+body {
+	background: white;
+}
+
+h1.mod-headline, h1 {
+	font-weight: 700;
+}
+
+.main {
+	min-width: 30rem;
+}
+
+.container {
+	padding: {
+		left: _theme("spacings.standard");
+		right: _theme("spacings.standard");
+	}
+
+	@include media_smaller_than("md") {
+		padding: {
+			left: _theme("spacings.small");
+			right: _theme("spacings.small");
+		}
+	}
+}
+
+.page-content {
+	padding: _theme("spacings.bigger") _theme("spacings.bigger");
+}

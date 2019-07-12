@@ -1,0 +1,26 @@
+<section class="contentSection">
+	<h3>{{documentation.name}} <span class="label">{{documentation.type}}</span></h3>
+	<h4>Selecteur <code>{{documentation.selector}}</code></h4>
+	<p>{{documentation.description}}</p>
+</section>
+
+<ng-template [ngIf]="documentation.inputs?.length">
+	<section class="contentSection">
+		<h3>Inputs</h3>
+		<table class="table">
+			<tbody class="table-body">
+				<pri-property *ngFor="let input of documentation.inputs" [documentation]="input"></pri-property>
+			</tbody>
+		</table>
+	</section>
+</ng-template>
+<ng-template [ngIf]="documentation.outputs?.length">
+	<section class="contentSection">
+		<h3>Outputs</h3>
+		<table class="table">
+			<tbody class="table-body">
+				<pri-property *ngFor="let output of documentation.outputs" [documentation]="output"></pri-property>
+			</tbody>
+		</table>
+	</section>
+</ng-template>

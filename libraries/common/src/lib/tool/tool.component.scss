@@ -1,0 +1,38 @@
+@import "~@lucca-front/scss/src/theming.overridable";
+
+:host {
+  display: block;
+  width: 22rem;
+}
+
+.tool {
+  display: block;
+  padding: _theme("spacings.small") _theme("spacings.standard") _theme("spacings.small") 5rem;
+  position: relative;
+  margin-bottom: _theme("spacings.small");
+  background: _theme("commons.background.base");
+  border: 1px solid _theme("commons.divider.color");
+  border-radius: _theme("commons.border.radius");
+  text-decoration: none;
+  transition: all 150ms ease;
+
+  &:hover {
+    background: white;
+  }
+}
+
+.tool-logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 3rem;
+}
+
+.tool-title {
+  color: _color("text.default");
+}
+
+.tool-link {
+  color: _color("text.light");
+  text-decoration: underline;
+}

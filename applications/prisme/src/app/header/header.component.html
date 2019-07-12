@@ -1,0 +1,10 @@
+<a class="header-logo" routerLink="/"></a>
+
+<pri-search class="mod-inline"></pri-search>
+<button class="header-toggleNav" (click)="showResponsiveMenu = !showResponsiveMenu"></button>
+
+<nav class="header-nav" [class.is-open]="showResponsiveMenu">
+	<a class="header-nav-item" [routerLinkActive]="['is-active']" routerLink="/principles">Principes</a>
+	<a class="header-nav-item" [routerLinkActive]="['is-active']" routerLink="/ressources">Identité graphique</a>
+	<a class="header-nav-item" [routerLinkActive]="['is-active']" routerLink="/components">Composants</a>
+</nav>

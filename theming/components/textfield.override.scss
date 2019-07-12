@@ -1,0 +1,12 @@
+$textfield: (
+	background: lighten(_color("primary", "color", true), 29%),
+	input: (
+		placeholder: desaturate(lighten(_color("primary", "color", true), 7%), 5%)
+	),
+	hover: (
+		background: lighten(_color("primary", "color", true), 26%)
+	),
+);
+
+
+$theme: _set($theme, "components.textfield", $textfield);

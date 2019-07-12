@@ -1,0 +1,36 @@
+<div class="grid">
+	<div class="grid-md4">
+		<h4>Afficher tous les élements sélectionnés</h4>
+		<div class="textfield">
+			<lu-select [(ngModel)]="items" class="textfield-input" multiple>
+				<span class="chip mod-unkillable" *luDisplayer="let value">{{value.name}}</span>
+				<lu-option-picker>
+					<lu-option [value]="green">{{green.name}}</lu-option>
+					<lu-option [value]="red">{{red.name}}</lu-option>
+					<lu-option [value]="yellow">{{yellow.name}}</lu-option>
+					<lu-option [value]="blue">{{blue.name}}</lu-option>
+				</lu-option-picker>
+				<lu-select-clearer></lu-select-clearer>
+			</lu-select>
+			<label class="textfield-label" for="itemOptions">my label</label>
+		</div>
+	</div>
+	<div class="grid-md4">
+		<h4>Afficher un résumé de la sélection</h4>
+		<div class="textfield">
+			<lu-select [(ngModel)]="items" class="textfield-input" multiple>
+				<ng-container *luDisplayer="let values; multiple: true">
+					<span class="label">{{values?.length || 0}}</span> colors selected
+				</ng-container>
+				<lu-option-picker>
+					<lu-option [value]="green">{{green.name}}</lu-option>
+					<lu-option [value]="red">{{red.name}}</lu-option>
+					<lu-option [value]="yellow">{{yellow.name}}</lu-option>
+					<lu-option [value]="blue">{{blue.name}}</lu-option>
+				</lu-option-picker>
+				<lu-select-clearer></lu-select-clearer>
+			</lu-select>
+			<label class="textfield-label" for="itemOptions">my label</label>
+		</div>
+	</div>
+</div>
