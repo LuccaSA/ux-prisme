@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@prisme/common';
 import { ModalsFeature } from './modals.feature';
-import { BasicExample, DialogTestComponent } from './basic/basic.example';
-import { MatDialogModule } from '@angular/material';
+import { BasicExample, BasicModalContent } from './basic/basic.example';
+import { LuOverlayModule } from '@lucca-front/ng';
 
 @NgModule({
 	imports: [
 		CommonModule,
-		MatDialogModule,
+		LuOverlayModule,
 	],
 	declarations: [
-	ModalsFeature,
-	DialogTestComponent,
-	BasicExample],
+		ModalsFeature,
+		BasicExample,
+		BasicModalContent,
+	],
 	entryComponents: [
-	BasicExample, DialogTestComponent]
+		BasicExample,
+		BasicModalContent,
+	]
 })
 export class ModalsModule {}
