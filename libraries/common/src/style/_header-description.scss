@@ -1,0 +1,12 @@
+@import "~@lucca-front/scss/src/_theming.overridable";
+
+.header-description {
+  font-size: _theme("sizes.big.font-size");
+  line-height: _theme("sizes.big.line-height");
+  color: _color("lucca", "lightest");
+  max-width: 40rem;
+
+  a, .link {
+    color: _color("lucca", "lightest");
+  }
+}

@@ -1,0 +1,21 @@
+<table class="table">
+	<thead class="table-head">
+		<tr class="table-head-row">
+			<th class="table-head-row-cell">Number</th>
+			<th class="table-head-row-cell u-textRight">Value</th>
+			<th class="table-head-row-cell u-textRight">Value aligned</th>
+		</tr>
+	</thead>
+	<tbody class="table-body">
+		<tr class="table-body-row">
+			<td class="table-body-row-cell">separateur</td>
+			<td class="table-body-row-cell u-textRight">{{ separator }}</td>
+			<td class="table-body-row-cell u-textRight" [innerHTML]="separator | luNumber"></td>
+		</tr>
+		<tr class="table-body-row">
+			<td class="table-body-row-cell">milliers</td>
+			<td class="table-body-row-cell u-textRight">{{ thousands }}</td>
+			<td class="table-body-row-cell u-textRight" [innerHTML]="thousands | luNumber"></td>
+		</tr>
+	</tbody>
+</table>

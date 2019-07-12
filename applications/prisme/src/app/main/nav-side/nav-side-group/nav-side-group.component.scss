@@ -1,0 +1,18 @@
+@import "~@lucca-front/scss/src/theming.overridable";
+
+:host {
+  display: block;
+  cursor: pointer;
+  outline: none;
+}
+
+.navSideGroup-title {
+  padding: _theme("spacings.smaller") _theme("spacings.small");
+  font-weight: 600;
+  border-radius: _theme("commons.border.radius");
+  color: _color("text.dark");
+
+  &:hover {
+    background: _theme("commons.background.dark");
+  }
+}

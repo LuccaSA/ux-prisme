@@ -1,0 +1,22 @@
+<section class="card">
+	<section class="card-content">
+		<h3>{{documentation.name}} <span class="label">{{documentation.type}}</span></h3>
+		<p>{{documentation.description}}</p>
+	</section>
+	<ng-template [ngIf]="documentation.properties?.length">
+		<section class="contentSection">
+			<div class="card-content u-paddingBottomReset">
+				<h3>Properties</h3>
+				<pri-property *ngFor="let property of documentation.properties" [documentation]="property"></pri-property>
+			</div>
+		</section>
+	</ng-template>
+	<ng-template [ngIf]="documentation.methods?.length">
+		<section class="contentSection">
+			<div class="card-content u-paddingBottomReset">
+				<h3>Methods</h3>
+				<pri-method *ngFor="let method of documentation.methods" [documentation]="method"></pri-method>
+			</div>
+		</section>
+	</ng-template>
+</section>

@@ -1,0 +1,17 @@
+@import
+  "~@lucca-front/scss/src/theming.overridable",
+  "~@lucca-front/scss/src/mixins";
+
+.home-description {
+  font-size: _theme("sizes.big.font-size");
+  line-height: _theme("sizes.big.line-height");
+  margin-bottom: _theme("spacings.standard");
+}
+
+.home-contentIllu {
+  max-width: 100%;
+
+  @include media_smaller_than("md") {
+    display: none;
+  }
+}

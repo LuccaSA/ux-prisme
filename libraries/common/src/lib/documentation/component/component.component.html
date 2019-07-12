@@ -1,0 +1,24 @@
+<section class="card">
+	<section class="card-content">
+		<h3>{{documentation.name}} <span class="label">{{documentation.type}}</span></h3>
+		<h4>Selecteur <code>{{documentation.selector}}</code></h4>
+		<p>{{documentation.description}}</p>
+	</section>
+	<ng-template [ngIf]="documentation.inputs?.length">
+		<section class="contentSection">
+			<div class="card-content u-paddingBottomReset">
+				<h3>Inputs</h3>
+				<pri-property *ngFor="let input of documentation.inputs" [documentation]="input"></pri-property>
+			</div>
+		</section>
+	</ng-template>
+	<ng-template [ngIf]="documentation.outputs?.length">
+		<section class="contentSection">
+			<div class="card-content u-paddingBottomReset">
+				<h3>Outputs</h3>
+				<pri-property *ngFor="let output of documentation.outputs" [documentation]="output"></pri-property>
+			</div>
+		</section>
+	</ng-template>
+
+</section>

@@ -1,0 +1,22 @@
+.palette {
+  display: flex;
+  color: white;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.palette-primary {
+  flex: 2;
+  height: 2rem;
+  padding: 0 .66rem;
+  display: flex;
+  align-items: center;
+}
+
+.palette-secondary {
+  flex: 1;
+  height: 2rem;
+  padding: 0 .66rem;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,41 @@
+<pri-feature-header [infos]="infos"></pri-feature-header>
+
+<section class="page-content">
+	<div class="callout mod-icon palette-info">
+		<div class="callout-icon"><i class="lucca-icon">info</i></div>
+		Les fonctions sont accessibles en ajoutant <code class="code">@import "~@lucca-front/scss/src/theming.overridable"</code> à votre composant.<br>
+		Elles retournent des objets dont la notation est <code class="code">parent.child.[...]</code>.
+	</div>
+
+	<section class="contentSection">
+		<h2>Couleurs & Palette</h2>
+		<p>Pour accéder à une couleur de votre palette :</p>
+		<code class="code mod-block">_color("nom_couleur")
+		ex. _color("primary")
+		</code>
+		<p>Pour accéder à une valeur secondaire de cette couleur (texte, déclinaison...) :</p>
+		<code class="code mod-block">_color("nom_couleur", "clé")
+		ex. _color("primary", "text")</code>
+	</section>
+
+	<section class="contentSection">
+		<h2>Composants</h2>
+		<p>Pour accéder au thème des composants :</p>
+		<code class="code mod-block">_component("nom_composant.clé.[...]")
+		ex. _component("button.padding")</code>
+	</section>
+
+	<section class="contentSection">
+		<h2>Theme</h2>
+		<p>Pour accéder de manière générique aux maps du thème :</p>
+		<code class="code mod-block">_theme("nom_map.clé.[...]")
+		ex. _theme("commons.background.base");</code>
+	</section>
+
+	<section class="contentSection">
+		<h2>Get</h2>
+		<p>Pour accéder aux valeurs de votre propre map :</p>
+		<code class="code mod-block">_get($nom_map, "clé.[...]")</code>
+	</section>
+
+</section>

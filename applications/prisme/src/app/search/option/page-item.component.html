@@ -1,0 +1,6 @@
+<span
+	*ngFor="let breadcrumb of _breadcrumbs; let last = last"
+	class="page-item-breadcrumb"
+	[ngClass]="{'last': last}">
+	{{ breadcrumb.title }}
+</span>

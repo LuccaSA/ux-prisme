@@ -1,0 +1,23 @@
+.textfield {
+	max-width: 50vw;
+}
+
+.textfield-input {
+	&::after {
+		display: none;
+	}
+}
+
+:host-context(pri-home) {
+	.textfield-input {
+		background: white;
+		padding: {
+			bottom: .15rem;
+			top: .15rem;
+		}
+
+		&:focus, &.is-focused {
+			box-shadow: none;
+		}
+	}
+}

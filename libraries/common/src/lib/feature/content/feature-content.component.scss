@@ -1,0 +1,58 @@
+@import
+	"~@lucca-front/scss/src/theming.overridable",
+	"~@lucca-front/scss/src/mixins";
+
+.feature-content {
+	padding: _theme("spacings.bigger") _theme("spacings.bigger");
+}
+
+.feature-quickNav {
+	position: sticky;
+	margin-top: 4rem;
+	right: 0;
+	top: 8rem;
+	width: 100%;
+	max-width: 16rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	@include media_smaller_than("xxl") {
+		display: none;
+	}
+}
+
+.feature-quickNav-item {
+	padding: .5rem 1rem;
+	position: relative;
+	display: block;
+	color: _color("text.default");
+	text-decoration: none;
+	transition: all _theme("commons.animations.durations.fast") ease;
+	border-radius: _theme("commons.border.radius");
+
+	&:hover {
+		background:	_theme("commons.background.dark");
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 2px;
+		background: _color("lucca");
+		transform: scaleY(0);
+		transition: all _theme("commons.animations.durations.fast") ease;
+	}
+
+	&.is-active {
+		font-weight: 600;
+		color: _color("lucca");
+
+		&::before {
+			transform: scaleY(1);
+		}
+	}
+}

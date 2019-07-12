@@ -1,0 +1,11 @@
+{
+  "name": "@prisme/schematics",
+  "version": "0.0.0",
+  "description": "schematics for prisme",
+  "keywords": [
+    "schematics"
+  ],
+  "author": "lucien bertin <me@lucienbertin.com>",
+  "license": "MIT",
+  "schematics": "./collection.json"
+}

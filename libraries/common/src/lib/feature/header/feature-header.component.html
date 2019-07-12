@@ -1,0 +1,9 @@
+<div class="feature-package" *ngIf="infos.packages">
+	<span *ngFor="let package of infos.packages" class="label palette-white">{{package}}</span>
+</div>
+
+<section class="feature-header">
+	<h1 class="mod-headline">{{infos.title}}</h1>
+	<p class="header-description" *ngIf="infos.description" [innerHTML]="infos.description"></p>
+	<ng-content></ng-content>
+</section>

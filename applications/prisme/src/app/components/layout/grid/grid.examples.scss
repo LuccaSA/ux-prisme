@@ -1,0 +1,9 @@
+@import "~@lucca-front/scss/src/theming.overridable";
+
+.grid-demo {
+  background: _theme("commons.background.dark");
+  border-radius: 3px;
+  padding: .5rem 1rem;
+  margin-bottom: 1rem;
+  min-height: 2rem;
+}

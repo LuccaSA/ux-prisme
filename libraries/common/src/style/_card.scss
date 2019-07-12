@@ -1,0 +1,30 @@
+.card {
+  &.mod-visual {
+    padding-top: 8rem;
+
+    .card-content {
+      padding-top: 1rem;
+    }
+  }
+}
+
+.card-visual {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px 3px 0 0;
+}
+
+.card-dependencies {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  .label {
+    margin-left: 0;
+  }
+}

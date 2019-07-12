@@ -1,0 +1,59 @@
+<pri-feature-header [infos]="infos"></pri-feature-header>
+<section class="page-content">
+	<div class="grid">
+		<div class="grid-md3">
+			<img [priAssetSrc]="'assets/logos/lucca/lucca-color.png'"/>
+		</div>
+		<div class="grid-md9">
+			<div *ngFor="let logo of luccaColoredLogos" class="logo-box">
+				<a href="{{logo.href}}">
+					<div class="image-wrapper"><img [priAssetSrc]="getFileIcon(logo.type)"></div>
+					<p>{{logo.name}}</p>
+					<p>Usage: {{logo.usage}}</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="grid-md3">
+			<img class="white-logo" [priAssetSrc]="'assets/logos/lucca/lucca-white.png'" />
+		</div>
+		<div class="grid-md9">
+			<div *ngFor="let logo of luccaWhiteLogos" class="logo-box">
+				<a href="{{logo.href}}">
+					<div class="image-wrapper"><img [priAssetSrc]="getFileIcon(logo.type)"></div>
+					<p>{{logo.name}}</p>
+					<p>Usage: {{logo.usage}}</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="grid-md3">
+			<img [priAssetSrc]="'assets/logos/jumpingcc/jumpingCC-color.png'" />
+		</div>
+		<div class="grid-md9">
+			<div *ngFor="let logo of jumpingCCColoredLogos" class="logo-box">
+				<a href="{{logo.href}}">
+					<div class="image-wrapper"><img [priAssetSrc]="getFileIcon(logo.type)"></div>
+					<p>{{logo.name}}</p>
+					<p>Usage: {{logo.usage}}</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="grid-md3">
+			<img class="white-logo" [priAssetSrc]="'assets/logos/jumpingcc/jumpingCC-white.png'" />
+		</div>
+		<div class="grid-md9">
+			<div *ngFor="let logo of jumpingCCWhiteLogos" class="logo-box">
+				<a href="{{logo.href}}">
+					<div class="image-wrapper"><img [priAssetSrc]="getFileIcon(logo.type)"></div>
+					<p>{{logo.name}}</p>
+					<p>Usage: {{logo.usage}}</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
