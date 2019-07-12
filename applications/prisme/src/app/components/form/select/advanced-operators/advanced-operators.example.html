@@ -1,7 +1,7 @@
 <div class="textfield">
 	<lu-select [(ngModel)]="item" class="textfield-input">
 		<ng-container *luDisplayer="let value">{{value.name}}</ng-container>
-		<lu-option-picker>
+		<lu-option-picker-advanced>
 			<!-- transforms the colors array to be passed between operators -->
 			<lu-option-feeder [options]="colors"></lu-option-feeder>
 			<!-- allows you to filter said colors -->
@@ -10,7 +10,7 @@
 			<lu-option-pager></lu-option-pager>
 			<!-- specify the template to display each color -->
 			<lu-option *luForOptions="let color; trackBy: trackBy" [value]="color">{{color.name}}</lu-option>
-		</lu-option-picker>
+		</lu-option-picker-advanced>
 	</lu-select>
 	<label class="textfield-label" for="itemOptions">my label</label>
 </div>
