@@ -1,4 +1,4 @@
-import { Component, forwardRef, Input, Output, EventEmitter, HostListener, ViewContainerRef } from '@angular/core';
+import { Component, forwardRef, Input, Output, EventEmitter, HostListener, ViewContainerRef, ElementRef } from '@angular/core';
 import { ALuOptionItem, ILuOptionItem } from '@lucca-front/ng';
 
 @Component({
@@ -25,13 +25,15 @@ export class AdvancedCustomOptionExample {
 	],
 })
 export class ColorOption<T = any> extends ALuOptionItem<T> implements ILuOptionItem<T> {
+	selected;
+	highlighted;
 	@Input() value: T;
-	@Output() onSelect = new EventEmitter<T>();
+	@Output() onSelect = new EventEmitter<this>();
 	@HostListener('click')
 	onclick() {
-		this.onSelect.emit(this.value);
+		this.onSelect.emit(this);
 	}
-	constructor(protected _vcr: ViewContainerRef) {
+	constructor(protected _vcr: ViewContainerRef, public element: ElementRef) {
 		super();
 	}
 }

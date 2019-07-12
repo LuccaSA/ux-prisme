@@ -22,7 +22,7 @@ import { IExample } from '../example.model';
 export class CodeTabsComponent implements AfterViewInit {
 
 	@ViewChildren(CodeTabComponent) tabsQL: QueryList<CodeTabComponent>;
-	@ViewChild('display', {read: ViewContainerRef}) display: ViewContainerRef;
+	@ViewChild('display', {read: ViewContainerRef, static: true}) display: ViewContainerRef;
 	@Input()
 	set example(example: IExample) {
 		this._example = example;

@@ -6,8 +6,8 @@ import { Component, ViewChild, AfterViewInit, ViewContainerRef, TemplateRef, Ele
 })
 export class BasicExampleComponent implements AfterViewInit {
 
-	@ViewChild('toastsBox', { read: ViewContainerRef }) toastsBox: ViewContainerRef;
-	@ViewChild('toast') toast: TemplateRef<any>;
+	@ViewChild('toastsBox', { read: ViewContainerRef, static: true }) toastsBox: ViewContainerRef;
+	@ViewChild('toast', { static: true }) toast: TemplateRef<any>;
 	constructor() { }
 	ngAfterViewInit() {
 	}

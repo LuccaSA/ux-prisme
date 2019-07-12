@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Output, HostListener, Input, EventEmitter, forwardRef } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Output, HostListener, Input, EventEmitter, forwardRef, ElementRef, HostBinding } from '@angular/core';
 import { ILuOptionItem, ALuOptionItem } from '@lucca-front/ng';
 import { IPage } from '@prisme/common';
 
@@ -23,10 +23,13 @@ export class PageItemComponent extends ALuOptionItem<IPage> implements ILuOption
 		this._page = page;
 	}
 	get page() { return this._page; }
-	@Output() onSelect = new EventEmitter<IPage>();
+	@Output() onSelect = new EventEmitter<this>();
 	get value() { return this.page; }
 	@HostListener('click')
 	onclick() {
-		this.onSelect.emit(this.page);
+		this.onSelect.emit(this);
 	}
+	selected;
+	@HostBinding('class.is-highlighted') highlighted;
+	constructor(public element: ElementRef) { super(); }
 }
