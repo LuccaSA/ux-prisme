@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IFeatureInfos } from '@prisme/common';
 import { BasicExample } from './basic/basic.example';
+import { SendingDataExample } from './sending-data/sending-data.example';
 declare var require: any;
 @Component({
 	selector: 'pri-modals',
@@ -16,6 +17,11 @@ export class ModalsFeature {
 				component: BasicExample,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./basic/basic.example.ts')
+			},
+			{
+				title: 'sending-data',
+				component: SendingDataExample,
+				code: require('!!prismjs-loader?lang=markup!./sending-data/sending-data.example.html'),
 			},
 		],
 		packages: [
