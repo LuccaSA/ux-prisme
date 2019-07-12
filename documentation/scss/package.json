@@ -1,0 +1,5 @@
+{
+  "name": "@prisme/documentation/scss",
+	"version": "0.0.1",
+	"main": "scss-docs.js"
+}
