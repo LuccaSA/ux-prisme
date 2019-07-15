@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IFeatureInfos } from '@prisme/common';
 import { BasicExample } from './basic/basic.example';
 import { SendingDataExample } from './sending-data/sending-data.example';
+import { RecievingDataExample } from './recieving-data/recieving-data.example';
 declare var require: any;
 @Component({
 	selector: 'pri-modals',
@@ -22,6 +23,13 @@ export class ModalsFeature {
 				title: 'sending-data',
 				component: SendingDataExample,
 				code: require('!!prismjs-loader?lang=markup!./sending-data/sending-data.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./sending-data/sending-data.example.ts'),
+			},
+			{
+				title: 'recieving-data',
+				component: RecievingDataExample,
+				code: require('!!prismjs-loader?lang=markup!./recieving-data/recieving-data.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./recieving-data/recieving-data.example.ts'),
 			},
 		],
 		packages: [
