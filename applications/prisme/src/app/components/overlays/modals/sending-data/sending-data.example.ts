@@ -9,7 +9,7 @@ import { LuModal, LU_MODAL_DATA } from '@lucca-front/ng';
 })
 export class SendingDataExample {
 	constructor(private _modal: LuModal) {}
-	message = '';
+	message = 'hello world';
 	open(message: string) {
 		this._modal.open(SendingDataModalContent, message);
 	}
