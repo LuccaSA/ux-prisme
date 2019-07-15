@@ -1,7 +1,6 @@
 import { Component, Inject } from '@angular/core';
-import { delay } from 'rxjs/operators';
 import { of } from 'rxjs';
-import { LuModal, LU_MODAL_DATA } from '@lucca-front/ng';
+import { LuModal, LU_MODAL_DATA, ILuModalContent } from '@lucca-front/ng';
 
 @Component({
 	selector: 'pri-sending-data-example',
@@ -18,10 +17,10 @@ export class SendingDataExample {
 	selector: 'pri-sending-data-modal-content',
 	templateUrl: './modal-content.component.html'
 })
-export class SendingDataModalContent {
+export class SendingDataModalContent implements ILuModalContent {
 	title = 'titre';
 	message;
-	submitAction = () => of(true).pipe(delay(1000));
+	submitAction = () => of(true);
 
 	constructor(@Inject(LU_MODAL_DATA) data) {
 		this.message = data;

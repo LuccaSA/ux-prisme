@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { LuModal } from '@lucca-front/ng';
+import { LuModal, ILuModalContent } from '@lucca-front/ng';
 import { of } from 'rxjs';
-import { delay } from 'rxjs/operators';
 
 @Component({
 	selector: 'pri-basic-example',
@@ -18,7 +17,7 @@ export class BasicExample {
 	selector: 'pri-basic-modal-content',
 	templateUrl: './modal-content.component.html'
 })
-export class BasicModalContent {
+export class BasicModalContent implements ILuModalContent {
 	title = 'titre';
-	submitAction = () => of(true).pipe(delay(1000));
+	submitAction = () => of(true);
 }

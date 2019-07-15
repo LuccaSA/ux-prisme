@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { of, Subject } from 'rxjs';
-import { LuModal } from '@lucca-front/ng';
+import { LuModal, ILuModalContent } from '@lucca-front/ng';
 
 @Component({
 	selector: 'pri-recieving-data-example',
@@ -18,7 +18,7 @@ export class RecievingDataExample {
 	selector: 'pri-sending-data-modal-content',
 	templateUrl: './modal-content.component.html'
 })
-export class RecievingDataModalContent {
+export class RecievingDataModalContent implements ILuModalContent {
 	title = 'titre';
 	message = 'hello from modal';
 	submitAction = () => of(this.message).pipe();
