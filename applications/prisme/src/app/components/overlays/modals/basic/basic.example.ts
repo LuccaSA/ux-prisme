@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { LuModal, ILuModalContent } from '@lucca-front/ng';
-import { of } from 'rxjs';
 
 @Component({
 	selector: 'pri-basic-example',
@@ -19,5 +18,4 @@ export class BasicExample {
 })
 export class BasicModalContent implements ILuModalContent {
 	title = 'titre';
-	submitAction = () => of(true);
 }
