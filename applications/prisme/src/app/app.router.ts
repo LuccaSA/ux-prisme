@@ -1,14 +1,14 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ressourcesPage, RessourcesModule } from './ressources';
-import { principlesPage, PrinciplesModule } from './principles';
-import { componentsPage, ComponentsModule } from './components';
+import { ressourcesPage } from './ressources';
+import { principlesPage } from './principles';
+import { componentsPage } from './components';
 import { IPage } from '@prisme/common';
 
 const routes = [
-	{ ...ressourcesPage.toRoute(), loadChildren: () => RessourcesModule },
-	{ ...componentsPage.toRoute(), loadChildren: () => ComponentsModule },
-	{ ...principlesPage.toRoute(), loadChildren: () => PrinciplesModule },
+	{ path: 'home', loadChildren: () => import('./home').then(m => m.HomeModule) },
+	{ ...ressourcesPage.toRoute(), loadChildren: () => import('./ressources').then(m => m.RessourcesModule) },
+	{ ...componentsPage.toRoute(), loadChildren: () => import('./components').then(m => m.ComponentsModule) },
+	{ ...principlesPage.toRoute(), loadChildren: () => import('./principles').then(m => m.PrinciplesModule) },
 ];
 export const searchableIndex: IPage[] = [
 	...componentsPage.toIndex(),
@@ -17,7 +17,6 @@ export const searchableIndex: IPage[] = [
 ];
 
 export const appRoutes: Routes = [
-	{ path: 'home', component: HomeComponent },
 	...routes,
 	{ path: '**', redirectTo: '/home', pathMatch: 'full' }
 ] as Routes;

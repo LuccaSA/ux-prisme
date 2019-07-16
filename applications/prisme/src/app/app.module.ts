@@ -4,7 +4,6 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { MainModule } from './main';
-import { HomeModule } from './home';
 
 import { AppComponent } from './app.component';
 import { MarkdownModule, EnvironmentModule } from '@prisme/common';
@@ -19,7 +18,6 @@ import { environment } from '../environments/environment';
 		BrowserModule,
 		BrowserAnimationsModule,
 
-		HomeModule,
 		MainModule,
 
 		EnvironmentModule.forRoot(environment as any),

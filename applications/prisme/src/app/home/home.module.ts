@@ -14,6 +14,9 @@ import { HeaderModule } from '../header';
 		RouterModule,
 		SearchModule,
 		HeaderModule,
+		RouterModule.forChild([
+			{ path: '', component: HomeComponent, }
+		])
 	],
 	declarations: [
 		HomeSplashComponent,
