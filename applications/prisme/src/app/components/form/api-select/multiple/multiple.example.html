@@ -1,0 +1,15 @@
+<div class="grid">
+		<div class="grid-md4">
+			<div class="textfield">
+				<lu-api-select [(ngModel)]="sections" class="textfield-input" api="/api/v3/axisSections" multiple></lu-api-select>
+				<label class="textfield-label">sections analytiques</label>
+			</div>
+		</div>
+		<div class="grid-md8">
+			valeur :
+			<code>
+				{{sections | json}}
+			</code>
+		</div>
+	</div>
+	
