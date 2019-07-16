@@ -7,8 +7,6 @@ import { LuModule } from '@lucca-front/ng';
 
 import { MainModule } from './main';
 
-import { HomeModule } from './home';
-
 import { AppComponent } from './app.component';
 import { MarkdownModule, EnvironmentModule } from '@prisme/common';
 import { appRoutes, searchableIndex } from './app.router';
@@ -23,7 +21,6 @@ import { environment } from '../environments/environment';
 		BrowserAnimationsModule,
 		LuModule,
 
-		HomeModule,
 		MainModule,
 
 		EnvironmentModule.forRoot(environment as any),
