@@ -4,6 +4,7 @@ import { ApiSelectFeature } from './api-select.feature';
 import { BasicExample } from './basic/basic.example';
 import { LuApiSelectModule, LuSelectModule, LuOptionModule } from '@lucca-front/ng';
 import { FormsModule } from '@angular/forms';
+import { MultipleExample } from './multiple/multiple.example';
 
 @NgModule({
 	imports: [
@@ -15,8 +16,10 @@ import { FormsModule } from '@angular/forms';
 	],
 	declarations: [
 	ApiSelectFeature,
-	BasicExample],
+	BasicExample,
+	MultipleExample],
 	entryComponents: [
-	BasicExample]
+	BasicExample,
+	MultipleExample]
 })
 export class ApiSelectModule {}
