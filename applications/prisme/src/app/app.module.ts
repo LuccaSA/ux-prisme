@@ -3,10 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { LuModule } from '@lucca-front/ng';
-
 import { MainModule } from './main';
-
 import { HomeModule } from './home';
 
 import { AppComponent } from './app.component';
@@ -21,7 +18,6 @@ import { environment } from '../environments/environment';
 	imports: [
 		BrowserModule,
 		BrowserAnimationsModule,
-		LuModule,
 
 		HomeModule,
 		MainModule,
