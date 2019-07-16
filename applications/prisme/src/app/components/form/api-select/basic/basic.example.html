@@ -5,16 +5,10 @@
 			<label class="textfield-label">department</label>
 		</div>
 	</div>
-	<div class="grid-md4">
-		<div class="textfield">
-			<lu-select [(ngModel)]="department" class="textfield-input">
-				<ng-container *luDisplayer="let value">{{value.name}}</ng-container>
-				<lu-option-picker>
-					<lu-api-feeder api="/api/v3/departments"></lu-api-feeder>
-					<lu-option *luForOptions="let option" [value]="option">{{option.name}}</lu-option>
-				</lu-option-picker>
-			</lu-select>
-			<label class="textfield-label">department</label>
-		</div>
+	<div class="grid-md8">
+		valeur :
+		<code>
+			{{department | json}}
+		</code>
 	</div>
 </div>
