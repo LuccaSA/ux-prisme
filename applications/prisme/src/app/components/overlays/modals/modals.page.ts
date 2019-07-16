@@ -2,8 +2,8 @@ import { FeaturePage } from '@prisme/common';
 import { ModalsFeature } from './modals.feature';
 
 export const modalsPage = new FeaturePage(
-	'dialogs',
-	'Dialogues 🔨',
+	'modals',
+	'Modales',
 	ModalsFeature,
-	["dialogs", "modals", "fenêtre", "dialogue", "popup", "modales"]
+	["modals", "modals", "fenêtre", "dialogue", "popup", "modales"]
 );

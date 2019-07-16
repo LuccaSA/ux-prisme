@@ -1,18 +1,21 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import { LuModal, ILuModalContent } from '@lucca-front/ng';
 
 @Component({
 	selector: 'pri-basic-example',
 	templateUrl: './basic.example.html'
 })
 export class BasicExample {
-	constructor(public dialog: MatDialog) { }
-	openDialog(): void {
-		this.dialog.open(DialogTestComponent);
+	constructor(private _modal: LuModal) {}
+	open() {
+		this._modal.open(BasicModalContent);
 	}
 }
+
 @Component({
-	selector: 'pri-dialog-test',
-	template: `<h1>C'est un dialog</h1>`
+	selector: 'pri-basic-modal-content',
+	templateUrl: './modal-content.component.html'
 })
-export class DialogTestComponent {}
+export class BasicModalContent implements ILuModalContent {
+	title = 'titre';
+}
