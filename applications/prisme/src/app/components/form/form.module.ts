@@ -10,6 +10,7 @@ import { RadioButtonsModule } from './radio-buttons';
 import { SelectModule } from './select';
 import { ApiSelectModule } from './api-select';
 import { FormGuidelinesModule } from './guidelines';
+import { DepartmentSelectModule } from './department-select';
 
 @NgModule({
 	imports: [
@@ -24,6 +25,7 @@ import { FormGuidelinesModule } from './guidelines';
 		SelectModule,
 		ApiSelectModule,
 		FormGuidelinesModule,
+		DepartmentSelectModule,
 	],
 })
 export class FormModule { }

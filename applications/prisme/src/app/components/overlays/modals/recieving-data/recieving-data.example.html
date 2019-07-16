@@ -1,0 +1,7 @@
+<button class="button" (click)="open(message)">Ouvrir la modale</button>
+<p>
+	message de la modale : 
+</p>
+<section class="callout">
+	{{message$ | async}}
+</section>

@@ -1,9 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
-import { LuModule } from '@lucca-front/ng';
 
 import { MainModule } from './main';
 
@@ -19,7 +17,6 @@ import { environment } from '../environments/environment';
 	imports: [
 		BrowserModule,
 		BrowserAnimationsModule,
-		LuModule,
 
 		MainModule,
 
@@ -36,7 +33,8 @@ import { environment } from '../environments/environment';
 		AppComponent
 	],
 	providers: [
-		{ provide: PAGES_INDEX, useValue: searchableIndex }
+		{ provide: PAGES_INDEX, useValue: searchableIndex },
+		{ provide: LOCALE_ID, useValue: 'fr-FR' },
 	],
 	bootstrap: [AppComponent]
 })

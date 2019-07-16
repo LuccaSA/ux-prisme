@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IFeatureInfos, DocumentationService } from '@prisme/common';
 import { BasicExample } from './basic/basic.example';
+import { MultipleExample } from './multiple/multiple.example';
 declare var require: any;
 @Component({
 	selector: 'pri-api-select',
@@ -14,17 +15,21 @@ export class ApiSelectFeature {
 			{
 				title: 'Basique',
 				component: BasicExample,
-				description: `
-				L'API Select peut être utilisé sous deux formes :
-				<ol>
-					<li>Le composant <code class="code">lu-api-select</code></li>
-					<li>L'opérateur <code class="code">lu-api-feeder</code> du <code class="code">lu-option-picker</code> pour plus de contrôle</li>
-				</ol>
-				L'opérateur et la composant prennent tous deux un input <code class="code">api</code> où vous devez renseigner l'URL de l'API.
-				<br>Le composant <code class="code">lu-api-select</code> supporte l'attribut <code class="code">multiple</code>.
-				`,
+				// description: `
+				// L'API Select peut être utilisé sous deux formes :
+				// <ol>
+				// 	<li>Le composant <code class="code">lu-api-select</code></li>
+				// 	<li>L'opérateur <code class="code">lu-api-feeder</code> du <code class="code">lu-option-picker</code> pour plus de contrôle</li>
+				// </ol>
+				// L'opérateur et la composant prennent tous deux un input <code class="code">api</code> où vous devez renseigner l'URL de l'API.
+				// <br>Le composant <code class="code">lu-api-select</code> supporte l'attribut <code class="code">multiple</code>.
+				// `,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
-				tsCode: require('!!prismjs-loader?lang=typescript!./basic/basic.example.ts')
+			},
+			{
+				title: 'multiple',
+				component: MultipleExample,
+				code: require('!!prismjs-loader?lang=markup!./multiple/multiple.example.html'),
 			},
 		],
 		packages: [
