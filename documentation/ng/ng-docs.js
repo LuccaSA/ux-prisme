@@ -225,17 +225,7 @@ const NG_DOCS = {
         "description": ""
       },
       {
-        "name": "multiple",
-        "propertyType": "string | boolean",
-        "description": ""
-      },
-      {
         "name": "orderBy",
-        "propertyType": "string",
-        "description": ""
-      },
-      {
-        "name": "placeholder",
         "propertyType": "string",
         "description": ""
       },
@@ -246,32 +236,8 @@ const NG_DOCS = {
       }
     ],
     "outputs": [],
-    "properties": [
-      {
-        "name": "isDisabled",
-        "propertyType": "boolean",
-        "description": ""
-      },
-      {
-        "name": "isFocused",
-        "propertyType": "boolean",
-        "description": ""
-      },
-      {
-        "name": "tabindex",
-        "defaultValue": "0",
-        "propertyType": "number",
-        "description": ""
-      }
-    ],
-    "methods": [
-      {
-        "name": "onClick",
-        "description": "bind to dom events",
-        "arguments": [],
-        "returnType": "void"
-      }
-    ]
+    "properties": [],
+    "methods": []
   },
   "LuApiSelectInputModule": {
     "fileName": "libraries/core/src/lib/api/select/input/api-select-input.module.ts",
@@ -320,13 +286,7 @@ const NG_DOCS = {
       }
     ],
     "outputs": [],
-    "properties": [
-      {
-        "name": "outOptions$",
-        "propertyType": "BehaviorSubject<T[]>",
-        "description": ""
-      }
-    ],
+    "properties": [],
     "methods": []
   },
   "ILuApiOptionPager": {
@@ -363,7 +323,7 @@ const NG_DOCS = {
       },
       {
         "name": "outOptions$",
-        "propertyType": "BehaviorSubject<T[]>",
+        "propertyType": "Subject<T[]>",
         "description": ""
       }
     ]
@@ -543,7 +503,7 @@ const NG_DOCS = {
       },
       {
         "name": "outOptions$",
-        "propertyType": "BehaviorSubject<T[]>",
+        "propertyType": "Subject<T[]>",
         "description": ""
       }
     ]
@@ -602,7 +562,7 @@ const NG_DOCS = {
       },
       {
         "name": "outOptions$",
-        "propertyType": "BehaviorSubject<T[]>",
+        "propertyType": "Subject<T[]>",
         "description": ""
       }
     ]
@@ -638,6 +598,158 @@ const NG_DOCS = {
     "description": "",
     "methods": [],
     "properties": []
+  },
+  "ILuDepartment": {
+    "fileName": "libraries/core/src/lib/department/department.model.ts",
+    "type": "interface",
+    "name": "ILuDepartment",
+    "className": "ILuDepartment",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuDepartmentModule": {
+    "fileName": "libraries/core/src/lib/department/department.module.ts",
+    "type": "module",
+    "className": "LuDepartmentModule",
+    "name": "LuDepartmentModule",
+    "declarations": [],
+    "exports": [
+      "LuDepartmentSelectModule"
+    ]
+  },
+  "LuDepartmentSelectModule": {
+    "fileName": "libraries/core/src/lib/department/select/department-select.module.ts",
+    "type": "module",
+    "className": "LuDepartmentSelectModule",
+    "name": "LuDepartmentSelectModule",
+    "declarations": [],
+    "exports": [
+      "LuDepartmentFeederModule",
+      "LuDepartmentSelectInputModule"
+    ]
+  },
+  "LuDepartmentFeederComponent": {
+    "fileName": "libraries/core/src/lib/department/select/feeder/department-feeder.component.ts",
+    "name": "LuDepartmentFeederComponent",
+    "type": "component",
+    "className": "LuDepartmentFeederComponent",
+    "description": "",
+    "selector": "lu-department-feeder",
+    "inputs": [],
+    "outputs": [],
+    "properties": [
+      {
+        "name": "outOptions$",
+        "propertyType": "Observable<ILuTree<ILuDepartment>[]>",
+        "description": ""
+      }
+    ],
+    "methods": []
+  },
+  "ILuDepartmentFeederService": {
+    "fileName": "libraries/core/src/lib/department/select/feeder/department-feeder.model.ts",
+    "type": "interface",
+    "name": "ILuDepartmentFeederService",
+    "className": "ILuDepartmentFeederService",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ALuDepartmentFeederService": {
+    "fileName": "libraries/core/src/lib/department/select/feeder/department-feeder.model.ts",
+    "type": "class",
+    "name": "ALuDepartmentFeederService",
+    "className": "ALuDepartmentFeederService",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuDepartmentFeederModule": {
+    "fileName": "libraries/core/src/lib/department/select/feeder/department-feeder.module.ts",
+    "type": "module",
+    "className": "LuDepartmentFeederModule",
+    "name": "LuDepartmentFeederModule",
+    "declarations": [
+      "LuDepartmentFeederComponent"
+    ],
+    "exports": [
+      "LuDepartmentFeederComponent"
+    ]
+  },
+  "LuDepartmentFeederService": {
+    "type": "injectable",
+    "name": "LuDepartmentFeederService",
+    "fileName": "libraries/core/src/lib/department/select/feeder/department-feeder.service.ts",
+    "className": "LuDepartmentFeederService",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuDepartmentSelectInputComponent": {
+    "fileName": "libraries/core/src/lib/department/select/input/department-select-input.component.ts",
+    "name": "LuDepartmentSelectInputComponent",
+    "type": "component",
+    "className": "LuDepartmentSelectInputComponent",
+    "description": "",
+    "selector": "lu-department-select",
+    "inputs": [],
+    "outputs": [],
+    "properties": [],
+    "methods": []
+  },
+  "LuDepartmentSelectInputIntl": {
+    "type": "injectable",
+    "name": "LuDepartmentSelectInputIntl",
+    "fileName": "libraries/core/src/lib/department/select/input/department-select-input.intl.ts",
+    "className": "LuDepartmentSelectInputIntl",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuDepartmentSelectInputModule": {
+    "fileName": "libraries/core/src/lib/department/select/input/department-select-input.module.ts",
+    "type": "module",
+    "className": "LuDepartmentSelectInputModule",
+    "name": "LuDepartmentSelectInputModule",
+    "declarations": [
+      "LuDepartmentSelectInputComponent"
+    ],
+    "exports": [
+      "LuDepartmentSelectInputComponent"
+    ]
+  },
+  "ILuDepartmentSelectInputLabel": {
+    "fileName": "libraries/core/src/lib/department/select/input/department-select-input.translate.ts",
+    "type": "interface",
+    "name": "ILuDepartmentSelectInputLabel",
+    "className": "ILuDepartmentSelectInputLabel",
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "departments",
+        "propertyType": "string",
+        "description": ""
+      }
+    ]
+  },
+  "ALuDepartmentSelectInputLabel": {
+    "fileName": "libraries/core/src/lib/department/select/input/department-select-input.translate.ts",
+    "type": "class",
+    "name": "ALuDepartmentSelectInputLabel",
+    "className": "ALuDepartmentSelectInputLabel",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "departments",
+        "propertyType": "string",
+        "description": ""
+      }
+    ]
   },
   "ILuClearer": {
     "fileName": "libraries/core/src/lib/input/clearer/clearer.model.ts",
@@ -884,15 +996,16 @@ const NG_DOCS = {
     "declarations": [],
     "exports": [
       "LuApiModule",
+      "LuDepartmentModule",
       "LuInputModule",
       "LuNumberModule",
       "LuOptionModule",
-      "LuPopoverModule",
       "LuSafeContentModule",
       "LuScrollModule",
       "LuSelectModule",
-      "LuTooltipModule",
-      "LuUserModule"
+      "LuUserModule",
+      "LuOverlayModule",
+      "LuTreeModule"
     ]
   },
   "LuNumberModule": {
@@ -939,6 +1052,16 @@ const NG_DOCS = {
     "selector": "lu-option",
     "inputs": [
       {
+        "name": "highlighted",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "selected",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
         "name": "value",
         "propertyType": "T",
         "description": ""
@@ -947,11 +1070,22 @@ const NG_DOCS = {
     "outputs": [
       {
         "name": "onSelect",
-        "propertyType": "EventEmitter<T>",
+        "propertyType": "EventEmitter<this>",
         "description": ""
       }
     ],
-    "properties": [],
+    "properties": [
+      {
+        "name": "highlighted",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "selected",
+        "propertyType": "boolean",
+        "description": ""
+      }
+    ],
     "methods": []
   },
   "ILuOptionItem": {
@@ -963,8 +1097,23 @@ const NG_DOCS = {
     "methods": [],
     "properties": [
       {
+        "name": "element",
+        "propertyType": "ElementRef<any>",
+        "description": ""
+      },
+      {
+        "name": "highlighted",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
         "name": "onSelect",
-        "propertyType": "Observable<T>",
+        "propertyType": "Observable<this>",
+        "description": ""
+      },
+      {
+        "name": "selected",
+        "propertyType": "boolean",
         "description": ""
       },
       {
@@ -984,8 +1133,23 @@ const NG_DOCS = {
     "methods": [],
     "properties": [
       {
+        "name": "element",
+        "propertyType": "ElementRef<any>",
+        "description": ""
+      },
+      {
+        "name": "highlighted",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
         "name": "onSelect",
-        "propertyType": "Observable<T>",
+        "propertyType": "Observable<this>",
+        "description": ""
+      },
+      {
+        "name": "selected",
+        "propertyType": "boolean",
         "description": ""
       },
       {
@@ -1043,37 +1207,6 @@ const NG_DOCS = {
       "LuOptionFeederComponent"
     ]
   },
-  "LuForOptionsContext": {
-    "fileName": "libraries/core/src/lib/option/operator/for-options/for-options.directive.ts",
-    "type": "class",
-    "name": "LuForOptionsContext",
-    "className": "LuForOptionsContext",
-    "abstract": false,
-    "description": "",
-    "methods": [],
-    "properties": [
-      {
-        "name": "even",
-        "propertyType": "boolean",
-        "description": ""
-      },
-      {
-        "name": "first",
-        "propertyType": "boolean",
-        "description": ""
-      },
-      {
-        "name": "last",
-        "propertyType": "boolean",
-        "description": ""
-      },
-      {
-        "name": "odd",
-        "propertyType": "boolean",
-        "description": ""
-      }
-    ]
-  },
   "LuForOptionsDirective": {
     "fileName": "libraries/core/src/lib/option/operator/for-options/for-options.directive.ts",
     "name": "LuForOptionsDirective",
@@ -1081,9 +1214,21 @@ const NG_DOCS = {
     "className": "LuForOptionsDirective",
     "description": "",
     "selector": "[luForOptions]",
-    "inputs": [],
+    "inputs": [
+      {
+        "name": "luForOptionsTrackBy",
+        "propertyType": "TrackByFunction<T>",
+        "description": ""
+      }
+    ],
     "outputs": [],
-    "properties": [],
+    "properties": [
+      {
+        "name": "outOptions$",
+        "propertyType": "any",
+        "description": ""
+      }
+    ],
     "methods": []
   },
   "LuForOptionsModule": {
@@ -1109,26 +1254,6 @@ const NG_DOCS = {
       {
         "name": "inOptions$",
         "propertyType": "Observable<T[]>",
-        "description": ""
-      },
-      {
-        "name": "onClose",
-        "propertyType": "() => void",
-        "description": ""
-      },
-      {
-        "name": "onKeydown",
-        "propertyType": "(key: number) => void",
-        "description": ""
-      },
-      {
-        "name": "onOpen",
-        "propertyType": "() => void",
-        "description": ""
-      },
-      {
-        "name": "onScrollBottom",
-        "propertyType": "() => void",
         "description": ""
       },
       {
@@ -1158,6 +1283,63 @@ const NG_DOCS = {
         "description": ""
       }
     ]
+  },
+  "ILuOnOpenSubscriber": {
+    "fileName": "libraries/core/src/lib/option/operator/option-operator.model.ts",
+    "type": "interface",
+    "name": "ILuOnOpenSubscriber",
+    "className": "ILuOnOpenSubscriber",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ALuOnOpenSubscriber": {
+    "fileName": "libraries/core/src/lib/option/operator/option-operator.model.ts",
+    "type": "class",
+    "name": "ALuOnOpenSubscriber",
+    "className": "ALuOnOpenSubscriber",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ILuOnCloseSubscriber": {
+    "fileName": "libraries/core/src/lib/option/operator/option-operator.model.ts",
+    "type": "interface",
+    "name": "ILuOnCloseSubscriber",
+    "className": "ILuOnCloseSubscriber",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ALuOnCloseSubscriber": {
+    "fileName": "libraries/core/src/lib/option/operator/option-operator.model.ts",
+    "type": "class",
+    "name": "ALuOnCloseSubscriber",
+    "className": "ALuOnCloseSubscriber",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ILuOnScrollBottomSubscriber": {
+    "fileName": "libraries/core/src/lib/option/operator/option-operator.model.ts",
+    "type": "interface",
+    "name": "ILuOnScrollBottomSubscriber",
+    "className": "ILuOnScrollBottomSubscriber",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ALuOnScrollBottomSubscriber": {
+    "fileName": "libraries/core/src/lib/option/operator/option-operator.model.ts",
+    "type": "class",
+    "name": "ALuOnScrollBottomSubscriber",
+    "className": "ALuOnScrollBottomSubscriber",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": []
   },
   "LuOptionOperatorModule": {
     "fileName": "libraries/core/src/lib/option/operator/option-operator.module.ts",
@@ -1266,6 +1448,71 @@ const NG_DOCS = {
       "LuOptionOperatorModule"
     ]
   },
+  "ALuOptionPickerAdvancedComponent": {
+    "fileName": "libraries/core/src/lib/option/picker/option-picker-advanced.component.ts",
+    "type": "class",
+    "name": "ALuOptionPickerAdvancedComponent",
+    "className": "ALuOptionPickerAdvancedComponent",
+    "abstract": true,
+    "description": "",
+    "methods": [
+      {
+        "name": "onOpen",
+        "description": "method called by the trigger when it opens the popover",
+        "arguments": [],
+        "returnType": "void"
+      },
+      {
+        "name": "onClose",
+        "description": "method called by the trigger when it closes the popover",
+        "arguments": [],
+        "returnType": "void"
+      }
+    ],
+    "properties": [
+      {
+        "name": "loading$",
+        "propertyType": "Observable<boolean>",
+        "description": ""
+      }
+    ]
+  },
+  "LuOptionPickerAdvancedComponent": {
+    "fileName": "libraries/core/src/lib/option/picker/option-picker-advanced.component.ts",
+    "name": "LuOptionPickerAdvancedComponent",
+    "type": "component",
+    "className": "LuOptionPickerAdvancedComponent",
+    "description": "advanced option picker panel",
+    "selector": "lu-option-picker-advanced",
+    "exportAs": "LuOptionPicker",
+    "inputs": [],
+    "outputs": [],
+    "properties": [],
+    "methods": []
+  },
+  "ALuOptionPickerComponent": {
+    "fileName": "libraries/core/src/lib/option/picker/option-picker.component.ts",
+    "type": "class",
+    "name": "ALuOptionPickerComponent",
+    "className": "ALuOptionPickerComponent",
+    "abstract": true,
+    "description": "",
+    "methods": [
+      {
+        "name": "onOpen",
+        "description": "method called by the trigger when it opens the popover",
+        "arguments": [],
+        "returnType": "void"
+      }
+    ],
+    "properties": [
+      {
+        "name": "highlightIndex",
+        "propertyType": "number",
+        "description": ""
+      }
+    ]
+  },
   "LuOptionPickerComponent": {
     "fileName": "libraries/core/src/lib/option/picker/option-picker.component.ts",
     "name": "LuOptionPickerComponent",
@@ -1274,42 +1521,9 @@ const NG_DOCS = {
     "description": "basic option picker panel",
     "selector": "lu-option-picker",
     "exportAs": "LuOptionPicker",
-    "inputs": [
-      {
-        "name": "overlap-trigger",
-        "propertyType": "boolean",
-        "description": ""
-      }
-    ],
-    "outputs": [
-      {
-        "name": "close",
-        "propertyType": "EventEmitter<void>",
-        "description": ""
-      },
-      {
-        "name": "onSelectValue",
-        "propertyType": "EventEmitter<T>",
-        "description": "emits when a value was selected on the picker"
-      },
-      {
-        "name": "open",
-        "propertyType": "EventEmitter<void>",
-        "description": ""
-      }
-    ],
-    "properties": [
-      {
-        "name": "highlightIndex",
-        "propertyType": "number",
-        "description": ""
-      },
-      {
-        "name": "optionsQLVR",
-        "propertyType": "QueryList<ViewContainerRef>",
-        "description": ""
-      }
-    ],
+    "inputs": [],
+    "outputs": [],
+    "properties": [],
     "methods": []
   },
   "ILuOptionPickerPanel": {
@@ -1355,14 +1569,266 @@ const NG_DOCS = {
     "className": "LuOptionPickerModule",
     "name": "LuOptionPickerModule",
     "declarations": [
-      "LuOptionPickerComponent"
+      "LuOptionPickerComponent",
+      "LuOptionPickerAdvancedComponent"
     ],
     "exports": [
-      "LuOptionPickerComponent"
+      "LuOptionPickerComponent",
+      "LuOptionPickerAdvancedComponent"
+    ]
+  },
+  "ILuModalConfig": {
+    "fileName": "libraries/core/src/lib/overlay/modal/modal-config.model.ts",
+    "type": "interface",
+    "name": "ILuModalConfig",
+    "className": "ILuModalConfig",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ALuModalPanelComponent": {
+    "fileName": "libraries/core/src/lib/overlay/modal/modal-panel.component.ts",
+    "type": "class",
+    "name": "ALuModalPanelComponent",
+    "className": "ALuModalPanelComponent",
+    "abstract": true,
+    "description": "",
+    "methods": [
+      {
+        "name": "attach",
+        "description": "Attaches a portal to this outlet.",
+        "arguments": [
+          {
+            "name": "portal",
+            "type": "Portal<U>"
+          }
+        ],
+        "returnType": "void"
+      },
+      {
+        "name": "detach",
+        "description": "Detaches the currently attached portal from this outlet.",
+        "arguments": [],
+        "returnType": "void"
+      },
+      {
+        "name": "dispose",
+        "description": "Performs cleanup before the outlet is destroyed.",
+        "arguments": [],
+        "returnType": "void"
+      },
+      {
+        "name": "hasAttached",
+        "description": "Whether there is currently a portal attached to this outlet.",
+        "arguments": [],
+        "returnType": "void"
+      }
+    ],
+    "properties": [
+      {
+        "name": "cancelLabel",
+        "propertyType": "string",
+        "description": ""
+      },
+      {
+        "name": "error$",
+        "propertyType": "Subject<{}>",
+        "description": ""
+      },
+      {
+        "name": "submitClass$",
+        "propertyType": "Subject<{}>",
+        "description": ""
+      },
+      {
+        "name": "submitDisabled",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "submitLabel",
+        "propertyType": "string",
+        "description": ""
+      },
+      {
+        "name": "title",
+        "propertyType": "string",
+        "description": ""
+      }
+    ]
+  },
+  "LuModalPanelComponent": {
+    "fileName": "libraries/core/src/lib/overlay/modal/modal-panel.component.ts",
+    "name": "LuModalPanelComponent",
+    "type": "component",
+    "className": "LuModalPanelComponent",
+    "description": "",
+    "selector": "lu-modal-panel",
+    "inputs": [],
+    "outputs": [],
+    "properties": [],
+    "methods": []
+  },
+  "LuModalRef": {
+    "fileName": "libraries/core/src/lib/overlay/modal/modal-ref.factory.ts",
+    "type": "class",
+    "name": "LuModalRef",
+    "className": "LuModalRef",
+    "abstract": false,
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuModalRefFactory": {
+    "type": "injectable",
+    "name": "LuModalRefFactory",
+    "fileName": "libraries/core/src/lib/overlay/modal/modal-ref.factory.ts",
+    "className": "LuModalRefFactory",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ILuModalRef": {
+    "fileName": "libraries/core/src/lib/overlay/modal/modal-ref.model.ts",
+    "type": "interface",
+    "name": "ILuModalRef",
+    "className": "ILuModalRef",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ALuModalRef": {
+    "fileName": "libraries/core/src/lib/overlay/modal/modal-ref.model.ts",
+    "type": "class",
+    "name": "ALuModalRef",
+    "className": "ALuModalRef",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuModalIntl": {
+    "type": "injectable",
+    "name": "LuModalIntl",
+    "fileName": "libraries/core/src/lib/overlay/modal/modal.intl.ts",
+    "className": "LuModalIntl",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ILuModalContent": {
+    "fileName": "libraries/core/src/lib/overlay/modal/modal.model.ts",
+    "type": "interface",
+    "name": "ILuModalContent",
+    "className": "ILuModalContent",
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "cancelLabel",
+        "propertyType": "string",
+        "description": ""
+      },
+      {
+        "name": "submitAction",
+        "propertyType": "() => Observable<T>",
+        "description": ""
+      },
+      {
+        "name": "submitDisabled",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "submitLabel",
+        "propertyType": "string",
+        "description": ""
+      },
+      {
+        "name": "title",
+        "propertyType": "string",
+        "description": ""
+      }
+    ]
+  },
+  "LuModalModule": {
+    "fileName": "libraries/core/src/lib/overlay/modal/modal.module.ts",
+    "type": "module",
+    "className": "LuModalModule",
+    "name": "LuModalModule",
+    "declarations": [
+      "LuModalPanelComponent"
+    ],
+    "exports": [
+      "LuModalPanelComponent"
+    ]
+  },
+  "LuModal": {
+    "type": "injectable",
+    "name": "LuModal",
+    "fileName": "libraries/core/src/lib/overlay/modal/modal.service.ts",
+    "className": "LuModal",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ILuModalLabel": {
+    "fileName": "libraries/core/src/lib/overlay/modal/modal.translate.ts",
+    "type": "interface",
+    "name": "ILuModalLabel",
+    "className": "ILuModalLabel",
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "cancel",
+        "propertyType": "string",
+        "description": ""
+      },
+      {
+        "name": "submit",
+        "propertyType": "string",
+        "description": ""
+      }
+    ]
+  },
+  "ALuModalLabel": {
+    "fileName": "libraries/core/src/lib/overlay/modal/modal.translate.ts",
+    "type": "class",
+    "name": "ALuModalLabel",
+    "className": "ALuModalLabel",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "cancel",
+        "propertyType": "string",
+        "description": ""
+      },
+      {
+        "name": "submit",
+        "propertyType": "string",
+        "description": ""
+      }
+    ]
+  },
+  "LuOverlayModule": {
+    "fileName": "libraries/core/src/lib/overlay/overlay.module.ts",
+    "type": "module",
+    "className": "LuOverlayModule",
+    "name": "LuOverlayModule",
+    "declarations": [],
+    "exports": [
+      "LuPopoverModule",
+      "LuTooltipModule",
+      "LuPopupModule",
+      "LuModalModule",
+      "LuSidepanelModule"
     ]
   },
   "LuPopoverPanelComponent": {
-    "fileName": "libraries/core/src/lib/popover/panel/popover-panel.component.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/panel/popover-panel.component.ts",
     "name": "LuPopoverPanelComponent",
     "type": "component",
     "className": "LuPopoverPanelComponent",
@@ -1371,54 +1837,19 @@ const NG_DOCS = {
     "exportAs": "LuPopoverPanel",
     "inputs": [
       {
-        "name": "alignment",
-        "propertyType": "LuPopoverAlignment",
-        "description": "Alignment of the popover regarding the trigger"
-      },
-      {
-        "name": "classes",
-        "propertyType": "string",
-        "description": "This method takes classes set on the host lu-popover element and applies them on the\npopover template that displays in the overlay container.  Otherwise, it's difficult\nto style the containing popover from outside the component."
-      },
-      {
         "name": "close-on-click",
         "propertyType": "boolean",
         "description": "Popover container close on click\ndefault: false"
       },
       {
-        "name": "enter-delay",
-        "propertyType": "number",
-        "description": "Popover enter delay"
+        "name": "content-classes",
+        "propertyType": "string",
+        "description": "This method takes classes set on the host lu-popover element and applies them on the\npopover template that displays in the overlay container. Otherwise, it's difficult\nto style the containing popover from outside the component."
       },
       {
-        "name": "focus-trap-enabled",
-        "propertyType": "boolean",
-        "description": "Popover focus trap using cdkTrapFocus\ndefault: false"
-      },
-      {
-        "name": "leave-delay",
-        "propertyType": "number",
-        "description": "Popover leave delay"
-      },
-      {
-        "name": "offset-x",
-        "propertyType": "number",
-        "description": "Popover target offset x"
-      },
-      {
-        "name": "offset-y",
-        "propertyType": "number",
-        "description": "Popover target offset y"
-      },
-      {
-        "name": "overlap-trigger",
-        "propertyType": "boolean",
-        "description": "Popover overlap trigger"
-      },
-      {
-        "name": "position",
-        "propertyType": "LuPopoverPosition",
-        "description": "Position of the popover around the trigger"
+        "name": "panel-classes",
+        "propertyType": "string",
+        "description": "This method takes classes set on the host lu-popover element and applies them on the\npopover template that displays in the overlay container.  Otherwise, it's difficult\nto style the containing popover from outside the component."
       },
       {
         "name": "scroll-strategy",
@@ -1431,9 +1862,9 @@ const NG_DOCS = {
         "description": "Template to Use for the popover"
       },
       {
-        "name": "trigger-on",
-        "propertyType": "LuPopoverTriggerEvent",
-        "description": "Popover trigger event"
+        "name": "trap-focus",
+        "propertyType": "boolean",
+        "description": "Popover focus trap using cdkTrapFocus\ndefault: false"
       }
     ],
     "outputs": [
@@ -1443,36 +1874,50 @@ const NG_DOCS = {
         "description": "Event emitted when the popover is closed."
       },
       {
+        "name": "hovered",
+        "propertyType": "EventEmitter<boolean>",
+        "description": "will emit when the panel is hovered"
+      },
+      {
         "name": "open",
         "propertyType": "EventEmitter<void>",
-        "description": ""
+        "description": "will emit when the panel wants to open"
       }
     ],
-    "properties": [],
+    "properties": [
+      {
+        "name": "template",
+        "propertyType": "TemplateRef<any>",
+        "description": "Template to Use for the popover"
+      }
+    ],
     "methods": []
   },
   "ILuPopoverPanel": {
-    "fileName": "libraries/core/src/lib/popover/panel/popover-panel.model.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/panel/popover-panel.model.ts",
     "type": "interface",
     "name": "ILuPopoverPanel",
     "className": "ILuPopoverPanel",
     "description": "",
-    "methods": [],
-    "properties": [
+    "methods": [
       {
-        "name": "alignment",
-        "propertyType": "LuPopoverAlignment",
-        "description": ""
+        "name": "onOpen",
+        "description": "method called by the trigger when it opens the popover",
+        "arguments": [],
+        "returnType": "void"
       },
+      {
+        "name": "onClose",
+        "description": "method called by the trigger when it closes the popover",
+        "arguments": [],
+        "returnType": "void"
+      }
+    ],
+    "properties": [
       {
         "name": "close",
         "propertyType": "Observable<void>",
-        "description": ""
-      },
-      {
-        "name": "closeDisabled",
-        "propertyType": "boolean",
-        "description": ""
+        "description": "will emit when the panel wants to close"
       },
       {
         "name": "closeOnClick",
@@ -1480,14 +1925,14 @@ const NG_DOCS = {
         "description": ""
       },
       {
-        "name": "containerPositioning",
-        "propertyType": "boolean",
-        "description": ""
+        "name": "contentClasses",
+        "propertyType": "string",
+        "description": "class to apply to the panel content, uses ' ' for separating values"
       },
       {
-        "name": "enterDelay",
-        "propertyType": "number",
-        "description": ""
+        "name": "hovered",
+        "propertyType": "Observable<boolean>",
+        "description": "will emit when the panel is hovered"
       },
       {
         "name": "keydownEvents$",
@@ -1495,29 +1940,14 @@ const NG_DOCS = {
         "description": ""
       },
       {
-        "name": "leaveDelay",
-        "propertyType": "number",
-        "description": ""
-      },
-      {
         "name": "open",
         "propertyType": "Observable<void>",
-        "description": ""
+        "description": "will emit when the panel wants to open"
       },
       {
-        "name": "overlapTrigger",
-        "propertyType": "boolean",
-        "description": ""
-      },
-      {
-        "name": "popoverPanelStyles",
-        "propertyType": "any",
-        "description": ""
-      },
-      {
-        "name": "position",
-        "propertyType": "LuPopoverPosition",
-        "description": ""
+        "name": "panelClasses",
+        "propertyType": "string",
+        "description": "classes to apply to the panel, uses ' ' for separating values"
       },
       {
         "name": "scrollStrategy",
@@ -1526,44 +1956,36 @@ const NG_DOCS = {
       },
       {
         "name": "setPositionClasses",
-        "propertyType": "(pos: LuPopoverPosition, al: LuPopoverAlignment) => void",
-        "description": ""
-      },
-      {
-        "name": "setPositionClassesChanges",
-        "propertyType": "(posX: LuPopoverPosition, posY: LuPopoverPosition) => void",
-        "description": ""
-      },
-      {
-        "name": "targetOffsetX",
-        "propertyType": "number",
-        "description": ""
-      },
-      {
-        "name": "targetOffsetY",
-        "propertyType": "number",
+        "propertyType": "(posX: HorizontalConnectionPos, posY: VerticalConnectionPos) => void",
         "description": ""
       },
       {
         "name": "templateRef",
         "propertyType": "TemplateRef<any>",
         "description": ""
-      },
-      {
-        "name": "triggerEvent",
-        "propertyType": "LuPopoverTriggerEvent",
-        "description": ""
       }
     ]
   },
   "ALuPopoverPanel": {
-    "fileName": "libraries/core/src/lib/popover/panel/popover-panel.model.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/panel/popover-panel.model.ts",
     "type": "class",
     "name": "ALuPopoverPanel",
     "className": "ALuPopoverPanel",
     "abstract": true,
-    "description": "abstract class for basic implementation of a popover panel\r\nit is highly recommended to use this template\r\n<ng-template>\r\n<div class=\"lu-popover-panel\" role=\"dialog\" [class.lu-popover-overlap]=\"overlapTrigger\" [ngClass]=\"_classList\" [ngStyle]=\"popoverPanelStyles\"\r\n(keydown)=\"_handleKeydown($event)\" (click)=\"onClick()\" (mouseover)=\"onMouseOver()\" (mouseleave)=\"onMouseLeave()\" (mousedown)=\"onMouseDown($event)\"\r\n[@transformPopover]=\"'enter'\">\r\n<div class=\"lu-popover-content\" [ngStyle]=\"popoverContentStyles\" cdkTrapFocus=\"focusTrapEnabled\">\r\n### PUT HERE THE CONTENT OF THE POPOVER ###\r\n</div>\r\n</div>\r\n</ng-template>",
+    "description": "abstract class for basic implementation of a popover panel",
     "methods": [
+      {
+        "name": "onOpen",
+        "description": "method called by the trigger when it opens the popover",
+        "arguments": [],
+        "returnType": "void"
+      },
+      {
+        "name": "onClose",
+        "description": "method called by the trigger when it closes the popover",
+        "arguments": [],
+        "returnType": "void"
+      },
       {
         "name": "onMouseOver",
         "description": "TODO: Refactor when @angular/cdk includes feature I mentioned on github see link below.\r\nhttps://github.com/angular/material2/pull/5493#issuecomment-313085323\nDisables close of popover when leaving trigger element and mouse over the popover",
@@ -1590,24 +2012,9 @@ const NG_DOCS = {
     ],
     "properties": [
       {
-        "name": "alignment",
-        "propertyType": "LuPopoverAlignment",
-        "description": ""
-      },
-      {
-        "name": "classList",
-        "propertyType": "any",
-        "description": ""
-      },
-      {
         "name": "close",
         "propertyType": "Observable<void>",
-        "description": ""
-      },
-      {
-        "name": "closeDisabled",
-        "propertyType": "boolean",
-        "description": ""
+        "description": "will emit when the panel wants to close"
       },
       {
         "name": "closeOnClick",
@@ -1615,19 +2022,19 @@ const NG_DOCS = {
         "description": ""
       },
       {
-        "name": "containerPositioning",
-        "propertyType": "boolean",
+        "name": "contentClasses",
+        "propertyType": "string",
+        "description": "class to apply to the panel content, uses ' ' for separating values\nclass to apply to the panel content, uses ' ' for separating values"
+      },
+      {
+        "name": "contentClassesMap",
+        "propertyType": "any",
         "description": ""
       },
       {
-        "name": "enterDelay",
-        "propertyType": "number",
-        "description": ""
-      },
-      {
-        "name": "focusTrapEnabled",
-        "propertyType": "boolean",
-        "description": ""
+        "name": "hovered",
+        "propertyType": "Observable<boolean>",
+        "description": "will emit when the panel is hovered"
       },
       {
         "name": "isOpen",
@@ -1635,33 +2042,23 @@ const NG_DOCS = {
         "description": ""
       },
       {
-        "name": "leaveDelay",
-        "propertyType": "number",
-        "description": ""
-      },
-      {
         "name": "open",
         "propertyType": "Observable<void>",
+        "description": "will emit when the panel wants to open"
+      },
+      {
+        "name": "overlayPaneClass",
+        "propertyType": "string | string[]",
         "description": ""
       },
       {
-        "name": "overlapTrigger",
-        "propertyType": "boolean",
-        "description": ""
+        "name": "panelClasses",
+        "propertyType": "string",
+        "description": "classes to apply to the panel, uses ' ' for separating values\nclasses to apply to the panel, uses ' ' for separating values"
       },
       {
-        "name": "popoverContentStyles",
+        "name": "panelClassesMap",
         "propertyType": "any",
-        "description": ""
-      },
-      {
-        "name": "popoverPanelStyles",
-        "propertyType": "any",
-        "description": ""
-      },
-      {
-        "name": "position",
-        "propertyType": "LuPopoverPosition",
         "description": ""
       },
       {
@@ -1670,29 +2067,19 @@ const NG_DOCS = {
         "description": ""
       },
       {
-        "name": "targetOffsetX",
-        "propertyType": "number",
-        "description": ""
-      },
-      {
-        "name": "targetOffsetY",
-        "propertyType": "number",
-        "description": ""
-      },
-      {
         "name": "templateRef",
         "propertyType": "TemplateRef<any>",
         "description": ""
       },
       {
-        "name": "triggerEvent",
-        "propertyType": "LuPopoverTriggerEvent",
+        "name": "trapFocus",
+        "propertyType": "boolean",
         "description": ""
       }
     ]
   },
   "LuPopoverPanelModule": {
-    "fileName": "libraries/core/src/lib/popover/panel/popover-panel.module.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/panel/popover-panel.module.ts",
     "type": "module",
     "className": "LuPopoverPanelModule",
     "name": "LuPopoverPanelModule",
@@ -1704,7 +2091,7 @@ const NG_DOCS = {
     ]
   },
   "LuPopoverModule": {
-    "fileName": "libraries/core/src/lib/popover/popover.module.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/popover.module.ts",
     "type": "module",
     "className": "LuPopoverModule",
     "name": "LuPopoverModule",
@@ -1716,29 +2103,137 @@ const NG_DOCS = {
     ]
   },
   "LuPopoverTargetDirective": {
-    "fileName": "libraries/core/src/lib/popover/target/popover-target.directive.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/target/popover-target.directive.ts",
     "name": "LuPopoverTargetDirective",
     "type": "directive",
     "className": "LuPopoverTargetDirective",
     "description": "",
-    "selector": "lu-popover-target, [luPopoverTarget]",
+    "selector": "[luPopoverTarget]",
     "exportAs": "LuPopoverTarget",
-    "inputs": [],
+    "inputs": [
+      {
+        "name": "luPopoverAlignment",
+        "propertyType": "LuPopoverAlignment",
+        "description": "how the panel will be align with the target, allowed values: top, bottom, left, right"
+      },
+      {
+        "name": "luPopoverOffsetX",
+        "propertyType": "number",
+        "description": ""
+      },
+      {
+        "name": "luPopoverOffsetY",
+        "propertyType": "number",
+        "description": ""
+      },
+      {
+        "name": "luPopoverOverlap",
+        "propertyType": "boolean",
+        "description": "set to true if you want the panel to appear on top of the target"
+      },
+      {
+        "name": "luPopoverPosition",
+        "propertyType": "LuPopoverPosition",
+        "description": "how you want to position the panel relative to the target, allowed values: above, below, before, after"
+      }
+    ],
     "outputs": [],
     "properties": [],
     "methods": []
   },
   "ILuPopoverTarget": {
-    "fileName": "libraries/core/src/lib/popover/target/popover-target.model.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/target/popover-target.model.ts",
     "type": "interface",
     "name": "ILuPopoverTarget",
     "className": "ILuPopoverTarget",
+    "description": "anchor for a popover panel",
+    "methods": [],
+    "properties": [
+      {
+        "name": "alignment",
+        "propertyType": "LuPopoverAlignment",
+        "description": "how the panel will be align with the target, allowed values: top, bottom, left, right"
+      },
+      {
+        "name": "elementRef",
+        "propertyType": "ElementRef<any>",
+        "description": "the element used to position the panel"
+      },
+      {
+        "name": "offsetX",
+        "propertyType": "number",
+        "description": ""
+      },
+      {
+        "name": "offsetY",
+        "propertyType": "number",
+        "description": ""
+      },
+      {
+        "name": "overlap",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "position",
+        "propertyType": "LuPopoverPosition",
+        "description": "how you want to position the panel relative to the target, allowed values: above, below, before, after"
+      }
+    ]
+  },
+  "ALuPopoverTarget": {
+    "fileName": "libraries/core/src/lib/overlay/popover/target/popover-target.model.ts",
+    "type": "class",
+    "name": "ALuPopoverTarget",
+    "className": "ALuPopoverTarget",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "alignment",
+        "propertyType": "LuPopoverAlignment",
+        "description": "how the panel will be align with the target, allowed values: top, bottom, left, right"
+      },
+      {
+        "name": "elementRef",
+        "propertyType": "ElementRef<any>",
+        "description": "the element used to position the panel"
+      },
+      {
+        "name": "offsetX",
+        "propertyType": "number",
+        "description": ""
+      },
+      {
+        "name": "offsetY",
+        "propertyType": "number",
+        "description": ""
+      },
+      {
+        "name": "overlap",
+        "propertyType": "boolean",
+        "description": "set to true if you want the panel to appear on top of the target"
+      },
+      {
+        "name": "position",
+        "propertyType": "LuPopoverPosition",
+        "description": "how you want to position the panel relative to the target, allowed values: above, below, before, after"
+      }
+    ]
+  },
+  "LuPopoverTarget": {
+    "fileName": "libraries/core/src/lib/overlay/popover/target/popover-target.model.ts",
+    "type": "class",
+    "name": "LuPopoverTarget",
+    "className": "LuPopoverTarget",
+    "abstract": false,
     "description": "",
     "methods": [],
     "properties": []
   },
   "LuPopoverTargetModule": {
-    "fileName": "libraries/core/src/lib/popover/target/popover-target.module.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/target/popover-target.module.ts",
     "type": "module",
     "className": "LuPopoverTargetModule",
     "name": "LuPopoverTargetModule",
@@ -1750,23 +2245,68 @@ const NG_DOCS = {
     ]
   },
   "LuPopoverTriggerDirective": {
-    "fileName": "libraries/core/src/lib/popover/trigger/popover-trigger.directive.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/trigger/popover-trigger.directive.ts",
     "name": "LuPopoverTriggerDirective",
     "type": "directive",
     "className": "LuPopoverTriggerDirective",
     "description": "This directive is intended to be used in conjunction with an lu-popover tag.  It is\nresponsible for toggling the display of the provided popover instance.",
-    "selector": "[luPopoverTriggerFor]",
+    "selector": "[luPopover]",
     "exportAs": "LuPopoverTrigger",
     "inputs": [
       {
-        "name": "luPopoverTargetAt",
-        "propertyType": "ILuPopoverTarget",
+        "name": "luPopover",
+        "propertyType": "TPanel",
+        "description": "References the popover instance that the trigger is associated with."
+      },
+      {
+        "name": "luPopoverAlignment",
+        "propertyType": "LuPopoverAlignment",
+        "description": "how the panel will be align with the target, allowed values: top, bottom, left, right"
+      },
+      {
+        "name": "luPopoverDisabled",
+        "propertyType": "boolean",
+        "description": "disable popover apparition"
+      },
+      {
+        "name": "luPopoverEnterDelay",
+        "propertyType": "number",
+        "description": "when trigger = hover, delay before the popover panel appears"
+      },
+      {
+        "name": "luPopoverLeaveDelay",
+        "propertyType": "number",
+        "description": "when trigger = hover, delay before the popover panel disappears"
+      },
+      {
+        "name": "luPopoverOffsetX",
+        "propertyType": "number",
+        "description": ""
+      },
+      {
+        "name": "luPopoverOffsetY",
+        "propertyType": "number",
+        "description": ""
+      },
+      {
+        "name": "luPopoverOverlap",
+        "propertyType": "boolean",
+        "description": "set to true if you want the panel to appear on top of the target"
+      },
+      {
+        "name": "luPopoverPosition",
+        "propertyType": "LuPopoverPosition",
+        "description": "how you want to position the panel relative to the target, allowed values: above, below, before, after"
+      },
+      {
+        "name": "luPopoverTarget",
+        "propertyType": "TTarget",
         "description": "References the popover target instance that the trigger is associated with."
       },
       {
-        "name": "luPopoverTriggerFor",
-        "propertyType": "T",
-        "description": "References the popover instance that the trigger is associated with."
+        "name": "luPopoverTrigger",
+        "propertyType": "LuPopoverTriggerEvent",
+        "description": "References the popover target instance that the trigger is associated with."
       }
     ],
     "outputs": [
@@ -1781,26 +2321,58 @@ const NG_DOCS = {
         "description": "Event emitted when the associated popover is opened."
       }
     ],
-    "properties": [],
+    "properties": [
+      {
+        "name": "hasPopup",
+        "defaultValue": "true",
+        "propertyType": "boolean",
+        "description": ""
+      }
+    ],
     "methods": []
   },
   "ILuPopoverTrigger": {
-    "fileName": "libraries/core/src/lib/popover/trigger/popover-trigger.model.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/trigger/popover-trigger.model.ts",
     "type": "interface",
     "name": "ILuPopoverTrigger",
     "className": "ILuPopoverTrigger",
-    "description": "",
+    "description": "component that will decide when to show the popover and attach it to the target",
     "methods": [],
     "properties": [
       {
-        "name": "popover",
-        "propertyType": "T",
-        "description": ""
+        "name": "disabled",
+        "propertyType": "boolean",
+        "description": "disable popover apparition"
+      },
+      {
+        "name": "enterDelay",
+        "propertyType": "number",
+        "description": "delay before popover apparition when trigger is 'hover'"
+      },
+      {
+        "name": "leaveDelay",
+        "propertyType": "number",
+        "description": "delay before popover disparition when trigger is 'hover'"
+      },
+      {
+        "name": "panel",
+        "propertyType": "TPanel",
+        "description": "the popover panel to display"
+      },
+      {
+        "name": "target",
+        "propertyType": "TTarget",
+        "description": "the popover target to attach the panel"
+      },
+      {
+        "name": "triggerEvent",
+        "propertyType": "LuPopoverTriggerEvent",
+        "description": "when to display the popover"
       }
     ]
   },
   "ALuPopoverTrigger": {
-    "fileName": "libraries/core/src/lib/popover/trigger/popover-trigger.model.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/trigger/popover-trigger.model.ts",
     "type": "class",
     "name": "ALuPopoverTrigger",
     "className": "ALuPopoverTrigger",
@@ -1845,39 +2417,44 @@ const NG_DOCS = {
         "description": "The text direction of the containing app."
       },
       {
+        "name": "disabled",
+        "propertyType": "boolean",
+        "description": "disable popover apparition\ndisable popover apparition"
+      },
+      {
+        "name": "enterDelay",
+        "propertyType": "number",
+        "description": "delay before popover apparition when trigger is 'hover'\ndelay before popover apparition when trigger is 'hover'"
+      },
+      {
         "name": "isVerticallyPositionned",
         "propertyType": "boolean",
         "description": "Return if the popover main positionning is vertical"
       },
       {
-        "name": "onPopoverClose",
-        "propertyType": "EventEmitter<void>",
-        "description": "Event emitted when the associated popover is closed."
+        "name": "leaveDelay",
+        "propertyType": "number",
+        "description": "delay before popover disparition when trigger is 'hover'\ndelay before popover disparition when trigger is 'hover'"
       },
       {
-        "name": "onPopoverOpen",
-        "propertyType": "EventEmitter<void>",
-        "description": "Event emitted when the associated popover is opened."
-      },
-      {
-        "name": "popover",
-        "propertyType": "T",
+        "name": "panel",
+        "propertyType": "TPanel",
         "description": "References the popover instance that the trigger is associated with."
       },
       {
-        "name": "popoverOpen",
-        "propertyType": "boolean",
-        "description": "Whether the popover is open."
+        "name": "target",
+        "propertyType": "TTarget",
+        "description": "References the popover target instance that the trigger is associated with."
       },
       {
-        "name": "targetElement",
-        "propertyType": "ILuPopoverTarget",
-        "description": "References the popover target instance that the trigger is associated with."
+        "name": "triggerEvent",
+        "propertyType": "LuPopoverTriggerEvent",
+        "description": "when to display the popover\nwhen to display the popover"
       }
     ]
   },
   "LuPopoverTriggerModule": {
-    "fileName": "libraries/core/src/lib/popover/trigger/popover-trigger.module.ts",
+    "fileName": "libraries/core/src/lib/overlay/popover/trigger/popover-trigger.module.ts",
     "type": "module",
     "className": "LuPopoverTriggerModule",
     "name": "LuPopoverTriggerModule",
@@ -1886,6 +2463,381 @@ const NG_DOCS = {
     ],
     "exports": [
       "LuPopoverTriggerDirective"
+    ]
+  },
+  "ILuPopupConfig": {
+    "fileName": "libraries/core/src/lib/overlay/popup/popup-config.model.ts",
+    "type": "interface",
+    "name": "ILuPopupConfig",
+    "className": "ILuPopupConfig",
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "backdropClass",
+        "propertyType": "string | string[]",
+        "description": ""
+      },
+      {
+        "name": "noBackdrop",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "panelClass",
+        "propertyType": "string | string[]",
+        "description": ""
+      },
+      {
+        "name": "position",
+        "propertyType": "LuPopoverAlignment",
+        "description": ""
+      }
+    ]
+  },
+  "LuPopupRef": {
+    "fileName": "libraries/core/src/lib/overlay/popup/popup-ref.factory.ts",
+    "type": "class",
+    "name": "LuPopupRef",
+    "className": "LuPopupRef",
+    "abstract": false,
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuPopupRefFactory": {
+    "type": "injectable",
+    "name": "LuPopupRefFactory",
+    "fileName": "libraries/core/src/lib/overlay/popup/popup-ref.factory.ts",
+    "className": "LuPopupRefFactory",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ILuPopupRef": {
+    "fileName": "libraries/core/src/lib/overlay/popup/popup-ref.model.ts",
+    "type": "interface",
+    "name": "ILuPopupRef",
+    "className": "ILuPopupRef",
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "onClose",
+        "propertyType": "Observable<R>",
+        "description": ""
+      },
+      {
+        "name": "onOpen",
+        "propertyType": "Observable<D>",
+        "description": ""
+      }
+    ]
+  },
+  "ILuPopupRefFactory": {
+    "fileName": "libraries/core/src/lib/overlay/popup/popup-ref.model.ts",
+    "type": "interface",
+    "name": "ILuPopupRefFactory",
+    "className": "ILuPopupRefFactory",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ALuPopupRef": {
+    "fileName": "libraries/core/src/lib/overlay/popup/popup-ref.model.ts",
+    "type": "class",
+    "name": "ALuPopupRef",
+    "className": "ALuPopupRef",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "onClose",
+        "propertyType": "Subject<R>",
+        "description": ""
+      },
+      {
+        "name": "onOpen",
+        "propertyType": "Subject<D>",
+        "description": ""
+      }
+    ]
+  },
+  "ILuPopupContent": {
+    "fileName": "libraries/core/src/lib/overlay/popup/popup.model.ts",
+    "type": "interface",
+    "name": "ILuPopupContent",
+    "className": "ILuPopupContent",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuPopup": {
+    "type": "injectable",
+    "name": "LuPopup",
+    "fileName": "libraries/core/src/lib/overlay/popup/popup.service.ts",
+    "className": "LuPopup",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ILuSidepanelConfig": {
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel-config.model.ts",
+    "type": "interface",
+    "name": "ILuSidepanelConfig",
+    "className": "ILuSidepanelConfig",
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "position",
+        "propertyType": "\"left\" | \"right\"",
+        "description": ""
+      }
+    ]
+  },
+  "LuSidepanelPanelComponent": {
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel-panel.component.ts",
+    "name": "LuSidepanelPanelComponent",
+    "type": "component",
+    "className": "LuSidepanelPanelComponent",
+    "description": "",
+    "selector": "lu-sidepanel-panel",
+    "inputs": [],
+    "outputs": [],
+    "properties": [],
+    "methods": []
+  },
+  "LuSidepanelRef": {
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel-ref.factory.ts",
+    "type": "class",
+    "name": "LuSidepanelRef",
+    "className": "LuSidepanelRef",
+    "abstract": false,
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuSidepanelRefFactory": {
+    "type": "injectable",
+    "name": "LuSidepanelRefFactory",
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel-ref.factory.ts",
+    "className": "LuSidepanelRefFactory",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ILuSidepanelRef": {
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel-ref.model.ts",
+    "type": "interface",
+    "name": "ILuSidepanelRef",
+    "className": "ILuSidepanelRef",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ALuSidepanelRef": {
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel-ref.model.ts",
+    "type": "class",
+    "name": "ALuSidepanelRef",
+    "className": "ALuSidepanelRef",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuSidepanelIntl": {
+    "type": "injectable",
+    "name": "LuSidepanelIntl",
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel.intl.ts",
+    "className": "LuSidepanelIntl",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ILuSidepanelContent": {
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel.model.ts",
+    "type": "interface",
+    "name": "ILuSidepanelContent",
+    "className": "ILuSidepanelContent",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuSidepanelModule": {
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel.module.ts",
+    "type": "module",
+    "className": "LuSidepanelModule",
+    "name": "LuSidepanelModule",
+    "declarations": [
+      "LuSidepanelPanelComponent"
+    ],
+    "exports": [
+      "LuSidepanelPanelComponent"
+    ]
+  },
+  "LuSidepanel": {
+    "type": "injectable",
+    "name": "LuSidepanel",
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel.service.ts",
+    "className": "LuSidepanel",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ILuSidepanelLabel": {
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel.translate.ts",
+    "type": "interface",
+    "name": "ILuSidepanelLabel",
+    "className": "ILuSidepanelLabel",
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "cancel",
+        "propertyType": "string",
+        "description": ""
+      },
+      {
+        "name": "submit",
+        "propertyType": "string",
+        "description": ""
+      }
+    ]
+  },
+  "ALuSidepanelLabel": {
+    "fileName": "libraries/core/src/lib/overlay/sidepanel/sidepanel.translate.ts",
+    "type": "class",
+    "name": "ALuSidepanelLabel",
+    "className": "ALuSidepanelLabel",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "cancel",
+        "propertyType": "string",
+        "description": ""
+      },
+      {
+        "name": "submit",
+        "propertyType": "string",
+        "description": ""
+      }
+    ]
+  },
+  "LuTooltipPanelComponent": {
+    "fileName": "libraries/core/src/lib/overlay/tooltip/panel/tooltip-panel.component.ts",
+    "name": "LuTooltipPanelComponent",
+    "type": "component",
+    "className": "LuTooltipPanelComponent",
+    "description": "",
+    "selector": "lu-tooltip-panel",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "close",
+        "propertyType": "EventEmitter<void>",
+        "description": "will emit when the panel wants to close"
+      },
+      {
+        "name": "hovered",
+        "propertyType": "EventEmitter<boolean>",
+        "description": "will emit when the panel is hovered"
+      },
+      {
+        "name": "open",
+        "propertyType": "EventEmitter<void>",
+        "description": "will emit when the panel wants to open"
+      }
+    ],
+    "properties": [
+      {
+        "name": "animationState",
+        "defaultValue": "enter",
+        "propertyType": "string",
+        "description": ""
+      },
+      {
+        "name": "content",
+        "propertyType": "any",
+        "description": ""
+      }
+    ],
+    "methods": []
+  },
+  "LuTooltipPanelModule": {
+    "fileName": "libraries/core/src/lib/overlay/tooltip/panel/tooltip-panel.module.ts",
+    "type": "module",
+    "className": "LuTooltipPanelModule",
+    "name": "LuTooltipPanelModule",
+    "declarations": [
+      "LuTooltipPanelComponent"
+    ],
+    "exports": [
+      "LuTooltipPanelComponent"
+    ]
+  },
+  "LuTooltipModule": {
+    "fileName": "libraries/core/src/lib/overlay/tooltip/tooltip.module.ts",
+    "type": "module",
+    "className": "LuTooltipModule",
+    "name": "LuTooltipModule",
+    "declarations": [],
+    "exports": [
+      "LuTooltipTriggerModule",
+      "LuTooltipPanelModule"
+    ]
+  },
+  "LuTooltipTriggerDirective": {
+    "fileName": "libraries/core/src/lib/overlay/tooltip/trigger/tooltip-trigger.directive.ts",
+    "name": "LuTooltipTriggerDirective",
+    "type": "directive",
+    "className": "LuTooltipTriggerDirective",
+    "description": "",
+    "selector": "[luTooltip]",
+    "inputs": [
+      {
+        "name": "luTooltip",
+        "propertyType": "any",
+        "description": ""
+      },
+      {
+        "name": "luTooltipDisabled",
+        "propertyType": "boolean",
+        "description": "disable popover apparition"
+      },
+      {
+        "name": "luTooltipEnterDelay",
+        "propertyType": "number",
+        "description": "when trigger = hover, delay before the popover panel appears, default 300ms"
+      },
+      {
+        "name": "luTooltipLeaveDelay",
+        "propertyType": "number",
+        "description": "when trigger = hover, delay before the popover panel disappears, default 100ms"
+      },
+      {
+        "name": "luTooltipPosition",
+        "propertyType": "LuPopoverPosition",
+        "description": ""
+      }
+    ],
+    "outputs": [],
+    "properties": [],
+    "methods": []
+  },
+  "LuTooltipTriggerModule": {
+    "fileName": "libraries/core/src/lib/overlay/tooltip/trigger/tooltip-trigger.module.ts",
+    "type": "module",
+    "className": "LuTooltipTriggerModule",
+    "name": "LuTooltipTriggerModule",
+    "declarations": [
+      "LuTooltipTriggerDirective"
+    ],
+    "exports": [
+      "LuTooltipTriggerDirective"
     ]
   },
   "LuSafeContentModule": {
@@ -2047,32 +2999,15 @@ const NG_DOCS = {
       "LuSelectClearerComponent"
     ]
   },
-  "LuSelectInputComponent": {
+  "ALuSelectInputComponent": {
     "fileName": "libraries/core/src/lib/select/input/select-input.component.ts",
-    "name": "LuSelectInputComponent",
-    "type": "component",
-    "className": "LuSelectInputComponent",
-    "description": "Displays user'picture or a placeholder with his/her initials and random bg color'",
-    "selector": "lu-select",
-    "inputs": [
-      {
-        "name": "multiple",
-        "propertyType": "string | boolean",
-        "description": ""
-      },
-      {
-        "name": "placeholder",
-        "propertyType": "string",
-        "description": ""
-      }
-    ],
-    "outputs": [],
+    "type": "class",
+    "name": "ALuSelectInputComponent",
+    "className": "ALuSelectInputComponent",
+    "abstract": true,
+    "description": "",
+    "methods": [],
     "properties": [
-      {
-        "name": "clearerEltRef",
-        "propertyType": "ElementRef<any>",
-        "description": ""
-      },
       {
         "name": "isClearable",
         "propertyType": "boolean",
@@ -2094,6 +3029,29 @@ const NG_DOCS = {
         "description": ""
       },
       {
+        "name": "tabindex",
+        "defaultValue": "0",
+        "propertyType": "number",
+        "description": ""
+      }
+    ]
+  },
+  "LuSelectInputComponent": {
+    "fileName": "libraries/core/src/lib/select/input/select-input.component.ts",
+    "name": "LuSelectInputComponent",
+    "type": "component",
+    "className": "LuSelectInputComponent",
+    "description": "select input",
+    "selector": "lu-select",
+    "inputs": [],
+    "outputs": [],
+    "properties": [
+      {
+        "name": "clearerEltRef",
+        "propertyType": "ElementRef<any>",
+        "description": ""
+      },
+      {
         "name": "modMultipleView",
         "propertyType": "boolean",
         "description": ""
@@ -2101,12 +3059,6 @@ const NG_DOCS = {
       {
         "name": "suffixEltRef",
         "propertyType": "ElementRef<any>",
-        "description": ""
-      },
-      {
-        "name": "tabindex",
-        "defaultValue": "0",
-        "propertyType": "number",
         "description": ""
       }
     ],
@@ -2124,7 +3076,7 @@ const NG_DOCS = {
       {
         "name": "disabled",
         "propertyType": "boolean",
-        "description": ""
+        "description": "disable popover apparition\ndisable popover apparition\ndisable popover apparition\ndisable popover apparition"
       },
       {
         "name": "multiple",
@@ -2166,117 +3118,557 @@ const NG_DOCS = {
       "LuSelectClearerModule"
     ]
   },
-  "LuTooltipPanelComponent": {
-    "fileName": "libraries/core/src/lib/tooltip/panel/tooltip-panel.component.ts",
-    "name": "LuTooltipPanelComponent",
-    "type": "component",
-    "className": "LuTooltipPanelComponent",
+  "ALuIntl": {
+    "fileName": "libraries/core/src/lib/translate/intl.model.ts",
+    "type": "class",
+    "name": "ALuIntl",
+    "className": "ALuIntl",
+    "abstract": true,
     "description": "",
-    "selector": "lu-tooltip-panel",
+    "methods": [],
+    "properties": []
+  },
+  "ILuTranslation": {
+    "fileName": "libraries/core/src/lib/translate/translation.model.ts",
+    "type": "interface",
+    "name": "ILuTranslation",
+    "className": "ILuTranslation",
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "de",
+        "propertyType": "{ [P in keyof T]?: string; }",
+        "description": ""
+      },
+      {
+        "name": "en",
+        "propertyType": "{ [P in keyof T]?: string; }",
+        "description": ""
+      },
+      {
+        "name": "es",
+        "propertyType": "{ [P in keyof T]?: string; }",
+        "description": ""
+      },
+      {
+        "name": "fr",
+        "propertyType": "{ [P in keyof T]?: string; }",
+        "description": ""
+      }
+    ]
+  },
+  "LuTreeOptionItemComponent": {
+    "fileName": "libraries/core/src/lib/tree/option/item/tree-option-item.component.ts",
+    "name": "LuTreeOptionItemComponent",
+    "type": "component",
+    "className": "LuTreeOptionItemComponent",
+    "description": "",
+    "selector": "lu-tree-option",
     "inputs": [
       {
-        "name": "content",
-        "propertyType": "any",
+        "name": "highlighted",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "selected",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "tree",
+        "propertyType": "ILuTree<T>",
         "description": ""
       }
     ],
     "outputs": [
       {
-        "name": "close",
-        "propertyType": "EventEmitter<void>",
+        "name": "onSelect",
+        "propertyType": "EventEmitter<this>",
         "description": ""
       },
       {
-        "name": "open",
-        "propertyType": "EventEmitter<void>",
+        "name": "onSelectChildren",
+        "propertyType": "EventEmitter<this>",
+        "description": ""
+      },
+      {
+        "name": "onSelectSelf",
+        "propertyType": "EventEmitter<this>",
         "description": ""
       }
     ],
     "properties": [
       {
-        "name": "animationState",
-        "defaultValue": "enter",
-        "propertyType": "string",
+        "name": "children",
+        "propertyType": "any[]",
+        "description": ""
+      },
+      {
+        "name": "hasChildren",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "highlighted",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "selected",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "value",
+        "propertyType": "T",
         "description": ""
       }
     ],
     "methods": []
   },
-  "LuTooltipPanelModule": {
-    "fileName": "libraries/core/src/lib/tooltip/panel/tooltip-panel.module.ts",
+  "LuTreeOptionItemIntl": {
+    "type": "injectable",
+    "name": "LuTreeOptionItemIntl",
+    "fileName": "libraries/core/src/lib/tree/option/item/tree-option-item.intl.ts",
+    "className": "LuTreeOptionItemIntl",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ILuTreeOptionItem": {
+    "fileName": "libraries/core/src/lib/tree/option/item/tree-option-item.model.ts",
+    "type": "interface",
+    "name": "ILuTreeOptionItem",
+    "className": "ILuTreeOptionItem",
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "allChildren",
+        "propertyType": "this[]",
+        "description": ""
+      },
+      {
+        "name": "children",
+        "propertyType": "this[]",
+        "description": ""
+      },
+      {
+        "name": "onSelectChildren",
+        "propertyType": "Observable<this>",
+        "description": ""
+      },
+      {
+        "name": "onSelectSelf",
+        "propertyType": "Observable<this>",
+        "description": ""
+      }
+    ]
+  },
+  "ALuTreeOptionItem": {
+    "fileName": "libraries/core/src/lib/tree/option/item/tree-option-item.model.ts",
+    "type": "class",
+    "name": "ALuTreeOptionItem",
+    "className": "ALuTreeOptionItem",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "allChildren",
+        "propertyType": "this[]",
+        "description": ""
+      },
+      {
+        "name": "children",
+        "propertyType": "this[]",
+        "description": ""
+      },
+      {
+        "name": "onSelectChildren",
+        "propertyType": "Observable<this>",
+        "description": ""
+      },
+      {
+        "name": "onSelectSelf",
+        "propertyType": "Observable<this>",
+        "description": ""
+      }
+    ]
+  },
+  "LuTreeOptionItemModule": {
+    "fileName": "libraries/core/src/lib/tree/option/item/tree-option-item.module.ts",
     "type": "module",
-    "className": "LuTooltipPanelModule",
-    "name": "LuTooltipPanelModule",
+    "className": "LuTreeOptionItemModule",
+    "name": "LuTreeOptionItemModule",
     "declarations": [
-      "LuTooltipPanelComponent"
+      "LuTreeOptionItemComponent"
     ],
     "exports": [
-      "LuTooltipPanelComponent"
+      "LuTreeOptionItemComponent"
     ]
   },
-  "LuTooltipModule": {
-    "fileName": "libraries/core/src/lib/tooltip/tooltip.module.ts",
-    "type": "module",
-    "className": "LuTooltipModule",
-    "name": "LuTooltipModule",
-    "declarations": [],
-    "exports": [
-      "LuTooltipTriggerModule",
-      "LuTooltipPanelModule"
-    ]
-  },
-  "LuTooltipTriggerDirective": {
-    "fileName": "libraries/core/src/lib/tooltip/trigger/tooltip-trigger.directive.ts",
-    "name": "LuTooltipTriggerDirective",
-    "type": "directive",
-    "className": "LuTooltipTriggerDirective",
+  "ILuTreeOptionItemLabel": {
+    "fileName": "libraries/core/src/lib/tree/option/item/tree-option-item.translate.ts",
+    "type": "interface",
+    "name": "ILuTreeOptionItemLabel",
+    "className": "ILuTreeOptionItemLabel",
     "description": "",
-    "selector": "[luTooltip]",
+    "methods": [],
+    "properties": [
+      {
+        "name": "childrenOnly",
+        "propertyType": "string",
+        "description": ""
+      },
+      {
+        "name": "parentOnly",
+        "propertyType": "string",
+        "description": ""
+      }
+    ]
+  },
+  "ALuTreeOptionItemLabel": {
+    "fileName": "libraries/core/src/lib/tree/option/item/tree-option-item.translate.ts",
+    "type": "class",
+    "name": "ALuTreeOptionItemLabel",
+    "className": "ALuTreeOptionItemLabel",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "childrenOnly",
+        "propertyType": "string",
+        "description": ""
+      },
+      {
+        "name": "parentOnly",
+        "propertyType": "string",
+        "description": ""
+      }
+    ]
+  },
+  "LuTreeOptionFeederComponent": {
+    "fileName": "libraries/core/src/lib/tree/option/operator/feeder/tree-option-feeder.component.ts",
+    "name": "LuTreeOptionFeederComponent",
+    "type": "component",
+    "className": "LuTreeOptionFeederComponent",
+    "description": "",
+    "selector": "lu-tree-option-feeder",
     "inputs": [
       {
-        "name": "enterDelay",
-        "defaultValue": "300",
-        "propertyType": "number",
-        "description": ""
-      },
-      {
-        "name": "leaveDelay",
-        "defaultValue": "100",
-        "propertyType": "number",
-        "description": ""
-      },
-      {
-        "name": "luTooltip",
-        "propertyType": "any",
-        "description": ""
-      },
-      {
-        "name": "luTooltipDisabled",
-        "propertyType": "boolean",
+        "name": "options",
+        "propertyType": "ILuTree<T>[]",
         "description": ""
       }
     ],
     "outputs": [],
+    "properties": [
+      {
+        "name": "outOptions$",
+        "propertyType": "BehaviorSubject<ILuTree<T>[]>",
+        "description": ""
+      }
+    ],
+    "methods": []
+  },
+  "LuTreeOptionFeederModule": {
+    "fileName": "libraries/core/src/lib/tree/option/operator/feeder/tree-option-feeder.module.ts",
+    "type": "module",
+    "className": "LuTreeOptionFeederModule",
+    "name": "LuTreeOptionFeederModule",
+    "declarations": [
+      "LuTreeOptionFeederComponent"
+    ],
+    "exports": [
+      "LuTreeOptionFeederComponent"
+    ]
+  },
+  "LuForTreeOptionsDirective": {
+    "fileName": "libraries/core/src/lib/tree/option/operator/for-tree-options/for-tree-options.directive.ts",
+    "name": "LuForTreeOptionsDirective",
+    "type": "directive",
+    "className": "LuForTreeOptionsDirective",
+    "description": "",
+    "selector": "[luForTreeOptions]",
+    "inputs": [],
+    "outputs": [],
     "properties": [],
+    "methods": []
+  },
+  "LuForTreeOptionsModule": {
+    "fileName": "libraries/core/src/lib/tree/option/operator/for-tree-options/for-tree-options.module.ts",
+    "type": "module",
+    "className": "LuForTreeOptionsModule",
+    "name": "LuForTreeOptionsModule",
+    "declarations": [
+      "LuForTreeOptionsDirective"
+    ],
+    "exports": [
+      "LuForTreeOptionsDirective"
+    ]
+  },
+  "LuTreeOptionPagerComponent": {
+    "fileName": "libraries/core/src/lib/tree/option/operator/pager/tree-option-pager.component.ts",
+    "name": "LuTreeOptionPagerComponent",
+    "type": "component",
+    "className": "LuTreeOptionPagerComponent",
+    "description": "",
+    "selector": "lu-tree-option-pager",
+    "inputs": [],
+    "outputs": [],
+    "properties": [
+      {
+        "name": "paging$",
+        "propertyType": "BehaviorSubject<number>",
+        "description": ""
+      }
+    ],
+    "methods": []
+  },
+  "LuTreeOptionPagerModule": {
+    "fileName": "libraries/core/src/lib/tree/option/operator/pager/tree-option-pager.module.ts",
+    "type": "module",
+    "className": "LuTreeOptionPagerModule",
+    "name": "LuTreeOptionPagerModule",
+    "declarations": [
+      "LuTreeOptionPagerComponent"
+    ],
+    "exports": [
+      "LuTreeOptionPagerComponent"
+    ]
+  },
+  "LuTreeOptionSearcherComponent": {
+    "fileName": "libraries/core/src/lib/tree/option/operator/searcher/tree-option-searcher.component.ts",
+    "name": "LuTreeOptionSearcherComponent",
+    "type": "component",
+    "className": "LuTreeOptionSearcherComponent",
+    "description": "",
+    "selector": "lu-tree-option-searcher",
+    "inputs": [
+      {
+        "name": "searchFn",
+        "propertyType": "(option: T, clue: string) => boolean",
+        "description": ""
+      }
+    ],
+    "outputs": [],
+    "properties": [
+      {
+        "name": "clue$",
+        "propertyType": "Observable<any>",
+        "description": ""
+      },
+      {
+        "name": "fixed",
+        "defaultValue": "true",
+        "propertyType": "boolean",
+        "description": ""
+      },
+      {
+        "name": "searchControl",
+        "propertyType": "FormControl",
+        "description": ""
+      },
+      {
+        "name": "searchInput",
+        "propertyType": "ElementRef<any>",
+        "description": ""
+      }
+    ],
+    "methods": []
+  },
+  "LuTreeOptionSearcherModule": {
+    "fileName": "libraries/core/src/lib/tree/option/operator/searcher/tree-option-searcher.module.ts",
+    "type": "module",
+    "className": "LuTreeOptionSearcherModule",
+    "name": "LuTreeOptionSearcherModule",
+    "declarations": [
+      "LuTreeOptionSearcherComponent"
+    ],
+    "exports": [
+      "LuTreeOptionSearcherComponent"
+    ]
+  },
+  "ILuTreeOptionOperator": {
+    "fileName": "libraries/core/src/lib/tree/option/operator/tree-option-operator.model.ts",
+    "type": "interface",
+    "name": "ILuTreeOptionOperator",
+    "className": "ILuTreeOptionOperator",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ALuTreeOptionOperator": {
+    "fileName": "libraries/core/src/lib/tree/option/operator/tree-option-operator.model.ts",
+    "type": "class",
+    "name": "ALuTreeOptionOperator",
+    "className": "ALuTreeOptionOperator",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuTreeOptionOperatorModule": {
+    "fileName": "libraries/core/src/lib/tree/option/operator/tree-option-operator.module.ts",
+    "type": "module",
+    "className": "LuTreeOptionOperatorModule",
+    "name": "LuTreeOptionOperatorModule",
+    "declarations": [],
+    "exports": [
+      "LuTreeOptionFeederModule",
+      "LuForTreeOptionsModule",
+      "LuTreeOptionPagerModule",
+      "LuTreeOptionSearcherModule"
+    ]
+  },
+  "ALuTreeOptionPickerAdvancedComponent": {
+    "fileName": "libraries/core/src/lib/tree/option/picker/tree-option-picker-advanced.component.ts",
+    "type": "class",
+    "name": "ALuTreeOptionPickerAdvancedComponent",
+    "className": "ALuTreeOptionPickerAdvancedComponent",
+    "abstract": true,
+    "description": "",
     "methods": [
       {
-        "name": "openPopover",
-        "description": "Opens the popover.",
+        "name": "onOpen",
+        "description": "method called by the trigger when it opens the popover",
+        "arguments": [],
+        "returnType": "void"
+      },
+      {
+        "name": "onClose",
+        "description": "method called by the trigger when it closes the popover",
         "arguments": [],
         "returnType": "void"
       }
+    ],
+    "properties": [
+      {
+        "name": "loading$",
+        "propertyType": "Observable<boolean>",
+        "description": ""
+      }
     ]
   },
-  "LuTooltipTriggerModule": {
-    "fileName": "libraries/core/src/lib/tooltip/trigger/tooltip-trigger.module.ts",
+  "LuTreeOptionPickerAdvancedComponent": {
+    "fileName": "libraries/core/src/lib/tree/option/picker/tree-option-picker-advanced.component.ts",
+    "name": "LuTreeOptionPickerAdvancedComponent",
+    "type": "component",
+    "className": "LuTreeOptionPickerAdvancedComponent",
+    "description": "advanced option picker panel",
+    "selector": "lu-tree-option-picker-advanced",
+    "exportAs": "LuOptionPicker",
+    "inputs": [],
+    "outputs": [],
+    "properties": [],
+    "methods": []
+  },
+  "ALuTreeOptionPickerComponent": {
+    "fileName": "libraries/core/src/lib/tree/option/picker/tree-option-picker.component.ts",
+    "type": "class",
+    "name": "ALuTreeOptionPickerComponent",
+    "className": "ALuTreeOptionPickerComponent",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "optionsQLVR",
+        "propertyType": "QueryList<ViewContainerRef>",
+        "description": ""
+      }
+    ]
+  },
+  "LuTreeOptionPickerComponent": {
+    "fileName": "libraries/core/src/lib/tree/option/picker/tree-option-picker.component.ts",
+    "name": "LuTreeOptionPickerComponent",
+    "type": "component",
+    "className": "LuTreeOptionPickerComponent",
+    "description": "basic tree option picker panel",
+    "selector": "lu-tree-option-picker",
+    "exportAs": "LuTreeOptionPicker",
+    "inputs": [],
+    "outputs": [],
+    "properties": [],
+    "methods": []
+  },
+  "ILuTreeOptionPickerPanel": {
+    "fileName": "libraries/core/src/lib/tree/option/picker/tree-option-picker.model.ts",
+    "type": "interface",
+    "name": "ILuTreeOptionPickerPanel",
+    "className": "ILuTreeOptionPickerPanel",
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "ALuTreeOptionPicker": {
+    "fileName": "libraries/core/src/lib/tree/option/picker/tree-option-picker.model.ts",
+    "type": "class",
+    "name": "ALuTreeOptionPicker",
+    "className": "ALuTreeOptionPicker",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": []
+  },
+  "LuTreeOptionPickerModule": {
+    "fileName": "libraries/core/src/lib/tree/option/picker/tree-option-picker.module.ts",
     "type": "module",
-    "className": "LuTooltipTriggerModule",
-    "name": "LuTooltipTriggerModule",
+    "className": "LuTreeOptionPickerModule",
+    "name": "LuTreeOptionPickerModule",
     "declarations": [
-      "LuTooltipTriggerDirective"
+      "LuTreeOptionPickerComponent",
+      "LuTreeOptionPickerAdvancedComponent"
     ],
     "exports": [
-      "LuTooltipTriggerDirective"
+      "LuTreeOptionPickerComponent",
+      "LuTreeOptionPickerAdvancedComponent"
+    ]
+  },
+  "LuTreeOptionModule": {
+    "fileName": "libraries/core/src/lib/tree/option/tree-option.module.ts",
+    "type": "module",
+    "className": "LuTreeOptionModule",
+    "name": "LuTreeOptionModule",
+    "declarations": [],
+    "exports": [
+      "LuTreeOptionItemModule",
+      "LuTreeOptionPickerModule",
+      "LuTreeOptionOperatorModule"
+    ]
+  },
+  "ILuTree": {
+    "fileName": "libraries/core/src/lib/tree/tree.model.ts",
+    "type": "interface",
+    "name": "ILuTree",
+    "className": "ILuTree",
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "children",
+        "propertyType": "ILuTree<T>[]",
+        "description": ""
+      },
+      {
+        "name": "value",
+        "propertyType": "T",
+        "description": ""
+      }
+    ]
+  },
+  "LuTreeModule": {
+    "fileName": "libraries/core/src/lib/tree/tree.module.ts",
+    "type": "module",
+    "className": "LuTreeModule",
+    "name": "LuTreeModule",
+    "declarations": [],
+    "exports": [
+      "LuTreeOptionModule"
     ]
   },
   "LuUserDisplayModule": {
@@ -2399,11 +3791,6 @@ const NG_DOCS = {
         "description": ""
       },
       {
-        "name": "multiple",
-        "propertyType": "string | boolean",
-        "description": ""
-      },
-      {
         "name": "operations",
         "propertyType": "number[]",
         "description": ""
@@ -2427,35 +3814,21 @@ const NG_DOCS = {
     "outputs": [],
     "properties": [
       {
-        "name": "isDisabled",
-        "propertyType": "boolean",
-        "description": ""
-      },
-      {
-        "name": "isFocused",
-        "propertyType": "boolean",
-        "description": ""
-      },
-      {
         "name": "searchFormat",
         "propertyType": "LuDisplayFullname",
         "description": ""
-      },
-      {
-        "name": "tabindex",
-        "defaultValue": "0",
-        "propertyType": "number",
-        "description": ""
       }
     ],
-    "methods": [
-      {
-        "name": "onClick",
-        "description": "bind to dom events",
-        "arguments": [],
-        "returnType": "void"
-      }
-    ]
+    "methods": []
+  },
+  "LuUserSelectInputIntl": {
+    "type": "injectable",
+    "name": "LuUserSelectInputIntl",
+    "fileName": "libraries/core/src/lib/user/select/input/user-select-input.intl.ts",
+    "className": "LuUserSelectInputIntl",
+    "description": "",
+    "methods": [],
+    "properties": []
   },
   "LuUserSelectInputModule": {
     "fileName": "libraries/core/src/lib/user/select/input/user-select-input.module.ts",
@@ -2467,6 +3840,37 @@ const NG_DOCS = {
     ],
     "exports": [
       "LuUserSelectInputComponent"
+    ]
+  },
+  "ILuUserSelectInputLabel": {
+    "fileName": "libraries/core/src/lib/user/select/input/user-select-input.translate.ts",
+    "type": "interface",
+    "name": "ILuUserSelectInputLabel",
+    "className": "ILuUserSelectInputLabel",
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "users",
+        "propertyType": "string",
+        "description": ""
+      }
+    ]
+  },
+  "ALuUserSelectInputLabel": {
+    "fileName": "libraries/core/src/lib/user/select/input/user-select-input.translate.ts",
+    "type": "class",
+    "name": "ALuUserSelectInputLabel",
+    "className": "ALuUserSelectInputLabel",
+    "abstract": true,
+    "description": "",
+    "methods": [],
+    "properties": [
+      {
+        "name": "users",
+        "propertyType": "string",
+        "description": ""
+      }
     ]
   },
   "LuUserPagedSearcherComponent": {
@@ -2726,6 +4130,18 @@ const NG_DOCS = {
         "description": ""
       }
     ],
+    "methods": []
+  },
+  "LuFormlyFieldDepartment": {
+    "fileName": "libraries/formly/src/lib/types/department.ts",
+    "name": "LuFormlyFieldDepartment",
+    "type": "component",
+    "className": "LuFormlyFieldDepartment",
+    "description": "",
+    "selector": "lu-formly-field-department",
+    "inputs": [],
+    "outputs": [],
+    "properties": [],
     "methods": []
   },
   "LuFormlyFieldInput": {
@@ -3019,6 +4435,11 @@ const NG_DOCS = {
       {
         "name": "fieldComponent",
         "propertyType": "ViewContainerRef",
+        "description": ""
+      },
+      {
+        "name": "isDisabled",
+        "propertyType": "\"\" | \"is-disabled\"",
         "description": ""
       },
       {
