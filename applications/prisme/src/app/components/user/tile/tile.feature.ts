@@ -21,7 +21,7 @@ export class TileFeature {
 				tsCode: require('!!prismjs-loader?lang=typescript!./basic/basic.example.ts')
 			},
 			{
-				title: 'DisplayFormat',
+				title: 'Format',
 				component: DisplayFormatExample,
 				description: `Vous pouvez changer le formatage du nom en utilisant
 				l'input <code class="code">displayFormat</code> pour préciser un format <code class="code">luUserDisplay</code>`,
@@ -35,7 +35,7 @@ export class TileFeature {
 				tsCode: require('!!prismjs-loader?lang=typescript!./sizes/sizes.example.ts')
 			},
 			{
-				title: 'Autres mods',
+				title: 'Divers',
 				component: OtherModsExample,
 				code: require('!!prismjs-loader?lang=markup!./other-mods/other-mods.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./other-mods/other-mods.example.ts')

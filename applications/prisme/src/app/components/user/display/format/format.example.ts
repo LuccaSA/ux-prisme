@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
 	selector: 'pri-format-example',
-	templateUrl: './format.example.html'
+	templateUrl: './format.example.html',
+	styleUrls: ['./format.example.scss']
 })
 export class FormatExample {
 	user = { firstName: 'John', lastName: 'Doe' };

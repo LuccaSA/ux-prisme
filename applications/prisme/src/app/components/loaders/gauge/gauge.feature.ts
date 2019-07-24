@@ -20,7 +20,7 @@ export class GaugeFeature {
 				extra: `Pour un chargement de données, préferez l'utilisation de <a href="/components/loaders/progress">progression</a>`
 			},
 			{
-				title: 'Weight',
+				title: 'Épaisseur',
 				component: WeightExample,
 				code: require('!!prismjs-loader?lang=markup!./weight/weight.example.html'),
 			},

@@ -4,7 +4,8 @@ import { LuModal, LU_MODAL_DATA, ILuModalContent } from '@lucca-front/ng';
 
 @Component({
 	selector: 'pri-sending-data-example',
-	templateUrl: './sending-data.example.html'
+	templateUrl: './sending-data.example.html',
+	styleUrls: ['./sending-data.example.scss']
 })
 export class SendingDataExample {
 	constructor(private _modal: LuModal) {}

@@ -6,9 +6,13 @@
 	</section>
 	<ng-template [ngIf]="documentation.inputs?.length">
 		<section class="contentSection">
-			<div class="card-content u-paddingBottomReset">
+			<div class="card-content u-paddingTopReset">
 				<h3>Inputs</h3>
-				<pri-property *ngFor="let input of documentation.inputs" [documentation]="input"></pri-property>
+				<table class="table">
+					<tbody class="table-body">
+						<pri-property  [documentation]="input" *ngFor="let input of documentation.inputs"></pri-property>
+					</tbody>
+				</table>
 			</div>
 		</section>
 	</ng-template>
@@ -16,7 +20,11 @@
 		<section class="contentSection">
 			<div class="card-content u-paddingBottomReset">
 				<h3>Outputs</h3>
-				<pri-property *ngFor="let output of documentation.outputs" [documentation]="output"></pri-property>
+				<table class="table">
+					<tbody class="table-body">
+						<pri-property *ngFor="let output of documentation.outputs" [documentation]="output"></pri-property>
+					</tbody>
+				</table>	
 			</div>
 		</section>
 	</ng-template>

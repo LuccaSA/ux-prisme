@@ -3,7 +3,7 @@
 		<h3>{{documentation.name}} <span class="label">{{documentation.type}}</span></h3>
 		<p>{{documentation.description}}</p>
 	</section>
-	<section>
+	<section class="card-content u-paddingTopReset">
 		<code class="code">{{documentation.input.name}} | {{documentation.pipeName}}</code>
 		<code class="code" *ngFor="let arg of documentation.arguments">[:{{arg.name}}]</code>
 	</section>
