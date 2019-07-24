@@ -9,7 +9,8 @@ import { CardExampleComponent } from './card/card.component';
 import { FiltersExampleComponent } from './filters/filters.component';
 import { DraggableExample } from './draggable/draggable.example';
 import { SizesExample } from './sizes/sizes.example';
-import { AlignmentExample } from './alignment/alignment.example';
+import { VerticalAlignmentExample } from './vertical-alignment/vertical-alignment.example';
+import { HorizontalAlignmentExample } from './horizontal-alignment/horizontal-alignment.example';
 declare var require: any;
 
 @Component({
@@ -80,9 +81,14 @@ export class TablesFeature {
 				code: require('!!prismjs-loader?lang=markup!./sizes/sizes.example.html'),
 			},
 			{
-				title: 'Alignement',
-				component: AlignmentExample,
-				code: require('!!prismjs-loader?lang=markup!./alignment/alignment.example.html'),
+				title: 'Alignement vertical',
+				component: VerticalAlignmentExample,
+				code: require('!!prismjs-loader?lang=markup!./vertical-alignment/vertical-alignment.example.html'),
+			},
+			{
+				title: 'Alignement horizontal',
+				component: HorizontalAlignmentExample,
+				code: require('!!prismjs-loader?lang=markup!./horizontal-alignment/horizontal-alignment.example.html'),
 			},
 		],
 		theme: this.docApi.get('table')

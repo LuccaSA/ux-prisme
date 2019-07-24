@@ -10,7 +10,8 @@ import { CardExampleComponent } from './card/card.component';
 import { FiltersExampleComponent } from './filters/filters.component';
 import { DraggableExample } from './draggable/draggable.example';
 import { SizesExample } from './sizes/sizes.example';
-import { AlignmentExample } from './alignment/alignment.example';
+import { VerticalAlignmentExample } from './vertical-alignment/vertical-alignment.example';
+import { HorizontalAlignmentExample } from './horizontal-alignment/horizontal-alignment.example';
 
 @NgModule({
 	imports: [
@@ -27,7 +28,8 @@ import { AlignmentExample } from './alignment/alignment.example';
 		FiltersExampleComponent,
 		DraggableExample,
 		SizesExample,
-		AlignmentExample,
+		VerticalAlignmentExample,
+		HorizontalAlignmentExample,
 	],
 	entryComponents: [
 		BasicExampleComponent,
@@ -39,7 +41,8 @@ import { AlignmentExample } from './alignment/alignment.example';
 		FiltersExampleComponent,
 		DraggableExample,
 		SizesExample,
-		AlignmentExample,
+		VerticalAlignmentExample,
+		HorizontalAlignmentExample,
 	]
 })
 export class TablesModule { }
