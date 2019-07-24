@@ -1,3 +1,4 @@
+export * from './layout/header/index';
 export * from './overlays/guidelines/index';
 export * from './listings/guidelines/index';
 export * from './actions/guidelines/index';
