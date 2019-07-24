@@ -6,7 +6,7 @@ import { overlayGuidelinesPage } from './guidelines/guidelines.page';
 
 export const overlaysPage = new GroupPage(
 	'overlays',
-	'Overlays 🔨',
+	'Overlays',
 	[
 	overlayGuidelinesPage,
 	popoversPage,
