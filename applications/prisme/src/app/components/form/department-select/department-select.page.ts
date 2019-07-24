@@ -5,4 +5,5 @@ export const departmentSelectPage = new FeaturePage(
 	'department-select',
 	'Department Select',
 	DepartmentSelectFeature,
+	['department', 'departement', 'select', 'picker', 'selecteur']
 );

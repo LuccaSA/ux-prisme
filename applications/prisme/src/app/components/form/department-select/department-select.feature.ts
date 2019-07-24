@@ -9,15 +9,15 @@ declare var require: any;
 })
 export class DepartmentSelectFeature {
 	infos: IFeatureInfos = {
-		title: 'DepartmentSelect',
+		title: 'Sélecteur de département',
 		examples: [
 			{
-				title: 'basic',
+				title: 'Basique',
 				component: BasicExample,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
 			},
 			{
-				title: 'multiple',
+				title: 'Multiple',
 				component: MultipleExample,
 				code: require('!!prismjs-loader?lang=markup!./multiple/multiple.example.html'),
 			},
