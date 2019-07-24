@@ -9,6 +9,8 @@ import { ActionsExampleComponent } from './actions/actions.component';
 import { CardExampleComponent } from './card/card.component';
 import { FiltersExampleComponent } from './filters/filters.component';
 import { DraggableExample } from './draggable/draggable.example';
+import { SizesExample } from './sizes/sizes.example';
+import { AlignmentExample } from './alignment/alignment.example';
 
 @NgModule({
 	imports: [
@@ -24,6 +26,8 @@ import { DraggableExample } from './draggable/draggable.example';
 		CardExampleComponent,
 		FiltersExampleComponent,
 		DraggableExample,
+		SizesExample,
+		AlignmentExample,
 	],
 	entryComponents: [
 		BasicExampleComponent,
@@ -34,6 +38,8 @@ import { DraggableExample } from './draggable/draggable.example';
 		CardExampleComponent,
 		FiltersExampleComponent,
 		DraggableExample,
+		SizesExample,
+		AlignmentExample,
 	]
 })
 export class TablesModule { }

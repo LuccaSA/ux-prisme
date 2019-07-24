@@ -8,6 +8,8 @@ import { ActionsExampleComponent } from './actions/actions.component';
 import { CardExampleComponent } from './card/card.component';
 import { FiltersExampleComponent } from './filters/filters.component';
 import { DraggableExample } from './draggable/draggable.example';
+import { SizesExample } from './sizes/sizes.example';
+import { AlignmentExample } from './alignment/alignment.example';
 declare var require: any;
 
 @Component({
@@ -71,6 +73,16 @@ export class TablesFeature {
 				component: FiltersExampleComponent,
 				code: require('!!prismjs-loader?lang=markup!./filters/filters.component.html'),
 				mod: 'white',
+			},
+			{
+				title: 'Tailles',
+				component: SizesExample,
+				code: require('!!prismjs-loader?lang=markup!./sizes/sizes.example.html'),
+			},
+			{
+				title: 'Alignement',
+				component: AlignmentExample,
+				code: require('!!prismjs-loader?lang=markup!./alignment/alignment.example.html'),
 			},
 		],
 		theme: this.docApi.get('table')
