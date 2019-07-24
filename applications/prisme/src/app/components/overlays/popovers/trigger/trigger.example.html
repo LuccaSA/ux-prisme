@@ -1,9 +1,10 @@
-<button class="button palette-primary" [luPopover]="popover" luPopoverTrigger="click">Popover on click</button>
-<code class="code" [luPopover]="popover" luPopoverTrigger="hover">Popover on hover (defaut)</code><br>
-<div class="textfield">
-	<input class="textfield-input" name="api" [luPopover]="popover" luPopoverTrigger="focus">
-	<label class="textfield-label" for="api">popover on focus</label>
+<div class="textfield mod-inline mod-white">
+	<input class="textfield-input" name="api" [luPopover]="popover" luPopoverTrigger="focus" placeholder="Popover au focus">
 </div>
+<button class="button palette-primary" [luPopover]="popover" luPopoverTrigger="click">Popover au clic</button>
+<button class="button palette-primary" [luPopover]="popover" luPopoverTrigger="hover">Popover au survol</button>
+
+
 <lu-popover #popover>
 	popover
 </lu-popover>
