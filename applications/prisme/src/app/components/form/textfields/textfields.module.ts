@@ -12,6 +12,7 @@ import { PalettesExampleComponent } from './palettes/palettes.example';
 import { RadioExampleComponent } from './radio/radio.example';
 import { TextareaExampleComponent } from './textarea/textarea.example';
 import { InvertedExample } from './inverted/inverted.example';
+import { ClearExample } from './clear/clear.example';
 
 @NgModule({
 	imports: [CommonModule],
@@ -28,6 +29,7 @@ import { InvertedExample } from './inverted/inverted.example';
 		RadioExampleComponent,
 		TextareaExampleComponent,
 		InvertedExample,
+		ClearExample,
 	],
 	entryComponents: [
 		BasicExampleComponent,
@@ -41,6 +43,7 @@ import { InvertedExample } from './inverted/inverted.example';
 		RadioExampleComponent,
 		TextareaExampleComponent,
 		InvertedExample,
+		ClearExample,
 	]
 })
 export class TextfieldsModule { }
