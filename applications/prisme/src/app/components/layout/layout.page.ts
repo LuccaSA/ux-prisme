@@ -6,11 +6,13 @@ import { sectionsPage } from './sections/sections.page';
 import { gridPage } from './grid/grid.page';
 import { templatesPage } from './templates/templates.page';
 import { headerPage } from './header/header.page';
+import { filtersPage } from './filters/filters.page';
 
 export const layoutPage = new GroupPage(
 	'layout',
 	'Structure',
 	[
+	filtersPage,
 	headerPage,
 		cardsPage,
 		containersPage,

@@ -7,6 +7,7 @@ import { ContainersModule } from './containers/containers.module';
 import { SectionsModule } from './sections/sections.module';
 import { TemplatesModule } from './templates';
 import { HeaderModule } from './header';
+import { FiltersModule } from './filters';
 
 @NgModule({
 	imports: [
@@ -18,6 +19,7 @@ import { HeaderModule } from './header';
 		SectionsModule,
 		TemplatesModule,
 		HeaderModule,
+		FiltersModule,
 	],
 })
 export class LayoutModule { }
