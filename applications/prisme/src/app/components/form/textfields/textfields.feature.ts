@@ -11,6 +11,7 @@ import { RadioExampleComponent } from './radio/radio.example';
 import { TextareaExampleComponent } from './textarea/textarea.example';
 import { PalettesExampleComponent } from './palettes/palettes.example';
 import { InvertedExample } from './inverted/inverted.example';
+import { ClearExample } from './clear/clear.example';
 
 declare var require: any;
 
@@ -111,6 +112,11 @@ export class TextfieldsFeature {
 				component: InvertedExample,
 				code: require('!!prismjs-loader?lang=markup!./inverted/inverted.example.html'),
 				mod: 'dark',
+			},
+			{
+				title: 'Effaçable',
+				component: ClearExample,
+				code: require('!!prismjs-loader?lang=markup!./clear/clear.example.html'),
 			},
 		],
 		theme: this.docApi.get('textfield')
