@@ -1,6 +1,5 @@
 <div class="textfield">
 	<input type="text" class="textfield-input" [(ngModel)]="message">
-	<label for="" class="textfield-label">message a transmettre a la modale</label>
+	<label for="" class="textfield-label">Message à transmettre à la modale</label>
 </div>
-<br>
-<button class="button" (click)="open(message)" [disabled]="!message">Ouvrir la modale</button>
+<button class="button palette-primary" (click)="open(message)" [disabled]="!message">Ouvrir la modale</button>

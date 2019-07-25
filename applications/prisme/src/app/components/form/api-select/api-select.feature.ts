@@ -27,7 +27,7 @@ export class ApiSelectFeature {
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
 			},
 			{
-				title: 'multiple',
+				title: 'Multiple',
 				component: MultipleExample,
 				code: require('!!prismjs-loader?lang=markup!./multiple/multiple.example.html'),
 			},

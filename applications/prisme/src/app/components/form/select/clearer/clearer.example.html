@@ -1,35 +1,14 @@
-<div class="grid">
-	<div class="grid-md4">
-		<h4>Avec Clearer</h4>
-		<div class="textfield">
-			<lu-select [(ngModel)]="item" class="textfield-input">
-				<ng-container *luDisplayer="let value">{{value.name}}</ng-container>
-				<lu-option-picker>
-					<lu-option [value]="green">{{green.name}}</lu-option>
-					<lu-option [value]="red">{{red.name}}</lu-option>
-					<lu-option [value]="yellow">{{yellow.name}}</lu-option>
-					<lu-option [value]="blue">{{blue.name}}</lu-option>
-				</lu-option-picker>
-				<!-- pass the clearer as a content child -->
-				<lu-select-clearer></lu-select-clearer>
-			</lu-select>
-			<label class="textfield-label" for="itemOptions">my label</label>
-		</div>
-	</div>
-
-	<div class="grid-md4">
-		<h4>Sans Clearer</h4>
-		<div class="textfield">
-			<lu-select [(ngModel)]="item" class="textfield-input">
-				<ng-container *luDisplayer="let value">{{value.name}}</ng-container>
-				<lu-option-picker>
-					<lu-option [value]="green">{{green.name}}</lu-option>
-					<lu-option [value]="red">{{red.name}}</lu-option>
-					<lu-option [value]="yellow">{{yellow.name}}</lu-option>
-					<lu-option [value]="blue">{{blue.name}}</lu-option>
-				</lu-option-picker>
-			</lu-select>
-			<label class="textfield-label" for="itemOptions">my label</label>
-		</div>
-	</div>
+<div class="textfield">
+	<lu-select [(ngModel)]="item" class="textfield-input">
+		<ng-container *luDisplayer="let value">{{value.name}}</ng-container>
+		<lu-option-picker>
+			<lu-option [value]="green">{{green.name}}</lu-option>
+			<lu-option [value]="red">{{red.name}}</lu-option>
+			<lu-option [value]="yellow">{{yellow.name}}</lu-option>
+			<lu-option [value]="blue">{{blue.name}}</lu-option>
+		</lu-option-picker>
+		<!-- pass the clearer as a content child -->
+		<lu-select-clearer></lu-select-clearer>
+	</lu-select>
+	<label class="textfield-label" for="itemOptions">my label</label>
 </div>

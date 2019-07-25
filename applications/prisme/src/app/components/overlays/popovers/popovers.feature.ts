@@ -14,17 +14,17 @@ export class PopoversFeature {
 		description: "Les popovers servent à afficher un contenu supplémentaire superposé à partir d'une interaction avec un élément.",
 		examples: [
 			{
-				title: 'basic',
+				title: 'Basique',
 				component: BasicExample,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
 			},
 			{
-				title: 'trigger',
+				title: 'Déclencheur',
 				component: TriggerExample,
 				code: require('!!prismjs-loader?lang=markup!./trigger/trigger.example.html'),
 			},
 			{
-				title: 'position',
+				title: 'Position',
 				component: PositionExample,
 				code: require('!!prismjs-loader?lang=markup!./position/position.example.html'),
 			},

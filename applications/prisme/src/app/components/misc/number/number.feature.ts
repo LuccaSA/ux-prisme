@@ -14,21 +14,21 @@ export class NumberFeature {
 		description: `luNumber permet de réaliser l'alignement de nombres sur les décimales en gérant l'arrondi et internationalisation.`,
 		examples: [
 			{
-				title: 'basic',
+				title: 'Basique',
 				component: BasicExample,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./basic/basic.example.ts'),
 				extra: `l'utilisation doit se faire sur un innerHTML`
 			},
 			{
-				title: 'precision',
+				title: 'Précision',
 				component: PrecisionExample,
 				code: require('!!prismjs-loader?lang=markup!./precision/precision.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./precision/precision.example.ts'),
 				extra: `l'utilisation doit se faire sur un innerHTML`
 			},
 			{
-				title: 'locale',
+				title: 'Internationalisation',
 				component: LocaleExample,
 				code: require('!!prismjs-loader?lang=markup!./locale/locale.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./locale/locale.example.ts'),

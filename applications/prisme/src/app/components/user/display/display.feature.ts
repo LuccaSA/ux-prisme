@@ -13,13 +13,13 @@ export class DisplayFeature {
 		description: "luUserDisplay permet d'afficher le prénom et le nom d'un utilisateur et donne accès à de nombreuses options de formatage.",
 		examples: [
 			{
-				title: 'basic',
+				title: 'Basique',
 				component: BasicExample,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./basic/basic.example.ts')
 			},
 			{
-				title: 'format',
+				title: 'Format',
 				component: FormatExample,
 				code: require('!!prismjs-loader?lang=markup!./format/format.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./format/format.example.ts')

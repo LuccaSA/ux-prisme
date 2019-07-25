@@ -15,21 +15,21 @@ export class ModalsFeature {
 		description: "Les fenêtres de dialogue vient superposer un contenu supplémentaire sans quitter la page en cours. Elles ont diverses utilités comme la création ou l'édition de contenu, la confirmation ou l'accès à des fonctionnalités avancées.",
 		examples: [
 			{
-				title: 'basic',
+				title: 'Basique',
 				component: BasicExample,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./basic/basic.example.ts'),
 				extra: extra,
 			},
 			{
-				title: 'sending-data',
+				title: 'Envoi de données',
 				component: SendingDataExample,
 				code: require('!!prismjs-loader?lang=markup!./sending-data/sending-data.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./sending-data/sending-data.example.ts'),
 				extra: extra,
 			},
 			{
-				title: 'recieving-data',
+				title: 'Réception de données',
 				component: RecievingDataExample,
 				code: require('!!prismjs-loader?lang=markup!./recieving-data/recieving-data.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./recieving-data/recieving-data.example.ts'),
@@ -37,7 +37,6 @@ export class ModalsFeature {
 			},
 		],
 		packages: [
-			'SCSS',
 			'NG',
 		],
 
