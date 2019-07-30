@@ -16,6 +16,7 @@ export class CalloutsFeature {
 	infos: IFeatureInfos = {
 		title: 'Callouts',
 		packages: ['SCSS'],
+		guidelines: 'guidelines/components/feedback/callouts/callouts.guidelines.md',
 		description: "Les callouts servent à mettre en valeur une information dans une page, comme une aide, une alerte ou une erreur.",
 		examples: [
 			{
