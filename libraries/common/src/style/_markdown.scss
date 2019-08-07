@@ -31,6 +31,10 @@
 		text-align: left;
 		padding: .5rem;
 	}
+
+	img {
+		max-width: 100%;
+	}
 }
 
 .markdown-dualDisplay {
@@ -99,7 +103,6 @@
 }
 
 .markdown-image {
-	max-height: 250px;
 	display: inline-block;
 }
 

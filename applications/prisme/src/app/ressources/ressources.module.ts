@@ -6,6 +6,7 @@ import { ColorsModule } from './colors/colors.module';
 import { ResourcesRoutingModule } from './resources.router';
 import { MainModule } from '../main';
 import { TypographyModule } from './typography';
+import { IconographyModule } from './iconography';
 
 @NgModule({
 	imports: [
@@ -16,6 +17,7 @@ import { TypographyModule } from './typography';
 		ResourcesRoutingModule,
 		MainModule,
 		TypographyModule,
+		IconographyModule,
 	],
 })
 export class RessourcesModule { }
