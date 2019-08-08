@@ -6,7 +6,7 @@ L'ensemble des icônes doit être réalisé dans un espace de construction défi
 # Structure de construction
 
 Plusieurs structures sont définies à l'intérieur de la grille pour faciliter la construction des icônes. Ces structures vous permettront de garder une cohérence de proportions entre les différentes formes.
-On distingue 4 structures différentes :
+On distingue 4 structures principales :
 - Carré : 18x18px
 - Verticale : 20x16px
 - Horizontale : 16x20px
@@ -17,6 +17,10 @@ On distingue 4 structures différentes :
 ![layout 16x20](guidelines/visual-identity/iconography/images/layout16x20.png)
 ![layout 20x16](guidelines/visual-identity/iconography/images/layout20x16.png)
 ![layout 20x20](guidelines/visual-identity/iconography/images/layout20x20.png)
+
+Si nécessaire, les grilles 16x20 et 20x16 peuvent être étendues à 18x20 et 20x18 afin de garantir une homogénéité dans l'espace occupé par les icônes.
+
+![layout 18x20](guidelines/visual-identity/iconography/images/layout18x20.png)
 
 Une cinquième structure existe pour les éléments fins et penchés. On utilisera un cercle de 24x24px pour définir ces icônes.
 
@@ -39,6 +43,7 @@ L'épaisseur du tracé des icônes est définie à 2px. Il est nécessaire de re
 L'arrondi des formes fait partie intégrante du du style de notre set d'icônes. Dans la majorité des cas, il sont définis comme ci-dessous :
 - Arrondi extérieur : 3px
 - Arrondi intérieur : 1px
+
 Dans d'autres cas, l'arrondi peut être ajusté optiquement pour une meilleure lisibilité.
 
 ![arrondis](guidelines/visual-identity/iconography/images/radius.png)
