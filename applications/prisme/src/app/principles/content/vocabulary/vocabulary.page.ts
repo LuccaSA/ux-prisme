@@ -3,7 +3,7 @@ import { VocabularyFeature } from './vocabulary.feature';
 
 export const vocabularyPage = new FeaturePage(
 	'vocabulary',
-	'Vocabulaire 🔨',
+	'Vocabulaire',
 	VocabularyFeature,
 	["vocabulaire", "vocabulary"]
 );
