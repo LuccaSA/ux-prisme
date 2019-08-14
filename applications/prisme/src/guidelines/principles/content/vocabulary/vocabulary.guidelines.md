@@ -147,6 +147,35 @@ Moyen de paiement destiné à payer des produits alimentaires dans les restauran
 </div>
 </div>
 
+# <div class="appLogo mod-timmi"></div> Timmi
+
+### Contrôle
+Algorithme permettant d'identifier si la législation applicable au réglementaire sur le temps de travail est respectée. Sinon, le contrôle lèvera une alerte, ou bien bloquera la déclaration de la feuille de temps correspondante.
+
+### Feuille de temps
+Conteneur de temps pour un salarié sur une période (semaine, mois, etc.) permettant de simplifier le workflow en l'appliquant non pas à des temps unitaires, mais à leur regroupement en bloc.
+
+### Imputation
+Coût (temps, dépense, etc.) sur une combinaison de sections analytiques.
+
+### Présence
+Temps saisi dans Timmi Timesheet. Le temps de présence est le temps de travail effectivement observé par le salarié (au bureau ou à distance). Par définition, le temps de présence est du temps de travail effectif.
+
+### Règle (d'EVP)
+Algorithme permettant de comptabiliser des heures en fonction de critères paramétrables pour chaque réglementaire. Ce sont elles qui vont calculer les heures supplémentaires, les heures de nuit, le travail du dimanche, etc.
+
+### Réglementaire
+Objet contenant toutes les règles de gestion applicables à une population donnée dans Timmi Timesheet.
+
+### Temps de travail effectif
+Lors du passage aux 35h en France, le patronat a voulu retirer le plus possible d'heures de l'assiette de calcul des majorations. D'où ce concept de temps de travail effectif. En pratique, c'est donc un sous-ensemble du temps de travail rémunéré. Notons au passage que certaines absences seront parfois assimilées à du temps de travail effectif dans le cadre du calcul des heures supplémentaires (formation, chômage technique, etc.). Se référer pour cela à la convention collective applicable.
+
+### Temps de travail théorique
+Temps de travail qu'un salarié doit à son employeur sur une période donnée. Il s'agit du résultat de l'application des jours fériés et des exceptions (personnalisations du planning dans Figgo) au cycle de travail du salarié.
+
+### Temps justifié
+Temps justifié dans une application éditée par Lucca, soit sous la forme d'une présence dans Timmi, soit d'une absence dans Figgo. Il faut comparer le temps de travail ainsi justifié au temps de travail théorique. Tout écart relève d'une anomalie.
+
 # <div class="appLogo mod-talent"></div> Poplee Entretiens & Objectifs
 
 ### Alerte
