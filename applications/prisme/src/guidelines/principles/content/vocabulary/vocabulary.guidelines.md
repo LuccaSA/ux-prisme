@@ -129,7 +129,9 @@ Regroupement de comptes caractérisé par un code rubrique et un paramétrage d�
 Somme des écritures comptables du compte d'un collaborateur à une date donnée.
 
 ### Titre-restaurant
+
 <div class="u-textLight u-textSmall"><b>TR</b> : Réservé aux pages administrateurs</div>
+
 Moyen de paiement déstiné à payer des produits alimentaires dans les restaurants, la grande et la petite distribution.
 
 <div class="markdown-dualDisplay">
