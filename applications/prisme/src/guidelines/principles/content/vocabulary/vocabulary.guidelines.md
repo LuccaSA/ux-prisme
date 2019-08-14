@@ -132,7 +132,7 @@ Somme des écritures comptables du compte d'un collaborateur à une date donnée
 
 <div class="u-textLight u-textSmall"><b>TR</b> : Réservé aux pages administrateurs</div>
 
-Moyen de paiement déstiné à payer des produits alimentaires dans les restaurants, la grande et la petite distribution.
+Moyen de paiement destiné à payer des produits alimentaires dans les restaurants, la grande et la petite distribution.
 
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
@@ -153,7 +153,7 @@ Moyen de paiement déstiné à payer des produits alimentaires dans les restaura
 Message envoyé par le responsable visant à alerter l'administrateur ou le service RH d'une problématique autour du collaborateur.
 
 ### Approbation
-Etape optionnelle de validation par le collaborateur de l'entretien généré par le responsable.
+Étape optionnelle de validation par le collaborateur de l'entretien généré par le responsable.
 
 ### Bilan
 Bilan d'entretien réalisé par le responsable, composé d'une note et / ou d'un message.
@@ -184,19 +184,19 @@ Cette numérotation impacte le calcul du pourcentage d'avancement global sur une
 Répartition de poids entre les objectifs d'un collaborateur
 
 ### Préparation
-Etape optionnelle où le collaborateur et/ou le responsable remplissent le formulaire avant la tenue de l'entretien physique
+Étape optionnelle où le collaborateur et/ou le responsable remplissent le formulaire avant la tenue de l'entretien physique
 
 ### Refus
 Refus du bilan par le collaborateur.
 
 ### Réserve
-Message envoyé par le collaborateur surpervisé visant à faire une remarque ou à présenter un désacord sur le bilan, sans bloquer l'entretien.
+Message envoyé par le collaborateur supervisé visant à faire une remarque ou à présenter un désaccord sur le bilan, sans bloquer l'entretien.
 
 ### Responsable d'entretien
 Manager responsable de l'entretien d'un collaborateur.
 
 ### Responsable de campagne
-Collaborateur qui configure la campagne (le déroulé,la population, le formulaire, les notifications) et qui recevra les alertes et réserves émises sur les entretiens
+Collaborateur qui configure la campagne (le déroulé, la population, le formulaire, les notifications) et qui recevra les alertes et réserves émises sur les entretiens
 
 ### Statut
 Qualification de la faisabilité d'un objectif (réalisable, à risque, abandonné)
