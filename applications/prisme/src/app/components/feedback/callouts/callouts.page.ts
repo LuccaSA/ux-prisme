@@ -5,5 +5,5 @@ export const calloutsPage = new FeaturePage(
 	'callouts',
 	'Callouts',
 	CalloutsFeature,
-	["callouts"]
+	["callouts", "alertes"]
 );
