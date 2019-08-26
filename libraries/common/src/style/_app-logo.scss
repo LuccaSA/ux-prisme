@@ -1,0 +1,42 @@
+.appLogo {
+	display: inline-block;
+	height: 2.5rem;
+	width: 2.5rem;
+	font-size: 1.7rem;
+	line-height: 1.3;
+	vertical-align: middle;
+	margin-right: .5rem;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	background: linear-gradient(to right, #FF9900 0%, var(--palettes-lucca-color) 100%);
+	font-weight: 400;
+
+	&::before {
+		@include makeIcon("jumping_cc");
+	}
+
+	&.mod-figgo {
+		background: #7072D2;
+	}
+
+	&.mod-cleemy {
+		background: #5FC871;
+	}
+
+	&.mod-poplee {
+		background: #0f98d0;
+	}
+
+	&.mod-talent {
+		background: #2DB7D3;
+	}
+
+	&.mod-pagga {
+		background: #FFB900;
+	}
+
+	&.mod-timmi {
+		background: #62CDA9;
+	}
+}

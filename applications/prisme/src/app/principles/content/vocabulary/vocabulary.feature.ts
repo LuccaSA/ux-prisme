@@ -7,15 +7,13 @@ declare var require: any;
 })
 export class VocabularyFeature {
 	infos: IFeatureInfos = {
-		title: 'Vocabulaire 🔨',
+		title: 'Vocabulaire',
+		guidelines: 'guidelines/principles/content/vocabulary/vocabulary.guidelines.md',
+		description: "Cette liste permet de rester consistant dans l'emploi de notre vocabulaire. Elle nous assure une rigueur dans l'utilisation des majuscules, des abréviations, et évite de créer de la confusion pour nos utilisateurs.",
 		examples: [
 		],
 		packages: [
-
-
 		],
-
-		//
 	};
 
 	constructor(
