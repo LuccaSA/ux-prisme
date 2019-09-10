@@ -1,3 +1,4 @@
+[//]: # (Please keep this Sheet updated: https://docs.google.com/spreadsheets/d/1xe5-ap56sFWLh1rU_ZjFeEinGKe25u90zN3qDwgpS4c/edit?usp=sharing)
 [//]: # (Please sort by apps & alphabetize definitions)
 
 # <div class="appLogo"></div> Vocabulaire général
@@ -58,11 +59,41 @@ Groupe de collaborateurs correspondant à un ensemble de critères discriminants
 ### Acquisition
 Jours ou heures crédités sur le compte d'un collaborateur.
 
-### Planning
-Calendrier des absences d'une population.
+### Arrêt de travail
+Type d'absence nécessitant la remise d'un arrêt de travail (maladie, maternité, etc.).
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+- Arrêt de travail
+
+</div>
+<div class="markdown-block mod-negative">
+
+- Arrêt maladie
+
+</div>
+</div>
 
 ### Calendrier
 Liste des jours fériés associée à une instance Figgo.
+
+### Catégorie (comptes)
+Regroupement de comptes millésimés (ex : la catégorie Congés payés contient les comptes Congés payés 2018/2019, Congés payés 2019/2020, etc.) ou de comptes au fonctionnement similaire (ex : la catégorie Congés nécessitant un arrêt de travail contient les comptes Maladie, Maternité, etc.).
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+- Catégorie
+
+</div>
+<div class="markdown-block mod-negative">
+
+- Série de comptes
+- Liste de comptes
+
+</div>
+</div>
 
 ### Compte
 Type d'absence disposant de ses propres règles.
@@ -116,17 +147,60 @@ Période au cours de laquelle les collaborateurs sont invités à ne pas poser d
 </div>
 </div>
 
+### Planning
+Calendrier des absences d'une population.
+
 ### Profil d'acquisition
 Groupe de collaborateurs disposant de règles d'acquisitions propres.
 
+### Règle
+Ensemble de critères déterminant les modalités d'acquisition ou de consommation d'un compte donné.
+
 ### Réglementaire
 Ensemble de profils, comptes, CSP et règles d'acquisition et de consommation sur ces comptes, propres à une ou plusieurs entités légales.
+
+### Régularisation
+Règle permettant d'ajuster l'acquisition sur un compte en fonction des absences du collaborateur (ex : X jours de maladie font perdre X jours de RTT)
+
+### Requalifier
+On préférera utiliser le terme Requalifier (une absence, un arrêt de travail) que Modifier.
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+- Requalifier une absence
+
+</div>
+<div class="markdown-block mod-negative">
+
+- Modifier une absence
+
+</div>
+</div>
 
 ### Rubrique de paie
 Regroupement de comptes caractérisé par un code rubrique et un paramétrage définissant les règles d'export dans un fichier d'export paie.
 
 ### Solde
 Somme des écritures comptables du compte d'un collaborateur à une date donnée.
+
+### Solde disponible
+Le solde disponible est le solde de jours pouvant être posés. Pour faire simple, il s'agit du solde actuel moins les jours posés dans le futur.
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+- Solde disponible
+
+</div>
+<div class="markdown-block mod-negative">
+
+- Solde
+- Solde actuel
+
+</div>
+</div>
+
 
 ### Titre-restaurant
 
