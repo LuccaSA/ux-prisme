@@ -147,6 +147,60 @@ Moyen de paiement destiné à payer des produits alimentaires dans les restauran
 </div>
 </div>
 
+# <div class="appLogo mod-cleemy"></div> Cleemy
+
+### Archive à valeur probante
+Document numérique attestant de l'intégrité des dépenses figurant au sein d'une note de frais (justificatifs valides, informations requises présentes).
+
+### Avance permanente
+Argent accordé à un salarié par l'entreprise. Cet argent devra être rendu au moment du solde de tout compte (il n'est pas déduit des prochaines notes de frais déclarées).
+
+### Avance ponctuelle
+Argent accordé à un salarié par l'entreprise. Le montant de cette avance sera déduit des prochains frais déclarés
+
+### Carte société
+Moyen de paiement lié au compte en banque de la société. Ce frais ne doit pas générer de remboursement.
+
+### Compte de charge
+Compte où sont retranscrites les charges d'une entreprise. Dans le cadre de Cleemy, ceci correspond à un regroupement et une catégorisation des natures.
+
+### Compte de tiers
+Compte représentant comptablement la situation financière d'un salarié vis-à-vis de son entreprise.
+
+### Compte de TVA
+Compte comptable où est indiqué les montants de TVA dépensés par un déclarant dans le cadre de ses frais professionnels.
+
+### Contrôler
+Action de valider comptablement une note de frais.
+
+### Déclarant
+Utilisateur saisissant des frais et les déclarant dans une ou plusieurs notes de frais soumise(s) à une approbation.
+
+### Dépense
+Frais engagé par un collaborateur au nom de son entreprise. Celui-ci doit faire l'objet d'une approbation a posteriori.
+
+### Frais kilométrique
+Indemnité versée à un salarié utilisant sa voiture personnelle dans le cadre de déplacements professionnels.
+
+### Justificatif
+Reçu papier numérisé et importé dans Cleemy. Il justifie le bien fondé d'une dépense. Il est soumis à certaines règles légales (ex. présence de la TVA pour qu'elle puisse être récupérable).
+
+### Nature
+Type de frais (avion, train, taxi, etc.).
+
+### Note de frais
+Ensemble de dépenses. C'est la note de frais qui suit le workflow de validation du logiciel.
+
+### Paiement
+Action de rembourser les frais engagés par le collaborateur.
+
+### Plan comptable
+Ensemble des données comptables relatives à une entreprise.
+
+### Reconnaissance Optique de Caractères
+<div class="u-textLight u-textSmall"><b>OCB</b> : Utilisable partout</div>
+Lecture informatisée des informations figurant sur un reçu papier pour en déduire : la nature, la date, le montant TTC, les montants de TVA.
+
 # <div class="appLogo mod-timmi"></div> Timmi
 
 ### Contrôle
@@ -184,6 +238,9 @@ Message envoyé par le responsable visant à alerter l'administrateur ou le serv
 ### Approbation
 Étape optionnelle de validation par le collaborateur de l'entretien généré par le responsable.
 
+### Avancement
+Pourcentage de progrès d'un objectif, modifiable à tout moment par le collaborateur ou le manager.
+
 ### Bilan
 Bilan d'entretien réalisé par le responsable, composé d'une note et / ou d'un message.
 
@@ -198,6 +255,9 @@ Type de campagne (entretien professionnel, annuel...)
 
 ### Déroulé
 Cadre de la campagne fixant son responsable, les dates des différentes étapes et les responsables d'entretiens.
+
+### Étape
+Phase d'une campagne d'entretiens qui peut être préparation, entretien, validation et approbation.
 
 ### Formulaire
 Ensemble de questions, divisés ou non en section servant à réaliser l'entretien.
