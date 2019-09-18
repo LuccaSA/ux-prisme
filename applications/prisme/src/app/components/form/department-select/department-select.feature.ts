@@ -15,11 +15,13 @@ export class DepartmentSelectFeature {
 				title: 'Basique',
 				component: BasicExample,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./basic/basic.example.ts'),
 			},
 			{
 				title: 'Multiple',
 				component: MultipleExample,
 				code: require('!!prismjs-loader?lang=markup!./multiple/multiple.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./multiple/multiple.example.ts'),
 			},
 		],
 		packages: [
