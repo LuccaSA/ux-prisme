@@ -16,7 +16,7 @@ export class ActionIconsFeature {
 		title: 'Icônes d\'action',
 		packages: ['SCSS'],
 		guidelines: 'guidelines/components/actions/action-icons/action-icons.guidelines.md',
-		description: "Ces boutons discrets sont des raccourcis pour réaliser des actions simples sur l'objet concerné sans surcharger la page.",
+		description: "L’icône d’action représente une action secondaire et/ou répétitive. Il sert notamment pour les actions de type suppression, édition, etc. au sein d’une liste d’éléments.",
 		examples: [
 			{
 				title: 'Basique',

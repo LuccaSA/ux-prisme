@@ -22,7 +22,7 @@ export class TablesFeature {
 		title: 'Tables',
 		guidelines: 'guidelines/components/listings/tables/tables.guidelines.md',
 		packages: ['SCSS'],
-		description: 'Les tables servent à présenter un ensemble de données dont les valeurs peuvent être comparées entre elles.',
+		description: "Liste d'éléments à comparer sur un ensemble de critères/valeurs présentés dans un header.",
 		examples: [
 			{
 				title: 'Basique',

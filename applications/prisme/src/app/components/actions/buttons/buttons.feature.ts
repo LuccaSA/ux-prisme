@@ -16,6 +16,7 @@ export class ButtonsFeature {
 		title: 'Boutons',
 		packages: ['SCSS'],
 		guidelines: 'guidelines/components/actions/buttons/buttons.guidelines.md',
+		description: 'Le bouton représente une action importante propre à la page comme la création d’un objet ou le changement d’état d’un élément.',
 		examples: [
 			{
 				title: 'Basique',
