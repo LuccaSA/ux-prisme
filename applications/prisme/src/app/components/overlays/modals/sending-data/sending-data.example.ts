@@ -1,5 +1,4 @@
 import { Component, Inject } from '@angular/core';
-import { of } from 'rxjs';
 import { LuModal, LU_MODAL_DATA, ILuModalContent } from '@lucca-front/ng';
 
 @Component({
@@ -21,8 +20,6 @@ export class SendingDataExample {
 export class SendingDataModalContent implements ILuModalContent {
 	title = 'titre';
 	message;
-	submitAction = () => of(true);
-
 	constructor(@Inject(LU_MODAL_DATA) data) {
 		this.message = data;
 	}
