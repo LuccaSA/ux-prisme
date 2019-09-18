@@ -1,68 +1,46 @@
+[//]: # (Please keep this Sheet updated: https://docs.google.com/spreadsheets/d/1xe5-ap56sFWLh1rU_ZjFeEinGKe25u90zN3qDwgpS4c/edit?usp=sharing)
 [//]: # (Please sort by apps & alphabetize definitions)
-
-# <div class="appLogo"></div> Vocabulaire général
-
-### Administrateur
-Personne ayant accès au paramétrage des applications.
-
-### Catégorie Socio-Professionnelle
-<div class="u-textLight u-textSmall"><b>CSP</b> : Utilisable partout</div>
-Nomenclature des professions (cadres, employés, etc.)
-
-### Collaborateur
-Personne travaillant pour l'entreprise.
-
-<div class="markdown-dualDisplay">
-<div class="markdown-block mod-positive">
-
-- collaborateur
-
-</div>
-<div class="markdown-block mod-negative">
-
-- utilisateur
-
-</div>
-</div>
-
-### Cycle de travail
-Détail des jours/heures travaillés et chômés d'une population.
-
-### Département
-Découpage organisationnel de l'entreprise.
-
-### Entité légale
-Découpage géographique ou organisationnel de l'entreprise disposant généralement de ses propres règles.
-
-### Manager
-Personne ayant au moins un collaborateur supervisé.
-
-### Population
-Groupe de collaborateurs correspondant à un ensemble de critères discriminants (LE, département, CSP, ...)
-<div class="markdown-dualDisplay">
-<div class="markdown-block mod-positive">
-
-- population
-
-</div>
-<div class="markdown-block mod-negative">
-
-- utilisateurs
-- collaborateurs sélectionnés
-
-</div>
-</div>
 
 # <div class="appLogo mod-figgo"></div> Figgo
 
 ### Acquisition
 Jours ou heures crédités sur le compte d'un collaborateur.
 
-### Planning
-Calendrier des absences d'une population.
+### Arrêt de travail
+Type d'absence nécessitant la remise d'un arrêt de travail (maladie, maternité, etc.).
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+- Arrêt de travail
+
+</div>
+<div class="markdown-block mod-negative">
+
+- Arrêt maladie
+
+</div>
+</div>
 
 ### Calendrier
 Liste des jours fériés associée à une instance Figgo.
+
+### Catégorie (comptes)
+Regroupement de comptes millésimés (ex : la catégorie Congés payés contient les comptes Congés payés 2018/2019, Congés payés 2019/2020, etc.) ou de comptes au fonctionnement similaire (ex : la catégorie Congés nécessitant un arrêt de travail contient les comptes Maladie, Maternité, etc.).
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+- Catégorie
+
+</div>
+<div class="markdown-block mod-negative">
+
+- Série de comptes
+- Liste de comptes
+
+</div>
+</div>
 
 ### Compte
 Type d'absence disposant de ses propres règles.
@@ -116,17 +94,60 @@ Période au cours de laquelle les collaborateurs sont invités à ne pas poser d
 </div>
 </div>
 
+### Planning
+Calendrier des absences d'une population.
+
 ### Profil d'acquisition
 Groupe de collaborateurs disposant de règles d'acquisitions propres.
 
+### Règle
+Ensemble de critères déterminant les modalités d'acquisition ou de consommation d'un compte donné.
+
 ### Réglementaire
 Ensemble de profils, comptes, CSP et règles d'acquisition et de consommation sur ces comptes, propres à une ou plusieurs entités légales.
+
+### Régularisation
+Règle permettant d'ajuster l'acquisition sur un compte en fonction des absences du collaborateur (ex : X jours de maladie font perdre X jours de RTT)
+
+### Requalifier
+On préférera utiliser le terme Requalifier (une absence, un arrêt de travail) que Modifier.
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+- Requalifier une absence
+
+</div>
+<div class="markdown-block mod-negative">
+
+- Modifier une absence
+
+</div>
+</div>
 
 ### Rubrique de paie
 Regroupement de comptes caractérisé par un code rubrique et un paramétrage définissant les règles d'export dans un fichier d'export paie.
 
 ### Solde
 Somme des écritures comptables du compte d'un collaborateur à une date donnée.
+
+### Solde disponible
+Le solde disponible est le solde de jours pouvant être posés. Pour faire simple, il s'agit du solde actuel moins les jours posés dans le futur.
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+- Solde disponible
+
+</div>
+<div class="markdown-block mod-negative">
+
+- Solde
+- Solde actuel
+
+</div>
+</div>
+
 
 ### Titre-restaurant
 
@@ -146,6 +167,60 @@ Moyen de paiement destiné à payer des produits alimentaires dans les restauran
 
 </div>
 </div>
+
+# <div class="appLogo mod-cleemy"></div> Cleemy
+
+### Archive à valeur probante
+Document numérique attestant de l'intégrité des dépenses figurant au sein d'une note de frais (justificatifs valides, informations requises présentes).
+
+### Avance permanente
+Argent accordé à un salarié par l'entreprise. Cet argent devra être rendu au moment du solde de tout compte (il n'est pas déduit des prochaines notes de frais déclarées).
+
+### Avance ponctuelle
+Argent accordé à un salarié par l'entreprise. Le montant de cette avance sera déduit des prochains frais déclarés
+
+### Carte société
+Moyen de paiement lié au compte en banque de la société. Ce frais ne doit pas générer de remboursement.
+
+### Compte de charge
+Compte où sont retranscrites les charges d'une entreprise. Dans le cadre de Cleemy, ceci correspond à un regroupement et une catégorisation des natures.
+
+### Compte de tiers
+Compte représentant comptablement la situation financière d'un salarié vis-à-vis de son entreprise.
+
+### Compte de TVA
+Compte comptable où est indiqué les montants de TVA dépensés par un déclarant dans le cadre de ses frais professionnels.
+
+### Contrôler
+Action de valider comptablement une note de frais.
+
+### Déclarant
+Utilisateur saisissant des frais et les déclarant dans une ou plusieurs notes de frais soumise(s) à une approbation.
+
+### Dépense
+Frais engagé par un collaborateur au nom de son entreprise. Celui-ci doit faire l'objet d'une approbation a posteriori.
+
+### Frais kilométrique
+Indemnité versée à un salarié utilisant sa voiture personnelle dans le cadre de déplacements professionnels.
+
+### Justificatif
+Reçu papier numérisé et importé dans Cleemy. Il justifie le bien fondé d'une dépense. Il est soumis à certaines règles légales (ex. présence de la TVA pour qu'elle puisse être récupérable).
+
+### Nature
+Type de frais (avion, train, taxi, etc.).
+
+### Note de frais
+Ensemble de dépenses. C'est la note de frais qui suit le workflow de validation du logiciel.
+
+### Paiement
+Action de rembourser les frais engagés par le collaborateur.
+
+### Plan comptable
+Ensemble des données comptables relatives à une entreprise.
+
+### Reconnaissance Optique de Caractères
+<div class="u-textLight u-textSmall"><b>OCB</b> : Utilisable partout</div>
+Lecture informatisée des informations figurant sur un reçu papier pour en déduire : la nature, la date, le montant TTC, les montants de TVA.
 
 # <div class="appLogo mod-timmi"></div> Timmi
 
@@ -184,6 +259,9 @@ Message envoyé par le responsable visant à alerter l'administrateur ou le serv
 ### Approbation
 Étape optionnelle de validation par le collaborateur de l'entretien généré par le responsable.
 
+### Avancement
+Pourcentage de progrès d'un objectif, modifiable à tout moment par le collaborateur ou le manager.
+
 ### Bilan
 Bilan d'entretien réalisé par le responsable, composé d'une note et / ou d'un message.
 
@@ -198,6 +276,9 @@ Type de campagne (entretien professionnel, annuel...)
 
 ### Déroulé
 Cadre de la campagne fixant son responsable, les dates des différentes étapes et les responsables d'entretiens.
+
+### Étape
+Phase d'une campagne d'entretiens qui peut être préparation, entretien, validation et approbation.
 
 ### Formulaire
 Ensemble de questions, divisés ou non en section servant à réaliser l'entretien.
