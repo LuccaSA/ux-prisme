@@ -6,5 +6,5 @@ import { GroupPage } from '@prisme/common';
 export const contentPage = new GroupPage('content', 'Contenu', [
 	typographicRulesPage,
 	vocabularyPage,
-	voicePage,
+	// voicePage,
 ]);
