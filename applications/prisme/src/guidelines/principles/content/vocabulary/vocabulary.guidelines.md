@@ -1,59 +1,6 @@
 [//]: # (Please keep this Sheet updated: https://docs.google.com/spreadsheets/d/1xe5-ap56sFWLh1rU_ZjFeEinGKe25u90zN3qDwgpS4c/edit?usp=sharing)
 [//]: # (Please sort by apps & alphabetize definitions)
 
-# <div class="appLogo"></div> Vocabulaire général
-
-### Administrateur
-Personne ayant accès au paramétrage des applications.
-
-### Catégorie Socio-Professionnelle
-<div class="u-textLight u-textSmall"><b>CSP</b> : Utilisable partout</div>
-Nomenclature des professions (cadres, employés, etc.)
-
-### Collaborateur
-Personne travaillant pour l'entreprise.
-
-<div class="markdown-dualDisplay">
-<div class="markdown-block mod-positive">
-
-- collaborateur
-
-</div>
-<div class="markdown-block mod-negative">
-
-- utilisateur
-
-</div>
-</div>
-
-### Cycle de travail
-Détail des jours/heures travaillés et chômés d'une population.
-
-### Département
-Découpage organisationnel de l'entreprise.
-
-### Entité légale
-Découpage géographique ou organisationnel de l'entreprise disposant généralement de ses propres règles.
-
-### Manager
-Personne ayant au moins un collaborateur supervisé.
-
-### Population
-Groupe de collaborateurs correspondant à un ensemble de critères discriminants (LE, département, CSP, ...)
-<div class="markdown-dualDisplay">
-<div class="markdown-block mod-positive">
-
-- population
-
-</div>
-<div class="markdown-block mod-negative">
-
-- utilisateurs
-- collaborateurs sélectionnés
-
-</div>
-</div>
-
 # <div class="appLogo mod-figgo"></div> Figgo
 
 ### Acquisition
