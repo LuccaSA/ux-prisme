@@ -5,7 +5,7 @@ import { saveDataPage } from './save-data/save-data.page';
 import { goldenRulesPage } from './golden-rules';
 
 export const principlesPage = new MainGroupPage('principles', 'Principles',  [
-	saveDataPage,
+	// saveDataPage,
 	goldenRulesPage,
 	generalPage,
 	contentPage,
