@@ -22,5 +22,5 @@ export class RecievingDataExample {
 export class RecievingDataModalContent implements ILuModalContent {
 	title = 'titre';
 	message = 'hello from modal';
-	submitAction = () => of(this.message).pipe();
+	submitAction = () => this.message;
 }
