@@ -11,7 +11,7 @@ export class LinksFeature {
 	infos: IFeatureInfos = {
 		title: 'Liens',
 		packages: ['SCSS'],
-		description: "Les liens servent à changer de page ou à réaliser des actions secondaires.",
+		description: "Le lien sert à accéder un contenu hors de la page ou de l’application. Il peut être également utile pour afficher ou masquer du contenu ou pour traiter une action secondaire.",
 		examples: [
 			{
 				title: 'Basique',

@@ -15,7 +15,7 @@ export class CardsFeature {
 		title: 'Cartes',
 		packages: ['SCSS'],
 		guidelines: 'guidelines/components/layout/cards/cards.guidelines.md',
-		description: "Les cartes servent à regrouper des informations d'un même sujet. Elles suggèrent souvent l'accès à un contenu plus exhaustif.",
+		description: "Les cartes permettent de lister des éléments similaires qui n'ont pas ou peu besoin d'être comparés et qui bénéficient d'une composition intelligente des informations importantes remontées.",
 		examples: [
 			{
 				title: 'Basique',
