@@ -82,6 +82,10 @@ export class GroupPage extends APage implements IPage {
 			return -1;
 		} else if (b.path === 'guidelines') {
 			return 1;
+		} else if (a.path === 'identity-ressources') {
+			return 1;
+		} else if (b.path === 'identity-ressources') {
+			return -1;
 		}
 		return a.title.localeCompare(b.title);
 	}

@@ -1,4 +1,4 @@
-import { IRessourceAsset } from "../ressource.model";
+import { IRessourceAsset } from "../../ressource.model";
 
 export const luccaColorJpg72: IRessourceAsset = {
 	name: 'JPG 72 dpi - RVB',

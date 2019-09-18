@@ -19,4 +19,10 @@ export class HomeFooterComponent {
 		link: 'https://github.com/LuccaSA/lucca-front',
 		href: 'assets/github.png',
 	} as ITool;
+	ressources = {
+		title: `Besoin de notre logo ou d'illustrations ?`,
+		description: 'Retrouver nos illustrations ici',
+		link: '/identity/identity-ressources/logos',
+		href: 'assets/prismeressources.png',
+	} as ITool;
 }
