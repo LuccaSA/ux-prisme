@@ -6,6 +6,8 @@ import { PrinciplesRoutingModule } from './principles.router';
 import { MainModule } from '../main';
 import { ContentModule } from './content';
 import { SaveDataModule } from './save-data';
+import { GoldenRulesModule } from './golden-rules';
+
 
 @NgModule({
 	imports: [
@@ -16,6 +18,7 @@ import { SaveDataModule } from './save-data';
 		ContentModule,
 		MainModule,
 		SaveDataModule,
+		GoldenRulesModule,
 	]
 })
 export class PrinciplesModule { }

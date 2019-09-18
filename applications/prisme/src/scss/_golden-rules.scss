@@ -1,0 +1,25 @@
+.goldenRule {
+
+	padding: _theme("spacings.bigger");
+	&:nth-child(2n+1) {
+		background: _theme("commons.background.dark");
+	}
+
+	.goldenRule-content {
+		display: flex;
+		align-items: flex-start;
+		max-width: 1200px;
+	}
+
+	.goldenRule-content-text {
+		width: 40%;
+		max-width: 500px;
+		min-width: 400px;
+	}
+
+	img {
+		max-width: 600px;
+		max-height: 300px;
+		margin-left: 30px;
+	}
+}
