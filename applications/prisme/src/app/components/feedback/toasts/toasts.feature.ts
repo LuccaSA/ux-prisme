@@ -18,7 +18,7 @@ export class ToastsFeature {
 				description: `Les toasts servent à afficher une information ou un callback dans un coin de l'application.`,
 				component: BasicExampleComponent,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
-				extra: `Ce composant est destiné à rajoindre le package NG`
+				extra: `Ce composant est destiné à rejoindre le package NG`
 			},
 		],
 		theme: this.docApi.get('toasts')
