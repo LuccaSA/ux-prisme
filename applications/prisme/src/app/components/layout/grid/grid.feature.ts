@@ -33,23 +33,23 @@ export class GridFeature {
 				title: 'Largeur Auto',
 				description: 'Supprimez les valeurs numériques pour diviser les colonnes uniformément.',
 				component: AutoExampleComponent,
-				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
+				code: require('!!prismjs-loader?lang=markup!./auto/auto.example.html'),
 		},
 			{
 				title: 'Alignement horizontal',
 				component: HorizontalExampleComponent,
-				code: require('!!prismjs-loader?lang=markup!./offset/offset.example.html'),
+				code: require('!!prismjs-loader?lang=markup!./horizontal/horizontal.example.html'),
 			},
 			{
 				title: 'Alignement vertical',
 				component: VerticalExampleComponent,
-				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
+				code: require('!!prismjs-loader?lang=markup!./vertical/vertical.example.html'),
 			},
 			{
 				title: 'Réorganisation',
 				description: 'Vous pouvez réorganiser les blocs d\'une grille grâce aux utilitaires. Cela permet de de changer l\'ordre des blocs en fonction de la résolution.',
 				component: ReorganisationExampleComponent,
-				code: require('!!prismjs-loader?lang=markup!./offset/offset.example.html'),
+				code: require('!!prismjs-loader?lang=markup!./reorganisation/reorganisation.example.html'),
 			},
 		],
 		theme: this.docApi.get('grids')

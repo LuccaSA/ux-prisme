@@ -18,11 +18,13 @@ export class TooltipsFeature {
 				title: 'Basique',
 				component: BasicExample,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./basic/basic.example.ts'),
 			},
 			{
 				title: 'Désactivé',
 				component: DisabledExample,
 				code: require('!!prismjs-loader?lang=markup!./disabled/disabled.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./disabled/disabled.example.ts'),
 			},
 			{
 				title: 'Contenu HTML',
@@ -34,6 +36,7 @@ export class TooltipsFeature {
 				title: 'Position',
 				component: PositionExample,
 				code: require('!!prismjs-loader?lang=markup!./position/position.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./position/position.example.ts'),
 			},
 		],
 		packages: [

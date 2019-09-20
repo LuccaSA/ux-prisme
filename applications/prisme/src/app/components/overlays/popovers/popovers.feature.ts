@@ -17,16 +17,19 @@ export class PopoversFeature {
 				title: 'Basique',
 				component: BasicExample,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./basic/basic.example.ts'),
 			},
 			{
 				title: 'Déclencheur',
 				component: TriggerExample,
 				code: require('!!prismjs-loader?lang=markup!./trigger/trigger.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./trigger/trigger.example.ts'),
 			},
 			{
 				title: 'Position',
 				component: PositionExample,
 				code: require('!!prismjs-loader?lang=markup!./position/position.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./position/position.example.ts'),
 			},
 		],
 		packages: [

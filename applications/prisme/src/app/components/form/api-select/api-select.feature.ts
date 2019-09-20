@@ -25,11 +25,14 @@ export class ApiSelectFeature {
 				// <br>Le composant <code class="code">lu-api-select</code> supporte l'attribut <code class="code">multiple</code>.
 				// `,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./basic/basic.example.ts'),
 			},
 			{
 				title: 'Multiple',
 				component: MultipleExample,
 				code: require('!!prismjs-loader?lang=markup!./multiple/multiple.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./multiple/multiple.example.ts'),
+
 			},
 		],
 		packages: [

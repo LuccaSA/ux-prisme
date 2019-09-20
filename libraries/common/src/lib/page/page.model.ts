@@ -74,10 +74,18 @@ export class GroupPage extends APage implements IPage {
 	}
 
 	private customLocaleCompare(a: IPage, b: IPage): any {
-		if (a.path === 'guidelines') {
+		if (a.path === 'general') {
+			return -1;
+		} else if (b.path === 'general') {
+			return 1;
+		} else if (a.path === 'guidelines') {
 			return -1;
 		} else if (b.path === 'guidelines') {
 			return 1;
+		} else if (a.path === 'identity-ressources') {
+			return 1;
+		} else if (b.path === 'identity-ressources') {
+			return -1;
 		}
 		return a.title.localeCompare(b.title);
 	}

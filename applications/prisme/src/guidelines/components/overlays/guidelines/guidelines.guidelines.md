@@ -10,11 +10,11 @@ Les popovers sont des blocs contextualisés. Ils peuvent appairaitre et disparai
 
 ## Popup 🔨
 
-Le popup permet d’afficher un bloc de contenu, tout en grisant le fond afin de capter l’attention de l’utilisateur. C’est un composant basique sur lequel se base le **dialog** et le **side panel**.
+Le popup permet d’afficher un bloc de contenu, tout en grisant le fond afin de capter l’attention de l’utilisateur. C’est un composant basique sur lequel se base la **modale** et le **side panel**.
 
-## [Dialogues](/components/overlays/dialogs)
+## [Modales](/components/overlays/modals)
 
-Basé sur le popup, le dialog permet de placer un bloc au centre de la page. Il se compose d’un header, d’une zone de contenu principale, pouvant recevoir des interactions avancées, et d’un footer, pour y placer des actions. Le dialog est utilisé pour la consultation détaillée d'un contenu.
+Basé sur le popup, la modale permet de placer un bloc au centre de la page. Il se compose d’un header, d’une zone de contenu principale, pouvant recevoir des interactions avancées, et d’un footer, pour y placer des actions. La modale est utilisée pour la consultation détaillée d'un contenu.
 
 ## Sidepanel 🔨
 
