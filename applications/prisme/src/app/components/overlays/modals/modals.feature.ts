@@ -3,6 +3,7 @@ import { IFeatureInfos } from '@prisme/common';
 import { BasicExample } from './basic/basic.example';
 import { SendingDataExample } from './sending-data/sending-data.example';
 import { RecievingDataExample } from './recieving-data/recieving-data.example';
+import { AsyncSubmitExample } from './async-submit/async-submit.example';
 declare var require: any;
 const extra = `un guide d'utilisation des modales est disponible sur le <a href="https://github.com/LuccaSA/lucca-front/wiki/Popup---modals---sidepanels">wiki de lucca-front</a>`;
 @Component({
@@ -33,6 +34,13 @@ export class ModalsFeature {
 				component: RecievingDataExample,
 				code: require('!!prismjs-loader?lang=markup!./recieving-data/recieving-data.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./recieving-data/recieving-data.example.ts'),
+				extra: extra,
+			},
+			{
+				title: 'Submission asynchrone',
+				component: AsyncSubmitExample,
+				code: require('!!prismjs-loader?lang=markup!./async-submit/async-submit.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./async-submit/async-submit.example.ts'),
 				extra: extra,
 			},
 		],

@@ -6,6 +6,7 @@ import { LuOverlayModule } from '@lucca-front/ng';
 import { SendingDataExample, SendingDataModalContent } from './sending-data/sending-data.example';
 import { FormsModule } from '@angular/forms';
 import { RecievingDataExample, RecievingDataModalContent } from './recieving-data/recieving-data.example';
+import { AsyncSubmitExample, AsyncSubmitModalContent } from './async-submit/async-submit.example';
 
 @NgModule({
 	imports: [
@@ -21,6 +22,8 @@ import { RecievingDataExample, RecievingDataModalContent } from './recieving-dat
 		SendingDataModalContent,
 		RecievingDataExample,
 		RecievingDataModalContent,
+		AsyncSubmitExample,
+		AsyncSubmitModalContent,
 	],
 	entryComponents: [
 		BasicExample,
@@ -29,6 +32,8 @@ import { RecievingDataExample, RecievingDataModalContent } from './recieving-dat
 		SendingDataModalContent,
 		RecievingDataExample,
 		RecievingDataModalContent,
+		AsyncSubmitExample,
+		AsyncSubmitModalContent,
 	]
 })
 export class ModalsModule {}
