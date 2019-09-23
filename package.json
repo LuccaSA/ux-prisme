@@ -61,7 +61,7 @@
     "@types/jasmine": "^3.3.13",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "^12.7.5",
-    "codelyzer": "^5.1.0",
+    "codelyzer": "^5.1.1",
     "copyfiles": "^2.0.0",
     "dotenv": "^8.1.0",
     "glob": "^7.1.2",
