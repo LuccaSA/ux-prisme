@@ -2,4 +2,7 @@
 
 /schematics/	@LuccaSA/ux-admins
 /libraries/		@LuccaSA/ux-admins
+
+# only admins review dependencies update
 package.json	@LuccaSA/ux-admins
+package-lock.json	@LuccaSA/ux-admins
