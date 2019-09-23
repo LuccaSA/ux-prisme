@@ -1,4 +1,5 @@
 *	@LuccaSA/ux-devs
 
 /schematics/	@LuccaSA/ux-admins
-/libraries/	@LuccaSA/ux-admins
+/libraries/		@LuccaSA/ux-admins
+package.json	@LuccaSA/ux-admins
