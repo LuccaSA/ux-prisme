@@ -1,0 +1,7 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+	<formly-form [model]="model" [fields]="fields" [form]="form"></formly-form><br />
+	<button type="submit" class="button" [class.is-disabled]="form.invalid">submit</button>
+</form>
+<p>
+	submitted model: {{ submittedModel | json}}
+</p>
