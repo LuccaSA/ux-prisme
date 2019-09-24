@@ -5,6 +5,9 @@ import { BasicExample } from './basic/basic.example';
 import { FormlyModule as NgxFormlyModule } from '@ngx-formly/core';
 import { LuFormlyModule } from '@lucca-front/ng/formly';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SupportedExample } from './supported/supported.example';
+import { RedirectModule } from '../../../redirect';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
 	imports: [
@@ -12,11 +15,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 		NgxFormlyModule.forRoot(),
 		LuFormlyModule,
 		ReactiveFormsModule,
+		RedirectModule,
+		MatNativeDateModule,
 	],
 	declarations: [
 	FormlyFeature,
-	BasicExample],
+	BasicExample,
+	SupportedExample],
 	entryComponents: [
-	BasicExample]
+	BasicExample,
+	SupportedExample]
 })
 export class FormlyModule {}

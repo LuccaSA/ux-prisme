@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IFeatureInfos, DocumentationService } from '@prisme/common';
 import { BasicExample } from './basic/basic.example';
+import { SupportedExample } from './supported/supported.example';
 declare var require: any;
 @Component({
 	selector: 'pri-formly',
@@ -11,10 +12,17 @@ export class FormlyFeature {
 		title: 'Formly',
 		examples: [
 			{
-				title: 'basic',
+				title: 'basique',
 				component: BasicExample,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
 				tsCode: require('!!prismjs-loader?lang=typescript!./basic/basic.example.ts')
+			},
+			{
+				title: 'supported',
+				component: SupportedExample,
+				code: require('!!prismjs-loader?lang=markup!./supported/supported.example.html'),
+				tsCode: require('!!prismjs-loader?lang=typescript!./supported/supported.example.ts'),
+				description: `Ensemble des types d'inputs offerts par le module LuFormlyModule`
 			},
 		],
 		packages: [
