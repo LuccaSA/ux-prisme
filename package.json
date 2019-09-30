@@ -53,7 +53,7 @@
     "@angular-devkit/core": "^8.3.6",
     "@angular-devkit/schematics": "^8.3.6",
     "@angular-devkit/schematics-cli": "^0.803.6",
-    "@angular/cli": "^8.3.5",
+    "@angular/cli": "^8.3.6",
     "@angular/compiler-cli": "^8.2.7",
     "@angular/language-service": "^8.2.8",
     "@lucca/schematics": "0.0.3",
