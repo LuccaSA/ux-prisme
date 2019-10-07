@@ -59,7 +59,7 @@
     "@lucca/schematics": "0.0.3",
     "@lucca/tslint": "0.0.3",
     "@types/jasmine": "^3.4.2",
-    "@types/jasminewd2": "~2.0.7",
+    "@types/jasminewd2": "~2.0.8",
     "@types/node": "^12.7.11",
     "codelyzer": "^5.1.2",
     "copyfiles": "^2.0.0",
