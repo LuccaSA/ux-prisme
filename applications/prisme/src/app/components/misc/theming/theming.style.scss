@@ -1,0 +1,8 @@
+@import "~@lucca-front/scss/src/theming.overridable";
+.feature-content {
+	padding: _theme("spacings.bigger") _theme("spacings.bigger");
+}
+
+.textfield {
+	margin-bottom: _theme("spacings.small");
+}
