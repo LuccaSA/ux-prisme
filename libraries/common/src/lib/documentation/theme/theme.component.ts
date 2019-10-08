@@ -49,6 +49,11 @@ export class ThemeDocumentationComponent implements OnInit {
 		} else if (property.value.includes('_theme')) {
 			return this.processThemeValue(property);
 		}
+
+		if (this.isPropertyValueColor(property.value)) {
+			property.propertyType = ThemeDocumentationType.COLOR;
+		}
+
 		return property;
 	}
 
@@ -62,7 +67,7 @@ export class ThemeDocumentationComponent implements OnInit {
 				name: property.name,
 				value: property.value,
 				realValue: realValue,
-				propertyType: ThemeDocumentationType.VAR
+				propertyType: this.isPropertyValueColor(realValue) ? ThemeDocumentationType.COLOR : ThemeDocumentationType.VAR
 			};
 		}
 		return property;
@@ -107,6 +112,10 @@ export class ThemeDocumentationComponent implements OnInit {
 			}
 		}
 		return node.value;
+	}
+
+	private isPropertyValueColor(value: string): boolean {
+		return value.startsWith('#') && value.length < 8;
 	}
 
 }
