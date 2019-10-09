@@ -33,7 +33,7 @@ export class ThemeDocumentationComponent implements OnInit {
 			} else {
 				p = this.processValue(p);
 				result.push({
-					name: `${parentName !== '' ? parentName + '.' : ''}${prop.name}.${p.name}`,
+					name: `${parentName !== '' ? parentName + ' > ' : ''}${prop.name} > ${p.name}`,
 					value: p.value,
 					realValue: p.realValue,
 					propertyType: p.propertyType

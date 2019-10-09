@@ -1,12 +1,16 @@
 <pri-feature-header [infos]="infos">
 	<ng-content></ng-content>
 </pri-feature-header>
-<section class="feature-content">
+<section class="page-content">
 	<div class="grid">
 		<div class="grid-xxl8">
+			<section id="guidelines" class="contentSection u-animatedFadeIn">
+				<h1>Fonctionnement</h1>
+				<markdown [priMarkdownSrc]="infos.guidelines"></markdown>
+			</section>
 			<section id="theme" class="contentSection u-animatedFadeIn">
-				<h1>Thème</h1>
-				<div class="textfield">
+				<h1>Parcourir les thèmes</h1>
+				<div class="textfield mod-noLabel">
 					<lu-select [(ngModel)]="selectedTheme" class="textfield-input">
 						<span *luDisplayer="let theme">{{theme.name}}</span>
 						<lu-option-picker-advanced>
@@ -16,7 +20,6 @@
 							<lu-option *luForOptions="let theme; trackBy: trackBy" [value]="theme">{{theme.name}}</lu-option>
 						</lu-option-picker-advanced>
 					</lu-select>
-					<label for="" class="textfield-label">Sélectionner un thème</label>
 				</div>
 				<pri-theme *ngIf="selectedTheme" [documentation]="selectedTheme"></pri-theme>
 			</section>
