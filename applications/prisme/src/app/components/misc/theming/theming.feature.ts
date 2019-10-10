@@ -11,7 +11,7 @@ export class ThemingFeature {
 	themesList = this.themeService.all().sort(( a, b ) => a.name < b.name ? -1 : 1);
 	infos: IFeatureInfos = {
 		title: 'Theming',
-		description: "Les tableaux de thème rassemblent toutes les valeurs modifiables par défaut dans vos solutions. Il est toujours possible d'en créer d'en rajouter pour vos propres besoins",
+		description: "Les tableaux de thème rassemblent toutes les valeurs modifiables par défaut dans vos solutions. Il est toujours possible d'en rajouter pour vos propres besoins",
 		guidelines: 'guidelines/components/misc/theming/theming.guidelines.md',
 		examples: [
 		],

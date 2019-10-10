@@ -9,9 +9,9 @@ Lucca-front va chercher 6 fichiers de theming distincts :
 - `palettes.override.scss`
 - `sizes.override.scss`
 
-Ces fichiers existent par défaut dans le dossier `src/overrides` du package `SCSS`. Pour pouvoir les référencer et les overrider avec les votres il vous faut donc ajouter les bons chemins dans votre fichier `angular.json`
+Ces fichiers existent par défaut dans le dossier `src/overrides` du package `SCSS`. Pour pouvoir les référencer et les overrider avec les votres, il vous faut donc ajouter les bons chemins dans votre fichier `angular.json`
 
-```is-code
+```mod-code
 ...
 "architect": {
 	"build": {
@@ -31,7 +31,7 @@ Ces fichiers existent par défaut dans le dossier `src/overrides` du package `SC
 
 Lucca-Front s'appuie sur des maps pour gérer les variables de thèmes. La syntaxe pour créer un nouveau set de variables est la suivante :
 
-```is-code
+```mod-code
 $nomdemap: (
     clé-1: valeur,
     sousmap-1: (
