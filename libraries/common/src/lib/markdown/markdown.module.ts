@@ -1,5 +1,4 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-import { AssetModule } from '../asset/index';
 import { MarkdownModule as NgxMarkdownModule, MarkedOptions as NgxMarkedOptions } from 'ngx-markdown';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MarkedOptions } from './markdown.options';
@@ -23,7 +22,6 @@ export class MarkdownRootModule {}
 @NgModule({
 	imports: [
 		NgxMarkdownModule,
-		AssetModule,
 	],
 	exports: [
 		NgxMarkdownModule,
