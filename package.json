@@ -38,7 +38,7 @@
     "@lucca-front/icons": "^3.1.2",
     "@lucca-front/ng": "^3.1.2",
     "@lucca-front/scss": "^3.1.2",
-    "@ngx-formly/core": "^5.4.3",
+    "@ngx-formly/core": "^5.5.0",
     "core-js": "^2.5.7",
     "marked": "^0.7.0",
     "moment": "^2.23.0",
