@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SupportedExample } from './supported/supported.example';
 import { RedirectModule } from '../../../redirect';
 import { MatNativeDateModule } from '@angular/material/core';
+import { FramedExample } from './framed/framed.example';
 
 @NgModule({
 	imports: [
@@ -21,9 +22,11 @@ import { MatNativeDateModule } from '@angular/material/core';
 	declarations: [
 	FormlyFeature,
 	BasicExample,
-	SupportedExample],
+	SupportedExample,
+	FramedExample],
 	entryComponents: [
 	BasicExample,
-	SupportedExample]
+	SupportedExample,
+	FramedExample]
 })
 export class FormlyModule {}

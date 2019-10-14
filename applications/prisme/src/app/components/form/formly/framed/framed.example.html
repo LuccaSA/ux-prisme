@@ -1,4 +1,4 @@
-<form [formGroup]="form" (ngSubmit)="submit()">
+<form [formGroup]="form" class="form mod-framed" (ngSubmit)="submit()">
 	<formly-form [model]="model" [fields]="fields" [form]="form"></formly-form>
 	<button type="submit" class="button" [class.is-disabled]="form.invalid">submit</button>
 </form>
