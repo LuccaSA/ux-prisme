@@ -11,6 +11,7 @@ import { SelectModule } from './select';
 import { ApiSelectModule } from './api-select';
 import { FormGuidelinesModule } from './guidelines';
 import { DepartmentSelectModule } from './department-select';
+import { FormlyModule } from './formly';
 
 @NgModule({
 	imports: [
@@ -26,6 +27,7 @@ import { DepartmentSelectModule } from './department-select';
 		ApiSelectModule,
 		FormGuidelinesModule,
 		DepartmentSelectModule,
+		FormlyModule,
 	],
 })
 export class FormModule { }
