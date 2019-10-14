@@ -1,3 +1,4 @@
+export * from './feedback/error-page/index';
 export * from './misc/theming/index';
 export * from './layout/filters/index';
 export * from './layout/header/index';
