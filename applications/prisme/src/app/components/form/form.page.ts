@@ -10,11 +10,13 @@ import { selectPage } from './select/select.page';
 import { apiSelectPage } from './api-select/api-select.page';
 import { formGuidelinesPage } from './guidelines/guidelines.page';
 import { departmentSelectPage } from './department-select/department-select.page';
+import { formlyPage } from './formly/formly.page';
 
 export const formPage = new GroupPage(
 	'form',
 	'Formulaires',
 	[
+	formlyPage,
 	departmentSelectPage,
 	formGuidelinesPage,
 	apiSelectPage,
