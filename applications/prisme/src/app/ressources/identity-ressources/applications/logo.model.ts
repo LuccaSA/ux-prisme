@@ -1,7 +1,7 @@
-import { IAsset } from '@prisme/common';
 import { IRessourceAsset } from '../../ressource.model';
 
-export interface ILogo extends IAsset {
+export interface ILogo {
+	href: string;
 	name: string;
 }
 export const luccaLogo = { name: 'lucca', href: 'assets/logos/favicons/lucca-32x32.png' };

@@ -61,6 +61,6 @@ export class AssetsFeature {
 	];
 
 	getFileIcon(type: string) {
-		return `assets/file-icons/${type}.png`;
+		return `/assets/file-icons/${type}.png`;
 	}
 }
