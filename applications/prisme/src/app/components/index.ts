@@ -1,3 +1,4 @@
+export * from './misc/theming/index';
 export * from './layout/filters/index';
 export * from './layout/header/index';
 export * from './overlays/guidelines/index';

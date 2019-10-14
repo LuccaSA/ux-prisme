@@ -20,3 +20,13 @@
 		min-width: 200px;
 	}
 }
+
+.color-dot {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .25rem;
+	border-radius: 1rem;
+	border: 1px solid _theme("commons.divider.color");
+	vertical-align: text-bottom;
+}

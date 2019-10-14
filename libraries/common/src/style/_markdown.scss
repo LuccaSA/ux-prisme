@@ -52,6 +52,10 @@
 	margin-bottom: _theme("spacings.smaller");
 	margin-left: _theme("spacings.small");
 
+	&.mod-code {
+		white-space: pre;
+	}
+
 	&:first-child {
 		margin-left: 0;
 	}
