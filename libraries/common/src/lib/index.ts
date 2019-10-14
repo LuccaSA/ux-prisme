@@ -1,4 +1,3 @@
-export * from './asset/index';
 export * from './documentation/index';
 export * from './environment/index';
 export * from './feature/index';

@@ -8,16 +8,28 @@
 	<tbody class="table-body">
 		<tr class="table-body-row" *ngFor="let prop of flatTheme">
 			<td class="table-body-row-cell u-nowrap">{{prop.name}}</td>
-			<td class="table-body-row-cell" *ngIf="!prop.realValue else withRealValue">{{prop.value}}</td>
+			<ng-container *ngIf="!prop.realValue else withRealValue">
+				<td class="table-body-row-cell">
+					<ng-container *ngIf="prop.propertyType === type.COLOR; then colorVar; else otherVar"></ng-container>
+				</td>
+				<ng-template #colorVar>
+					<span class="color-dot" [ngStyle]="{'background-color': prop.value}"></span>{{prop.value}}
+				</ng-template>
+				<ng-template #otherVar>{{prop.value}}</ng-template>
+			</ng-container>
 			<ng-template #withRealValue>
-				<td class="table-body-row-cell" *ngIf="prop.propertyType === type.COLOR else simpleVar">
-					<span class="label palette-secondary">{{prop.value}}</span> {{prop.realValue}}
+				<td class="table-body-row-cell">
+					<span [luTooltip]="prop.realValue">
+						<ng-container *ngIf="prop.propertyType === type.COLOR; then colorThemeVar; else simpleThemeVar"></ng-container>
+					</span>
 				</td>
 			</ng-template>
-			<ng-template #simpleVar>
-				<td class="table-body-row-cell">
-					<span class="label">{{prop.value}}</span> {{prop.realValue}}
-				</td>
+			<ng-template #colorThemeVar>
+				<span class="color-dot" [ngStyle]="{'background-color': prop.realValue}"></span>
+				<span class="label">{{prop.value}}</span>
+			</ng-template>
+			<ng-template #simpleThemeVar>
+				<span class="label">{{prop.value}}</span>
 			</ng-template>
 		</tr>
 	</tbody>

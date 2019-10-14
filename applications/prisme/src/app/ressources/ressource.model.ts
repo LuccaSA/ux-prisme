@@ -1,6 +1,5 @@
-import { IAsset } from '@prisme/common';
-
-export interface IRessourceAsset extends IAsset {
+export interface IRessourceAsset {
+	href: string;
 	name: string;
 	type: string;
 	usage?: string;

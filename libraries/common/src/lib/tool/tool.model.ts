@@ -1,6 +1,5 @@
-import { IAsset } from '../asset/index';
-
-export interface ITool extends IAsset {
+export interface ITool {
+	href: string;
 	title: string;
 	link: string;
 	description: string;
