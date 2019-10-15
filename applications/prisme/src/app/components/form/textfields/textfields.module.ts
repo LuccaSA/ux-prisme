@@ -8,11 +8,11 @@ import { MessagesExampleComponent } from './messages/messages.example';
 import { ValidationExampleComponent } from './validation/validation.example';
 import { SuffixExampleComponent } from './suffix/suffix.example';
 import { StatusExampleComponent } from './status/status.example';
-import { PalettesExampleComponent } from './palettes/palettes.example';
 import { RadioExampleComponent } from './radio/radio.example';
 import { TextareaExampleComponent } from './textarea/textarea.example';
 import { InvertedExample } from './inverted/inverted.example';
 import { ClearExample } from './clear/clear.example';
+import { FilterExample } from './filter/filter.example';
 
 @NgModule({
 	imports: [CommonModule],
@@ -25,11 +25,11 @@ import { ClearExample } from './clear/clear.example';
 		ValidationExampleComponent,
 		SuffixExampleComponent,
 		StatusExampleComponent,
-		PalettesExampleComponent,
 		RadioExampleComponent,
 		TextareaExampleComponent,
 		InvertedExample,
 		ClearExample,
+		FilterExample,
 	],
 	entryComponents: [
 		BasicExampleComponent,
@@ -39,11 +39,11 @@ import { ClearExample } from './clear/clear.example';
 		ValidationExampleComponent,
 		SuffixExampleComponent,
 		StatusExampleComponent,
-		PalettesExampleComponent,
 		RadioExampleComponent,
 		TextareaExampleComponent,
 		InvertedExample,
 		ClearExample,
+		FilterExample,
 	]
 })
 export class TextfieldsModule { }

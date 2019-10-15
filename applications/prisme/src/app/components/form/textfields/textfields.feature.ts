@@ -9,9 +9,9 @@ import { MessagesExampleComponent } from './messages/messages.example';
 import { ValidationExampleComponent } from './validation/validation.example';
 import { RadioExampleComponent } from './radio/radio.example';
 import { TextareaExampleComponent } from './textarea/textarea.example';
-import { PalettesExampleComponent } from './palettes/palettes.example';
 import { InvertedExample } from './inverted/inverted.example';
 import { ClearExample } from './clear/clear.example';
+import { FilterExample } from './filter/filter.example';
 
 declare var require: any;
 
@@ -98,16 +98,6 @@ export class TextfieldsFeature {
 				mod: 'white',
 			},
 			{
-				title: 'Palettes',
-				component: PalettesExampleComponent,
-				code: require('!!prismjs-loader?lang=markup!./palettes/palettes.example.html'),
-				mod: 'white',
-				extra: `
-				Les couleurs de votre palette sont éditables via votre
-				<a href="https://github.com/LuccaSA/lucca-front/#palettes" target="_blank">thème</a>
-				`
-			},
-			{
 				title: 'Inversé',
 				component: InvertedExample,
 				code: require('!!prismjs-loader?lang=markup!./inverted/inverted.example.html'),
@@ -117,6 +107,11 @@ export class TextfieldsFeature {
 				title: 'Effaçable',
 				component: ClearExample,
 				code: require('!!prismjs-loader?lang=markup!./clear/clear.example.html'),
+			},
+			{
+				title: 'Filtres',
+				component: FilterExample,
+				code: require('!!prismjs-loader?lang=markup!./filter/filter.example.html'),
 			},
 		],
 		theme: this.docApi.get('textfield')
