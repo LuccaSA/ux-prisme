@@ -6,6 +6,7 @@ import { PalettesExampleComponent } from './palettes/palettes.example';
 import { StatusExampleComponent } from './status/status.example';
 import { GroupsExampleComponent } from './groups/groups.example';
 import { SizesExampleComponent } from './sizes/sizes.example';
+import { MoreActionsExample } from './more-actions/more-actions.example';
 @NgModule({
 	imports: [ CommonModule ],
 	declarations: [
@@ -14,14 +15,16 @@ import { SizesExampleComponent } from './sizes/sizes.example';
 		PalettesExampleComponent,
 		StatusExampleComponent,
 		GroupsExampleComponent,
-		SizesExampleComponent
+		SizesExampleComponent,
+		MoreActionsExample
 	],
 	entryComponents: [
 		BasicExampleComponent,
 		PalettesExampleComponent,
 		StatusExampleComponent,
 		GroupsExampleComponent,
-		SizesExampleComponent
+		SizesExampleComponent,
+		MoreActionsExample
 	]
 })
 export class ButtonsModule {}

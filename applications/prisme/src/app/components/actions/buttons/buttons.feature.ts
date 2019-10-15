@@ -5,6 +5,7 @@ import { PalettesExampleComponent } from './palettes/palettes.example';
 import { StatusExampleComponent } from './status/status.example';
 import { GroupsExampleComponent } from './groups/groups.example';
 import { SizesExampleComponent } from './sizes/sizes.example';
+import { MoreActionsExample } from './more-actions/more-actions.example';
 declare var require: any;
 
 @Component({
@@ -50,6 +51,11 @@ export class ButtonsFeature {
 				component: GroupsExampleComponent,
 				code: require('!!prismjs-loader?lang=markup!./groups/groups.example.html'),
 				mod: 'white'
+			},
+			{
+				title: 'Actions secondaires',
+				component: MoreActionsExample,
+				code: require('!!prismjs-loader?lang=markup!./more-actions/more-actions.example.html'),
 			},
 		],
 		theme: this.themeService.get('button')
