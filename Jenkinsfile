@@ -104,24 +104,21 @@ node {
 			stage('Publish') {
 				parallel(
 					prisme: {
-						stage('publish') {
-							bat "npm run build -- --outputPath .\\${publishDirectoryName}"
-						}
+						bat "npm run build -- --outputPath .\\${publishDirectoryName}"
 					},
 					failFast: true,
 				)
 			}
 			stage('Deploy') {
 				parallel(
-					rc: {
-						// continuous deploy of branch rc
+					prisme: {
+						// continuous deploy of branch rc and master
 						if (isRc) {
+							echo "deploying prisme-rc"
 							bat "npx cpx ${publishDirectoryName}\\** \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme-rc"
 						}
-					},
-					master: {
-						// continuous deploy of branch master
 						if (isMaster) {
+							echo "deploying prisme"
 							bat "npx cpx ${publishDirectoryName}\\** \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme"
 						}
 					},
