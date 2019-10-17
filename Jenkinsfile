@@ -113,10 +113,27 @@ node {
 			}
 			stage('Archive') {
 				parallel(
-					front: {
+					prisme: {
 						zip archive:true, dir: "${publishDirectoryName}\\", glob: '**/*', zipFile: ".jenkins/zips/${projectTechnicalName}.zip"
 					},
 					failFast: true,
+				)
+			}
+			stage('Deploy') {
+				parallel(
+					rc: {
+						// continuous deploy of branch rc
+						if (isRc) {
+							// @gmouron
+							// deployer le contenu du zip dans le dossier
+							// C:\d\sites\prisme-rc
+							// sur le server labs2.lucca.local
+							// pas besoin de sous-dossier, faut que le dossier /prisme-rc contienne la derniere version buildee de la branche rc
+							// si tu veux pas passer par le zip tu peux directement deployer le contenu du dosser .\\${publishDirectoryName}
+							// tu peux faire un cleanup avant si tu veux, c'est pas necessaire dans un premier temps mais a un momne tfaudra le faire
+						}
+					},
+					failFast: true
 				)
 			}
 		}
