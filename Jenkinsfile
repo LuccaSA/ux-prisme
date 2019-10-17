@@ -124,7 +124,7 @@ node {
 					rc: {
 						// continuous deploy of branch rc
 						if (isRc) {
-							bat "npx cpx ${publishDirectoryName} \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme-rc"
+							bat "npx cpx ${publishDirectoryName}\\** \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme-rc"
 						}
 					},
 					failFast: true
