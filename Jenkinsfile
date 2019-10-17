@@ -18,7 +18,7 @@ node {
 	if(env.BRANCH_NAME == "master") {
 		isMaster = true
 	}
-	if(env.BRANCH_NAME == "rc") {
+	if(env.BRANCH_NAME == "feat/auto.deploy.rc") {
 		isRc = true
 	}
 	if(env.BRANCH_NAME ==~ /^PR-\d*/) {
