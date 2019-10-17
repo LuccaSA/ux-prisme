@@ -119,6 +119,12 @@ node {
 							bat "npx cpx ${publishDirectoryName}\\** \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme-rc"
 						}
 					},
+					master: {
+						// continuous deploy of branch master
+						if (isMater) {
+							bat "npx cpx ${publishDirectoryName}\\** \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme"
+						}
+					},
 					failFast: true
 				)
 			}
