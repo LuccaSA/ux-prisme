@@ -111,12 +111,15 @@ node {
 					failFast: true,
 				)
 			}
-			stage('Archive') {
+			stage('Deploy') {
 				parallel(
-					front: {
-						zip archive:true, dir: "${publishDirectoryName}\\", glob: '**/*', zipFile: ".jenkins/zips/${projectTechnicalName}.zip"
+					rc: {
+						// continuous deploy of branch rc
+						if (isRc) {
+							bat "npx cpx ${publishDirectoryName}\\** \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme-rc"
+						}
 					},
-					failFast: true,
+					failFast: true
 				)
 			}
 		}
@@ -134,13 +137,13 @@ node {
 			color = "danger"
 			endMessage = "Erreur"
 		}
-		stage('Notify') {
-			parallel(
-				github: {
+		// stage('Notify') {
+		// 	parallel(
+		// 		github: {
 
-				},
-				failFast: true,
-			)
-		}
+		// 		},
+		// 		failFast: true,
+		// 	)
+		// }
 	}
 }
