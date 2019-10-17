@@ -5,21 +5,12 @@ properties([
 ])
 
 node {
-	/////////////////////////////////////////////////
-	// Variables à ajuster pour le projet          //
-	/////////////////////////////////////////////////
 
-	// Utilisé à différents endroits (pour générer des noms de dossier par exemple)
-	// Ne pas mettre d'espaces ou de caractères bizarres
-	def slackChannel = "#build-organization"
 	def projectTechnicalName = 'ux-prisme'
 	def repoName = "ux-prisme"
-
-	/////////////////////////////////////////////////
-	// Fin des variables à ajuster pour le projet //
-	/////////////////////////////////////////////////
 	def publishDirectoryName = "${projectTechnicalName}-publish"
 
+	
 	def isPr = false
 	def isMaster = false
 	def isRc = false
