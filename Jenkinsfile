@@ -5,21 +5,12 @@ properties([
 ])
 
 node {
-	/////////////////////////////////////////////////
-	// Variables à ajuster pour le projet          //
-	/////////////////////////////////////////////////
 
-	// Utilisé à différents endroits (pour générer des noms de dossier par exemple)
-	// Ne pas mettre d'espaces ou de caractères bizarres
-	def slackChannel = "#build-organization"
 	def projectTechnicalName = 'ux-prisme'
 	def repoName = "ux-prisme"
-
-	/////////////////////////////////////////////////
-	// Fin des variables à ajuster pour le projet //
-	/////////////////////////////////////////////////
 	def publishDirectoryName = "${projectTechnicalName}-publish"
 
+	
 	def isPr = false
 	def isMaster = false
 	def isRc = false
@@ -66,7 +57,6 @@ node {
 							}
 						}
 					},
-					},
 					failFast: true,
 				)
 			}
@@ -88,7 +78,7 @@ node {
 			}
 			stage('Restore') {
 				parallel (
-					front: {
+					prisme: {
 						bat "npm ci"
 					},
 					failFast: true,
@@ -96,7 +86,7 @@ node {
 			}
 			stage('Qualif') {
 				parallel (
-					front: {
+					prisme: {
 						// stage('build') {
 						// 	bat "npm run ..."
 						// }
@@ -112,9 +102,9 @@ node {
 			}
 			stage('Publish') {
 				parallel(
-					front: {
+					prisme: {
 						stage('publish') {
-							bat "npm run build -- --outputPath ..\\${publishDirectoryName}\\front"
+							bat "npm run build -- --outputPath .\\${publishDirectoryName}"
 						}
 					},
 					failFast: true,
@@ -123,7 +113,7 @@ node {
 			stage('Archive') {
 				parallel(
 					front: {
-						zip archive:true, dir: "${publishDirectoryName}\\front\\", glob: '**/*', zipFile: ".jenkins/zips/${projectTechnicalName}.zip"
+						zip archive:true, dir: "${publishDirectoryName}\\", glob: '**/*', zipFile: ".jenkins/zips/${projectTechnicalName}.zip"
 					},
 					failFast: true,
 				)
