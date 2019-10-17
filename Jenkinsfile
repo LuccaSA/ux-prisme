@@ -78,7 +78,7 @@ node {
 			}
 			stage('Restore') {
 				parallel (
-					front: {
+					prisme: {
 						bat "npm ci"
 					},
 					failFast: true,
@@ -86,7 +86,7 @@ node {
 			}
 			stage('Qualif') {
 				parallel (
-					front: {
+					prisme: {
 						// stage('build') {
 						// 	bat "npm run ..."
 						// }
@@ -102,9 +102,9 @@ node {
 			}
 			stage('Publish') {
 				parallel(
-					front: {
+					prisme: {
 						stage('publish') {
-							bat "npm run build -- --outputPath ..\\${publishDirectoryName}\\front"
+							bat "npm run build -- --outputPath .\\${publishDirectoryName}"
 						}
 					},
 					failFast: true,
@@ -113,7 +113,7 @@ node {
 			stage('Archive') {
 				parallel(
 					front: {
-						zip archive:true, dir: "${publishDirectoryName}\\front\\", glob: '**/*', zipFile: ".jenkins/zips/${projectTechnicalName}.zip"
+						zip archive:true, dir: "${publishDirectoryName}\\", glob: '**/*', zipFile: ".jenkins/zips/${projectTechnicalName}.zip"
 					},
 					failFast: true,
 				)
