@@ -57,7 +57,6 @@ node {
 							}
 						}
 					},
-					},
 					failFast: true,
 				)
 			}
