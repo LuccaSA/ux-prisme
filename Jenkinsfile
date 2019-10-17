@@ -121,7 +121,7 @@ node {
 					},
 					master: {
 						// continuous deploy of branch master
-						if (isMater) {
+						if (isMaster) {
 							bat "npx cpx ${publishDirectoryName}\\** \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme"
 						}
 					},
