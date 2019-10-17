@@ -14,6 +14,7 @@ node {
 	def isPr = false
 	def isMaster = false
 	def isRc = false
+
 	if(env.BRANCH_NAME == "master") {
 		isMaster = true
 	}
