@@ -18,7 +18,7 @@ node {
 	if(env.BRANCH_NAME == "master") {
 		isMaster = true
 	}
-	if(env.BRANCH_NAME == "feat/auto.deploy.rc") {
+	if(env.BRANCH_NAME == "rc") {
 		isRc = true
 	}
 	if(env.BRANCH_NAME ==~ /^PR-\d*/) {
@@ -111,14 +111,6 @@ node {
 					failFast: true,
 				)
 			}
-			stage('Archive') {
-				parallel(
-					prisme: {
-						zip archive:true, dir: "${publishDirectoryName}\\", glob: '**/*', zipFile: ".jenkins/zips/${projectTechnicalName}.zip"
-					},
-					failFast: true,
-				)
-			}
 			stage('Deploy') {
 				parallel(
 					rc: {
@@ -145,13 +137,13 @@ node {
 			color = "danger"
 			endMessage = "Erreur"
 		}
-		stage('Notify') {
-			parallel(
-				github: {
+		// stage('Notify') {
+		// 	parallel(
+		// 		github: {
 
-				},
-				failFast: true,
-			)
-		}
+		// 		},
+		// 		failFast: true,
+		// 	)
+		// }
 	}
 }
