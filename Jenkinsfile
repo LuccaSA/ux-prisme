@@ -124,19 +124,7 @@ node {
 					rc: {
 						// continuous deploy of branch rc
 						if (isRc) {
-							bat """
-								robocopy ${publishDirectoryName} \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme-rc /MIR
-								rem http://weblogs.sqlteam.com/robv/archive/2010/02/17/61106.aspx
-								set /A errlev="%ERRORLEVEL% & 24"
-								if %errlev% neq 0 exit /b %errlev%
-							"""
-							// @gmouron
-							// deployer le contenu du zip dans le dossier
-							// C:\d\sites\prisme-rc
-							// sur le server labs2.lucca.local
-							// pas besoin de sous-dossier, faut que le dossier /prisme-rc contienne la derniere version buildee de la branche rc
-							// si tu veux pas passer par le zip tu peux directement deployer le contenu du dosser .\\${publishDirectoryName}
-							// tu peux faire un cleanup avant si tu veux, c'est pas necessaire dans un premier temps mais a un momne tfaudra le faire
+							bat "npx cpx ${publishDirectoryName} \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme-rc"
 						}
 					},
 					failFast: true
