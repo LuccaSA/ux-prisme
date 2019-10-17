@@ -124,6 +124,12 @@ node {
 					rc: {
 						// continuous deploy of branch rc
 						if (isRc) {
+							bat """
+								robocopy ${publishDirectoryName} \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme-rc /MIR
+								rem http://weblogs.sqlteam.com/robv/archive/2010/02/17/61106.aspx
+								set /A errlev="%ERRORLEVEL% & 24"
+								if %errlev% neq 0 exit /b %errlev%
+							"""
 							// @gmouron
 							// deployer le contenu du zip dans le dossier
 							// C:\d\sites\prisme-rc
