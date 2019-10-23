@@ -54,4 +54,4 @@ En cas d’absence de données, un placeholder doit être présent sous les filt
 # Loading
 Lors du premier chargement des données ou de l’application d’un filtre, un loader avec une description vient remplacer les données.
 
-(viuel)
+(visuel)
