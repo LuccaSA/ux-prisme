@@ -1,3 +1,4 @@
+export * from './templates/list-filter-create/index';
 export * from './feedback/error-page/index';
 export * from './misc/theming/index';
 export * from './layout/filters/index';
