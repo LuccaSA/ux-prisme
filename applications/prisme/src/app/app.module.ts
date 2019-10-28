@@ -6,10 +6,9 @@ import { RouterModule } from '@angular/router';
 import { MainModule } from './main';
 
 import { AppComponent } from './app.component';
-import { MarkdownModule, EnvironmentModule } from '@prisme/common';
+import { MarkdownModule } from '@prisme/common';
 import { appRoutes, searchableIndex } from './app.router';
 import { PAGES_INDEX } from './search';
-import { environment } from '../environments/environment';
 
 
 
@@ -20,7 +19,6 @@ import { environment } from '../environments/environment';
 
 		MainModule,
 
-		EnvironmentModule.forRoot(environment as any),
 		MarkdownModule.forRoot(),
 
 		RouterModule.forRoot(appRoutes, {

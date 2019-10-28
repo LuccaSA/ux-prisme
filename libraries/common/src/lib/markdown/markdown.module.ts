@@ -2,7 +2,6 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { MarkdownModule as NgxMarkdownModule, MarkedOptions as NgxMarkedOptions } from 'ngx-markdown';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MarkedOptions } from './markdown.options';
-import { EnvironmentModule } from '../environment/environment.module';
 
 @NgModule({
 	imports: [
@@ -14,7 +13,6 @@ import { EnvironmentModule } from '../environment/environment.module';
 				useClass: MarkedOptions
 			}
 		}),
-		EnvironmentModule,
 	],
 })
 export class MarkdownRootModule {}
