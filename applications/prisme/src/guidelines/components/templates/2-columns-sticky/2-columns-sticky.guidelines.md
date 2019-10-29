@@ -1,6 +1,6 @@
 # Layout principal
 
-(visuel)
+![layout](guidelines/components/templates/2-columns-sticky/images/layout.png)
 
 ## Navigation
 Elle permet de remonter dans l’arborescence du module.
@@ -15,7 +15,7 @@ Elle permet de remonter dans l’arborescence du module.
 
 # Responsive
 
-(visuel)
+![responsive](guidelines/components/templates/2-columns-sticky/images/responsive.png)
 
 - Le bloc Overview n’est plus fixé en haut afin de laisser plus de place au Contenu
 - L’ordre des blocs Overview et Contenu peut être inversé

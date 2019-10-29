@@ -1,0 +1,7 @@
+@import '~@lucca-front/scss/src/theming.overridable';
+
+.guidelines-visual {
+	width: 100%;
+	display: block;
+	border-bottom: 1px solid _theme("commons.divider.color");
+}

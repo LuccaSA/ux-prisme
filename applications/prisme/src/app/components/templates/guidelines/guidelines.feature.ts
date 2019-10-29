@@ -4,6 +4,7 @@ declare var require: any;
 @Component({
 	selector: 'pri-guidelines',
 	templateUrl: './guidelines.feature.html',
+	styleUrls: ['./guidelines.feature.scss'],
 })
 export class GuidelinesFeature {
 	infos: IFeatureInfos = {

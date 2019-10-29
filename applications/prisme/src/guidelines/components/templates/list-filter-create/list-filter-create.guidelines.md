@@ -37,7 +37,7 @@
 - En cas de modification des filtres, seule la section “données” doit être rechargée.
 - En cas d’erreurs ou d’alertes, le message est écrit en toute lettre à l'intérieur du dropdown.  
 
-(visuel)
+![responsive](guidelines/components/templates/list-filter-create/images/responsive.png)
 
 **Alternative** : Il est possible d’afficher un certain nombre de filtres en fonction de la place disponible et d’avoir à droite un dropdown de type “5 autres filtres”.
 
@@ -49,9 +49,9 @@ En cas de manque de place horizontale, deux méthodes peuvent être utilisées :
 # Empty State
 En cas d’absence de données, un placeholder doit être présent sous les filtres. On favorisera un visuel (générique ou non) suivi d’une titre et d’une description. Ces derniers devront préciser si l’absence de données est dûe à l’utilisation de la recherche ou d’un filtre.
 
-(visuel)
+![empty-state](guidelines/components/templates/list-filter-create/images/empty-state.png)
 
 # Loading
 Lors du premier chargement des données ou de l’application d’un filtre, un loader avec une description vient remplacer les données.
 
-(visuel)
+![loader](guidelines/components/templates/list-filter-create/images/loader.png)
