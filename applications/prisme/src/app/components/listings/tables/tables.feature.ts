@@ -11,6 +11,7 @@ import { DraggableExample } from './draggable/draggable.example';
 import { SizesExample } from './sizes/sizes.example';
 import { VerticalAlignmentExample } from './vertical-alignment/vertical-alignment.example';
 import { HorizontalAlignmentExample } from './horizontal-alignment/horizontal-alignment.example';
+import { BorderlessExample } from './borderless/borderless.example';
 declare var require: any;
 
 @Component({
@@ -63,7 +64,7 @@ export class TablesFeature {
 				mod: 'white',
 			},
 			{
-				title: 'Card',
+				title: 'Carte',
 				description: `Pour utiliser une table dans une carte, placez là hors du <code class="code">card-content</code> et ajoutez-y une classe <code class="code">mod-card</code>.`,
 				component: CardExampleComponent,
 				code: require('!!prismjs-loader?lang=markup!./card/card.component.html'),
@@ -83,12 +84,20 @@ export class TablesFeature {
 			{
 				title: 'Alignement vertical',
 				component: VerticalAlignmentExample,
+				mod: 'white',
 				code: require('!!prismjs-loader?lang=markup!./vertical-alignment/vertical-alignment.example.html'),
 			},
 			{
 				title: 'Alignement horizontal',
 				component: HorizontalAlignmentExample,
+				mod: 'white',
 				code: require('!!prismjs-loader?lang=markup!./horizontal-alignment/horizontal-alignment.example.html'),
+			},
+			{
+				title: 'Sans bordure',
+				component: BorderlessExample,
+				mod: 'white',
+				code: require('!!prismjs-loader?lang=markup!./borderless/borderless.example.html'),
 			},
 		],
 		theme: this.docApi.get('table')
