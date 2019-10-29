@@ -1,3 +1,4 @@
+export * from './templates/guidelines/index';
 export * from './templates/2-columns-sticky/index';
 export * from './templates/list-filter-create/index';
 export * from './feedback/error-page/index';
