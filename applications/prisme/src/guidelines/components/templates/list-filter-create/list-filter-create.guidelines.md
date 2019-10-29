@@ -1,5 +1,5 @@
 # Layout principal
-(visuel)
+![layout](guidelines/components/templates/list-filter-create/images/layout.png)
 
 ## Container
 - La largeur des éléments sous la barre d'administration peut être variable en fonction de la quantité d’informations à afficher.
