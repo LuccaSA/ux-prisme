@@ -40,6 +40,11 @@
 .markdown-dualDisplay {
 	display: flex;
 	align-items: flex-start;
+
+	.markdown-block.mod-code {
+		padding: 0;
+		margin: 0;
+	}
 }
 
 .markdown-block {
@@ -54,6 +59,9 @@
 
 	&.mod-code {
 		white-space: pre;
+		font-family: monospace;
+		tab-size: 2;
+		margin: 0 0 1rem;
 	}
 
 	&:first-child {

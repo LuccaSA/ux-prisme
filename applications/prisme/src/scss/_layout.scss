@@ -25,5 +25,6 @@ h1.mod-headline, h1 {
 }
 
 .page-content {
+	max-width: 65rem;
 	padding: _theme("spacings.bigger") _theme("spacings.bigger");
 }

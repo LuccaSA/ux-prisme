@@ -5,4 +5,5 @@ export const integrationPage = new FeaturePage(
 	'integration',
 	'Integration',
 	IntegrationFeature,
+	['integration', 'dev', 'methodologies']
 );
