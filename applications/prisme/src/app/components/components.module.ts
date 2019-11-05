@@ -9,7 +9,7 @@ import { LoadersModule } from './loaders/loaders.module';
 import { MiscModule } from './misc/misc.module';
 import { NavigationModule } from './navigation/navigation.module';
 import { TextModule } from './text/text.module';
-import { GeneralModule } from './general/general.module';
+import { IntegrationModule } from './integration/integration.module';
 import { ComponentsRoutingModule } from './components.router';
 import { MainModule } from '../main';
 import { UserModule } from './user';
@@ -19,7 +19,7 @@ import { UserModule } from './user';
 		ActionsModule,
 		FeedbackModule,
 		FormModule,
-		GeneralModule,
+		IntegrationModule,
 		LayoutModule,
 		ListingsModule,
 		LoadersModule,

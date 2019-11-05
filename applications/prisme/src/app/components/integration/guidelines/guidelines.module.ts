@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@prisme/common';
-import { IntegrationFeature } from './integration.feature';
+import { GuidelinesFeature } from './guidelines.feature';
 
 @NgModule({
 	imports: [
 		CommonModule
 	],
 	declarations: [
-	IntegrationFeature],
+	GuidelinesFeature],
 	entryComponents: [
 	]
 })
-export class IntegrationModule {}
+export class GuidelinesModule {}

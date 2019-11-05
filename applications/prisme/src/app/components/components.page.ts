@@ -10,7 +10,7 @@ import { overlaysPage } from './overlays/overlays.page';
 import { textPage } from './text/text.page';
 import { MainGroupPage } from '../main';
 import { userPage } from './user';
-import { generalPage } from './general/general.page';
+import { integrationPage } from './integration/integration.page';
 
 export const componentsPage = new MainGroupPage('components', 'Composants', [
 	actionsPage,
@@ -24,5 +24,5 @@ export const componentsPage = new MainGroupPage('components', 'Composants', [
 	overlaysPage,
 	userPage,
 	textPage,
-	generalPage,
+	integrationPage,
 ]);
