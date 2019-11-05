@@ -267,7 +267,7 @@ Elles sont les seules à utiliser la règle !important afin d’écraser le styl
 
 # Variables Lucca Front
 
-Lucca Front embarque de nombreuses [variables globales](/components/misc/theming) ou liées aux composant qui peuvent être utilisées et écrasées. Il est nécessaire de les utiliser systématiquement, et ce, dans une logique de maintenabilité.
+Lucca Front embarque de nombreuses [variables globales](components/integration/theming) ou liées aux composant qui peuvent être utilisées et écrasées. Il est nécessaire de les utiliser systématiquement, et ce, dans une logique de maintenabilité.
 
 Exemple :
 
