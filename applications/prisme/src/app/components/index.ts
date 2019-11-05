@@ -1,6 +1,6 @@
 export * from './general/integration/index';
 export * from './feedback/error-page/index';
-export * from './misc/theming/index';
+export * from './general/theming/index';
 export * from './layout/filters/index';
 export * from './layout/header/index';
 export * from './overlays/guidelines/index';
