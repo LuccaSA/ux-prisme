@@ -5,4 +5,5 @@ export const listFilterCreatePage = new FeaturePage(
 	'list-filter-create',
 	'Lister, filtrer & créer',
 	ListFilterCreateFeature,
+	['lister', 'list', 'créer', 'create', 'filter', 'filtered']
 );
