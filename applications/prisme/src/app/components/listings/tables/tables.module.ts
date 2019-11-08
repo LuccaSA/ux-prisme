@@ -12,6 +12,7 @@ import { DraggableExample } from './draggable/draggable.example';
 import { SizesExample } from './sizes/sizes.example';
 import { VerticalAlignmentExample } from './vertical-alignment/vertical-alignment.example';
 import { HorizontalAlignmentExample } from './horizontal-alignment/horizontal-alignment.example';
+import { BorderlessExample } from './borderless/borderless.example';
 
 @NgModule({
 	imports: [
@@ -30,6 +31,7 @@ import { HorizontalAlignmentExample } from './horizontal-alignment/horizontal-al
 		SizesExample,
 		VerticalAlignmentExample,
 		HorizontalAlignmentExample,
+		BorderlessExample,
 	],
 	entryComponents: [
 		BasicExampleComponent,
@@ -43,6 +45,7 @@ import { HorizontalAlignmentExample } from './horizontal-alignment/horizontal-al
 		SizesExample,
 		VerticalAlignmentExample,
 		HorizontalAlignmentExample,
+		BorderlessExample,
 	]
 })
 export class TablesModule { }
