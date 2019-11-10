@@ -49,7 +49,7 @@
     "@angular-devkit/core": "^8.3.14",
     "@angular-devkit/schematics": "^8.3.14",
     "@angular-devkit/schematics-cli": "^0.803.18",
-    "@angular/cli": "^8.3.14",
+    "@angular/cli": "^8.3.18",
     "@angular/compiler-cli": "^8.2.7",
     "@angular/language-service": "^8.2.12",
     "@lucca/schematics": "0.1.2",
