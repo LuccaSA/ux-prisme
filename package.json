@@ -52,7 +52,7 @@
     "@angular/cli": "^8.3.14",
     "@angular/compiler-cli": "^8.2.7",
     "@angular/language-service": "^8.2.12",
-    "@lucca/schematics": "0.0.3",
+    "@lucca/schematics": "0.1.2",
     "@lucca/tslint": "0.0.3",
     "@types/jasmine": "^3.4.6",
     "@types/jasminewd2": "~2.0.8",
