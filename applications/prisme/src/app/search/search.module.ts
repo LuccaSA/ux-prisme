@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import { SearchComponent } from './search.component';
 import { FormsModule } from '@angular/forms';
-import { LuModule } from '@lucca-front/ng';
 import { PageItemModule } from './option';
+import { LuSelectModule } from '@lucca-front/ng/select';
+import { LuInputModule } from '@lucca-front/ng/input';
+import { LuOptionModule } from '@lucca-front/ng/option';
 
 
 @NgModule({
 	imports: [
 		PageItemModule,
 		FormsModule,
-		LuModule
+		LuSelectModule,
+		LuInputModule,
+		LuOptionModule,
 	],
 	declarations: [
 		SearchComponent
