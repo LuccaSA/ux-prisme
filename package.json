@@ -76,6 +76,6 @@
     "tslib": "^1.9.3",
     "tslint": "~5.20.1",
     "typescript": "3.5.3",
-    "unist-util-visit": "^2.0.0"
+    "unist-util-visit": "^2.0.1"
   }
 }
