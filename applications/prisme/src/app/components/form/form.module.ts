@@ -12,6 +12,7 @@ import { ApiSelectModule } from './api-select';
 import { FormGuidelinesModule } from './guidelines';
 import { DepartmentSelectModule } from './department-select';
 import { FormlyModule } from './formly';
+import { DateModule } from './date';
 
 @NgModule({
 	imports: [
@@ -28,6 +29,7 @@ import { FormlyModule } from './formly';
 		FormGuidelinesModule,
 		DepartmentSelectModule,
 		FormlyModule,
+		DateModule,
 	],
 })
 export class FormModule { }
