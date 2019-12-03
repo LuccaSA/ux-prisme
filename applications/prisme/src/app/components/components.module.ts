@@ -10,6 +10,7 @@ import { MiscModule } from './misc/misc.module';
 import { NavigationModule } from './navigation/navigation.module';
 import { TemplatesModule } from './templates/templates.module';
 import { TextModule } from './text/text.module';
+import { IntegrationModule } from './integration/integration.module';
 import { ComponentsRoutingModule } from './components.router';
 import { MainModule } from '../main';
 import { UserModule } from './user';
@@ -19,6 +20,7 @@ import { UserModule } from './user';
 		ActionsModule,
 		FeedbackModule,
 		FormModule,
+		IntegrationModule,
 		LayoutModule,
 		ListingsModule,
 		LoadersModule,

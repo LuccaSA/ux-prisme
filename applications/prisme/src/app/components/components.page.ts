@@ -11,6 +11,7 @@ import { templatesPage } from './templates/templates.page';
 import { textPage } from './text/text.page';
 import { MainGroupPage } from '../main';
 import { userPage } from './user';
+import { integrationPage } from './integration/integration.page';
 
 export const componentsPage = new MainGroupPage('components', 'Composants', [
 	actionsPage,
@@ -25,4 +26,5 @@ export const componentsPage = new MainGroupPage('components', 'Composants', [
 	userPage,
 	templatesPage,
 	textPage,
+	integrationPage,
 ]);

@@ -5,4 +5,5 @@ export const themingPage = new FeaturePage(
 	'theming',
 	'Theming',
 	ThemingFeature,
+	["theming", "theme", "override", "variables"]
 );
