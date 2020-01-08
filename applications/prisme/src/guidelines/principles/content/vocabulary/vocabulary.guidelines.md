@@ -4,10 +4,12 @@
 # <div class="appLogo mod-figgo"></div> Figgo
 
 ### Acquisition
-Jours ou heures crédités sur le compte d'un collaborateur.
+Montant crédité sur un compte pour un collaborateur, à une fréquence définie, en général automatiquement. L'acquisition peut désigner à la fois le montant global à acquérir sur une période de référence (ex : 25 jours par an) et le montant à acquérir ou acquis sur une sous-période (ex : 2,5 jours par mois ou 17,5 jours depuis le début de l'acquisition). On parle en général d'acquisition pour les congés légaux récurrents (Congés payés, RTT, etc.).
 
-### Arrêt de travail
-Type d'absence nécessitant la remise d'un arrêt de travail (maladie, maternité, etc.).
+### Arrêt de travail (AT)
+<div class="u-textLight u-textSmall"><b>AT</b> : Réservé aux pages administrateurs</div>
+
+Type d'absence nécessitant de fournir à l'employeur un certificat (avis d'arrêt de travail) établi par un médecin. Spécifique à la France. Peut concerner de la maladie ou non (exemple : maladie, maternité, paternité, accident du travail...).
 
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
@@ -22,10 +24,7 @@ Type d'absence nécessitant la remise d'un arrêt de travail (maladie, maternit�
 </div>
 </div>
 
-### Calendrier
-Liste des jours fériés associée à une instance Figgo.
-
-### Catégorie (comptes)
+### Catégorie
 Regroupement de comptes millésimés (ex : la catégorie Congés payés contient les comptes Congés payés 2018/2019, Congés payés 2019/2020, etc.) ou de comptes au fonctionnement similaire (ex : la catégorie Congés nécessitant un arrêt de travail contient les comptes Maladie, Maternité, etc.).
 
 <div class="markdown-dualDisplay">
@@ -43,21 +42,23 @@ Regroupement de comptes millésimés (ex : la catégorie Congés payés contient
 </div>
 
 ### Compte
-Type d'absence disposant de ses propres règles.
+Matérialisation dans Figgo du motif d'absence. Le terme "compte" fait référence à la logique comptable utilisée dans Figgo.
 
 ### Compte épargne-temps
 <div class="u-textLight u-textSmall"><b>CET</b> : Utilisable partout</div>
-Compte permettant au salarié d'épargner certains éléments/droits fixés par son contrat de travail afin d'en faire usage ultérieurement.
+
+Compte permettant au salarié d'épargner des jours ou heures non utilisés, pour être monétisés ou utilisés plus tard. L'epargne-temps découle en général d'un accord d'entreprise.
 
 ### Compteur
-Solde d'un compte à une date donnée.
+Terme issu de la paie, assimilable dans Figgo au compte, lorsqu'il représente un compte avec acquisition.
 
 ### Congés payés
-<div class="u-textLight u-textSmall"><b>CP</b> : Réservé aux pages administrateurs</div>
+<div class="u-textLight u-textSmall"><b>CP</b> : Utilisable partout</div>
+
 Compte permettant au salarié d'accumuler des jours de congés annuels pendant lesquels il reste rémunéré.
 
 ### Écriture comptable
-Débit ou crédit d'une valeur réalisé sur un compte permettant de tracer les mouvements comptables effectués dans Figgo.
+Figgo fonctionne avec une logique comptable. Tout mouvement sur un compte (acquisition, prise de congés...) est matérialisé par une écriture comptable, qui contient au moins une ligne au débit ou au crédit sur le compte en question, et une ligne de sens opposé sur un compte dit "de contrepartie".
 
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
@@ -73,13 +74,21 @@ Débit ou crédit d'une valeur réalisé sur un compte permettant de tracer les 
 </div>
 
 ### Fractionnement
-Type de congé attribué en fonction de règles sur le fractionnement des CP en France et à Monaco ; par exemple, le code du travail français prévoit l'attribution de 1 ou 2 jour(s) supplémentaire(s) si on fractionne ses CP, c'est-à-dire si on pose au moins 2 semaines consécutives sur la période légale (01/05/N-31/10/N) et des jours hors de cette période (01/11/N-30/04/N+1).
+Droit à congé rémunéré existant en France et à Monaco, en supplément des congés payés, décrit dans le Code du Travail et certaines conventions collectives. Le principe est d'attribuer des jours de congés supplémentaires aux collaborateurs qui fractionnent leurs congés en prenant des jours de congés payés en dehors de la période légale, du 1er mai au 31 octobre. Dans certaines entreprises, l'employeur demande explicitement aux collaborateurs d'y renoncer, lorsque le fractionnement des congés est choisi par le salarié et non imposé.
 
 ### Groupe
-Sous-ensemble de collaborateurs.
+Groupe de collaborateurs personnalisable par l'utilisateur, pour affichage dans le planning. Peut-être utilisé lorsque les notions de département, collaborateurs supervisés ne suffisent pas.
+
+### Matricule paie
+<div class="u-textLight u-textSmall"><b>Matricule</b> : Réservé aux pages administrateurs</div>
+
+Identifiant du collaborateur dans le logiciel de paie de l'entreprise.
+
+### N° de compte
+Identifiant numérique unique d'un compte (4 chiffres).
 
 ### Période restreinte
-Période au cours de laquelle les collaborateurs sont invités à ne pas poser de congés
+Période durant laquelle les collaborateurs ne peuvent pas poser d'absence sur un compte donné (ou peuvent mais avec une alerte). Représente en général une période de forte activité métier (clôtures trimestrielles pour un service Comptabilité, etc.).
 
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
@@ -95,22 +104,36 @@ Période au cours de laquelle les collaborateurs sont invités à ne pas poser d
 </div>
 
 ### Planning
-Calendrier des absences d'une population.
+Planning des absences des collaborateurs. Un utilisateur peut en général consulter les absences de son département ou de toute la société, sans le détail (ne voit pas le compte d'absence). Un manager peut voir le détail pour ses collaborateurs supervisés.
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+- planning
+
+</div>
+<div class="markdown-block mod-negative">
+
+- planning annuel
+- planning individuel
+
+</div>
+</div>
 
 ### Profil d'acquisition
-Groupe de collaborateurs disposant de règles d'acquisitions propres.
+Matérialisation des droits à acquérir sur les comptes récurrents (congés payés ou RTT). Le profil est affecté directement aux utilisateurs. Un utilisateur avec RTT et un utilisateur sans RTT ont deux profils différents.
 
 ### Règle
-Ensemble de critères déterminant les modalités d'acquisition ou de consommation d'un compte donné.
+Modalités d'acquisition et de consommation sur les comptes. Les règles peuvent être décrites dans les réglementaires, via des paramètres, ou dans les modules dédiés. Exemples de règles d'acquisition : ancienneté, fractionnement. Exemples de règle de consommation : plafond sur les demandes de Mariage de 4 jours, non accolage de CP et de RTT, demande dans le passé interdite.
 
 ### Réglementaire
-Ensemble de profils, comptes, CSP et règles d'acquisition et de consommation sur ces comptes, propres à une ou plusieurs entités légales.
+Ensemble de profils, comptes, CSP et règles d'acquisition et de consommation propres à une ou plusieurs entités légales. Représente en général une convention collective particulière pour la France, ou les règles propres à l'entité d'un pays donné.
 
 ### Régularisation
-Règle permettant d'ajuster l'acquisition sur un compte en fonction des absences du collaborateur (ex : X jours de maladie font perdre X jours de RTT)
+Mécanisme d'ajustement a posteriori de l'acquisition, en raison d'absences sur certains comptes (ex : X jours de maladie font perdre Y jours de RTT). La régularisation peut être déclenchée manuellement ou automatiquement.
 
 ### Requalifier
-On préférera utiliser le terme Requalifier (une absence, un arrêt de travail) que Modifier.
+Action de modifier le compte d'une absence. Exemple : requalifier une absence à justifier en maladie.
 
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
@@ -125,48 +148,16 @@ On préférera utiliser le terme Requalifier (une absence, un arrêt de travail)
 </div>
 </div>
 
-### Rubrique de paie
-Regroupement de comptes caractérisé par un code rubrique et un paramétrage définissant les règles d'export dans un fichier d'export paie.
+### Rubrique
+Dans une configuration d'export, une rubrique décrit les éléments attendus par le logiciel cible, pour un ou plusieurs comptes. Exemple : les comptes congés payés sont exportés en heures avec le code CP.
 
 ### Solde
-Somme des écritures comptables du compte d'un collaborateur à une date donnée.
+Nombre de jours ou heures sur un compte à une date donnée passée. Il est calculé dans Figgo en faisant le cumul des écritures comptables sur le compte (somme des crédits - somme des débits).
 
 ### Solde disponible
-Le solde disponible est le solde de jours pouvant être posés. Pour faire simple, il s'agit du solde actuel moins les jours posés dans le futur.
-
-<div class="markdown-dualDisplay">
-<div class="markdown-block mod-positive">
-
-- Solde disponible
-
-</div>
-<div class="markdown-block mod-negative">
-
-- Solde
-- Solde actuel
-
-</div>
-</div>
-
-
-### Titre-restaurant
-
-<div class="u-textLight u-textSmall"><b>TR</b> : Réservé aux pages administrateurs</div>
-
-Moyen de paiement destiné à payer des produits alimentaires dans les restaurants, la grande et la petite distribution.
-
-<div class="markdown-dualDisplay">
-<div class="markdown-block mod-positive">
-
-- titre-restaurant
-
-</div>
-<div class="markdown-block mod-negative">
-
-- Ticket Restaurant
-
-</div>
-</div>
+Le *solde disponible* est le nombre de jours (ou heures) sur un compte à une date donnée qui peut être utilisé par le collaborateur en tenant compte des absences futures.
+Si aucune acquisition n'est à venir sur le compte, il s'agit du solde à la date donnée moins les absences futures (validées ou non).
+Si de l'acquisition est prévue sur le compte, il s'agit du solde à la date donnée moins les absences futures (après cette date) non couvertes par l'acquisition future.
 
 # <div class="appLogo mod-cleemy"></div> Cleemy
 
@@ -220,6 +211,7 @@ Ensemble des données comptables relatives à une entreprise.
 
 ### Reconnaissance Optique de Caractères
 <div class="u-textLight u-textSmall"><b>OCB</b> : Utilisable partout</div>
+
 Lecture informatisée des informations figurant sur un reçu papier pour en déduire : la nature, la date, le montant TTC, les montants de TVA.
 
 # <div class="appLogo mod-timmi"></div> Timmi
@@ -310,3 +302,26 @@ Collaborateur qui configure la campagne (le déroulé, la population, le formula
 
 ### Statut
 Qualification de la faisabilité d'un objectif (réalisable, à risque, abandonné)
+
+# <div class="appLogo"></div> Général
+### Calendrier
+Liste des jours fériés associée à une instance Figgo.
+
+### Titre-restaurant
+
+<div class="u-textLight u-textSmall"><b>TR</b> : Réservé aux pages administrateurs</div>
+
+Moyen de paiement destiné à payer des produits alimentaires dans les restaurants, la grande et la petite distribution.
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+- titre-restaurant
+
+</div>
+<div class="markdown-block mod-negative">
+
+- Ticket Restaurant
+
+</div>
+</div>
