@@ -7,8 +7,9 @@ import { LuFormlyModule } from '@lucca-front/ng/formly';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SupportedExample } from './supported/supported.example';
 import { RedirectModule } from '../../../redirect';
-import { MatNativeDateModule } from '@angular/material/core';
+// import { MatNativeDateModule } from '@angular/material/core';
 import { FramedExample } from './framed/framed.example';
+import { LuNativeDateModule } from '@lucca-front/ng/date';
 
 @NgModule({
 	imports: [
@@ -17,7 +18,8 @@ import { FramedExample } from './framed/framed.example';
 		LuFormlyModule,
 		ReactiveFormsModule,
 		RedirectModule,
-		MatNativeDateModule,
+		// MatNativeDateModule,
+		LuNativeDateModule,
 	],
 	declarations: [
 	FormlyFeature,

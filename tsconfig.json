@@ -28,5 +28,8 @@
         "documentation/ng"
       ]
     }
+  },
+  "angularCompilerOptions": {
+    "enableIvy": false
   }
 }

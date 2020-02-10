@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IUser } from '@lucca-front/ng';
+import { ILuUser } from '@lucca-front/ng/user';
 
 @Component({
 	selector: 'pri-basic-example',
@@ -7,7 +7,7 @@ import { IUser } from '@lucca-front/ng';
 })
 export class BasicExample {
 
-	anais: IUser = {
+	anais: ILuUser = {
 		id: 12,
 		firstName: 'Anaïs',
 		lastName: 'Lemoustier',
@@ -18,7 +18,7 @@ export class BasicExample {
 		jobTitle: 'Actress',
 	};
 
-	jeanMichel: IUser = {
+	jeanMichel: ILuUser = {
 		id: 23,
 		firstName: 'Jean-Michel',
 		lastName: 'Pasdephoto',

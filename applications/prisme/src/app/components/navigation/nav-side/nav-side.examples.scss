@@ -6,21 +6,27 @@
 }
 
 .grid .navSide-item, .grid .navSide-item-placeholder {
-	background: _component("navSide.fullwidth-palette.bg-color");
-	width: _component("navSide.width");
+	// background: _component("navSide.fullwidth-palette.bg-color");
+	background: _color("primary", "dark");
+	// width: _component("navSide.width");
+	width: 15rem;
 }
 
 .grid .mod-compact {
 	.navSide-item, .navSide-item-placeholder {
-		background: _component("navSide.compact-palette.bg-color");
-		width: _component("navSide.compact.width");
+		// background: _component("navSide.compact-palette.bg-color");
+		background: _color("primary", "dark");
+		// width: _component("navSide.compact.width");
+		width: 6.125rem;
 		text-align: center;
 	}
 
 	.navSide-item-link {
-		color: _component("navSide.compact-palette.text");
+		// color: _component("navSide.compact-palette.text");
+		color: white;
 		flex-direction: column;
-		font-size: _component("navSide.compact.font-size");
+		// font-size: _component("navSide.compact.font-size");
+		font-size: _theme("sizes.small.font-size");
 		justify-content: center;
 		position: relative;
 
