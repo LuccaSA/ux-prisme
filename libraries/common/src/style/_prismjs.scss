@@ -111,6 +111,12 @@
 		transform: rotate(2deg);
 	}
 
+	.token.tag {
+		margin: 0;
+		padding: 0;
+		background: transparent;
+	}
+
 	.token.comment,
 	.token.block-comment,
 	.token.prolog,
