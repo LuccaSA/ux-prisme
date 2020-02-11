@@ -48,3 +48,10 @@ Lorsque des boutons d’action et d’annulation sont utilisés ensemble, le bou
 
 - Si un bouton correspond à la création d’une occurrence d’une liste d’objets, on le place en haut de liste, afin qu’il reste toujours visible
 - Un bouton de soumission de formulaire sera quant à lui placé en bas à droite du formulaire
+
+# Changelog
+#### LF 4.0
+- [breaking] Les `.button.size-small`/`.button.size-smaller` sont remplacés par `.button.mod-small`
+- [breaking] Les `.button.size-big` prennent la taille d’un bouton standard
+- [remove/new] Suppression du `.button.mod-white`, remplacé par `.button.mod-outline`
+- [remove/new] Suppression du `.button.mod-lesser`, remplacé par `.button.mod-outline`
