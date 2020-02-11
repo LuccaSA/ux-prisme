@@ -1,3 +1,4 @@
+export * from './text/tags/index';
 // export * from './templates/level-2-horizontal-navigation/index';
 // export * from './templates/guidelines/index';
 // export * from './templates/2-columns-sticky/index';
