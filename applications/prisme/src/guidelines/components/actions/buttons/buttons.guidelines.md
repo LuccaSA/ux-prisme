@@ -53,5 +53,5 @@ Lorsque des boutons d’action et d’annulation sont utilisés ensemble, le bou
 #### LF 4.0
 - [breaking] Les `.button.size-small`/`.button.size-smaller` sont remplacés par `.button.mod-small`
 - [breaking] Les `.button.size-big` prennent la taille d’un bouton standard
-- [remove/new] Suppression du `.button.mod-white`, remplacé par `.button.mod-outline`
-- [remove/new] Suppression du `.button.mod-lesser`, remplacé par `.button.mod-outline`
+- [suppression/ajout] Suppression du `.button.mod-white`, remplacé par `.button.mod-outline`
+- [suppression/ajout] Suppression du `.button.mod-lesser`, remplacé par `.button.mod-outline`
