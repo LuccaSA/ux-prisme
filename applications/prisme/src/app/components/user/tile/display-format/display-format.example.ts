@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { IUser } from '@lucca-front/ng';
+import { ILuUser } from '@lucca-front/ng/user';
 
 @Component({
 	selector: 'pri-display-format-example',
 	templateUrl: './display-format.example.html'
 })
 export class DisplayFormatExample {
-	anais: IUser = {
+	anais: ILuUser = {
 		id: 12,
 		firstName: 'Anaïs',
 		lastName: 'Lemoustier',

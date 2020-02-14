@@ -8,6 +8,7 @@ import { ListingsModule } from './listings/listings.module';
 import { LoadersModule } from './loaders/loaders.module';
 import { MiscModule } from './misc/misc.module';
 import { NavigationModule } from './navigation/navigation.module';
+import { TemplatesModule } from './templates/templates.module';
 import { TextModule } from './text/text.module';
 import { IntegrationModule } from './integration/integration.module';
 import { ComponentsRoutingModule } from './components.router';
@@ -26,6 +27,7 @@ import { UserModule } from './user';
 		MiscModule,
 		NavigationModule,
 		OverlaysModule,
+		TemplatesModule,
 		TextModule,
 		UserModule,
 

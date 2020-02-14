@@ -33,3 +33,7 @@ hr {
 .lu-select-placeholder {
 	line-height: 1.3 !important;
 }
+
+.textfield-input::after {
+	font-size: 1rem !important;
+}

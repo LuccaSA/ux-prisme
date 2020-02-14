@@ -5,7 +5,6 @@ import { CardsModule } from './cards/cards.module';
 import { EmptyStatesModule } from './empty-states/empty-states.module';
 import { ContainersModule } from './containers/containers.module';
 import { SectionsModule } from './sections/sections.module';
-import { TemplatesModule } from './templates';
 import { HeaderModule } from './header';
 import { FiltersModule } from './filters';
 
@@ -17,7 +16,6 @@ import { FiltersModule } from './filters';
 		EmptyStatesModule,
 		ContainersModule,
 		SectionsModule,
-		TemplatesModule,
 		HeaderModule,
 		FiltersModule,
 	],

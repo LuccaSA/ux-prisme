@@ -4,6 +4,7 @@ import { BoxesFeature } from './boxes.feature';
 import { BasicExampleComponent } from './basic/basic.example';
 import { ToggleExampleComponent } from './toggle/toggle.example';
 import { KillableExampleComponent } from './killable/killable.example';
+import { ModGreyExample } from './mod-grey/mod-grey.example';
 
 @NgModule({
 	imports: [CommonModule],
@@ -12,11 +13,13 @@ import { KillableExampleComponent } from './killable/killable.example';
 		BasicExampleComponent,
 		ToggleExampleComponent,
 		KillableExampleComponent,
+		ModGreyExample,
 	],
 	entryComponents: [
 		BasicExampleComponent,
 		ToggleExampleComponent,
 		KillableExampleComponent,
+		ModGreyExample,
 	]
 })
 export class BoxesModule { }

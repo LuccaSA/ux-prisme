@@ -1,5 +1,5 @@
-@import '~@lucca-front/scss/src/_theming';
-@import '~@lucca-front/ng/style/_theming';
+@import '~@lucca-front/scss/src/_theming.overridable';
+@import '~@lucca-front/ng/style/_theming.overridable';
 @import '~@lucca-front/icons/src/_mixins';
 
 :host {
