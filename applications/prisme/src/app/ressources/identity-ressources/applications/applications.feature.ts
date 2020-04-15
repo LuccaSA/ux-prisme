@@ -21,6 +21,9 @@ import {
 	popleeIllu,
 	paggaIllu,
 	timmiIllu,
+	popleeEntretienPicto,
+	popleeRemPicto,
+	timmiProjectPicto,
 } from './logo.model';
 import { IFeatureInfos } from '@prisme/common';
 
@@ -49,6 +52,9 @@ export class ApplicationsFeature {
 		popleePicto,
 		paggaPicto,
 		timmiPicto,
+		popleeEntretienPicto,
+		popleeRemPicto,
+		timmiProjectPicto
 	];
 
 	banners = [
