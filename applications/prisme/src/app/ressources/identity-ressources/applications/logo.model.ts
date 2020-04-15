@@ -13,7 +13,7 @@ export const timmiLogo = { name: 'timmi', href: 'assets/logos/favicons/timmi-32x
 
 export const figgoPicto: IRessourceAsset = {
 	name: 'Picto Figgo',
-	href: 'http://design.lucca.fr/ressources_graphiques/img/icon-figgo.png',
+	href: 'https://cdn.lucca.fr/lucca-front/icons/softs/ico-figgo.svg',
 	type: 'png'
 };
 export const figgoIllu: IRessourceAsset = {
@@ -29,7 +29,7 @@ export const figgoBanner: IRessourceAsset = {
 
 export const cleemyPicto: IRessourceAsset = {
 	name: 'Picto Cleemy',
-	href: 'http://design.lucca.fr/ressources_graphiques/img/icon-cleemy.png',
+	href: 'https://cdn.lucca.fr/lucca-front/icons/softs/ico-cleemy.svg',
 	type: 'png'
 };
 export const cleemyIllu: IRessourceAsset = {
@@ -45,7 +45,7 @@ export const cleemyBanner: IRessourceAsset = {
 
 export const popleePicto: IRessourceAsset = {
 	name: 'Picto Poplee',
-	href: 'http://design.lucca.fr/ressources_graphiques/img/icon-poplee.png',
+	href: 'https://cdn.lucca.fr/lucca-front/icons/softs/ico-poplee-core-rh.svg',
 	type: 'png'
 };
 export const popleeIllu: IRessourceAsset = {
@@ -59,9 +59,21 @@ export const popleeBanner: IRessourceAsset = {
 	type: 'png'
 };
 
+export const popleeEntretienPicto: IRessourceAsset = {
+	name: 'Picto Poplee Entretiens et objectifs',
+	href: 'https://cdn.lucca.fr/lucca-front/icons/softs/ico-poplee-entretiens.svg',
+	type: 'png'
+};
+export const popleeRemPicto: IRessourceAsset = {
+	name: 'Picto Poplee Rémunérations',
+	href: 'https://cdn.lucca.fr/lucca-front/icons/softs/ico-poplee-rem.svg',
+	type: 'png'
+};
+
+
 export const paggaPicto: IRessourceAsset = {
 	name: 'Picto Pagga',
-	href: 'http://design.lucca.fr/ressources_graphiques/img/icon-pagga.png',
+	href: 'https://cdn.lucca.fr/lucca-front/icons/softs/ico-pagga.svg',
 	type: 'png'
 };
 export const paggaIllu: IRessourceAsset = {
@@ -76,8 +88,8 @@ export const paggaBanner: IRessourceAsset = {
 };
 
 export const timmiPicto: IRessourceAsset = {
-	name: 'Picto Timmi',
-	href: 'http://design.lucca.fr/ressources_graphiques/img/icon-timmi.png',
+	name: 'Picto Timmi Timesheet',
+	href: 'https://cdn.lucca.fr/lucca-front/icons/softs/ico-timmi-timesheet.svg',
 	type: 'png'
 };
 export const timmiIllu: IRessourceAsset = {
@@ -88,5 +100,11 @@ export const timmiIllu: IRessourceAsset = {
 export const timmiBanner: IRessourceAsset = {
 	name: 'Bannière Timmi',
 	href: 'http://design.lucca.fr/ressources_graphiques/img/illu-banner-timmi-600x200.jpg',
+	type: 'png'
+};
+
+export const timmiProjectPicto: IRessourceAsset = {
+	name: 'Picto Timmi Project',
+	href: 'https://cdn.lucca.fr/lucca-front/icons/softs/ico-timmi-project.svg',
 	type: 'png'
 };
