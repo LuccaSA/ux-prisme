@@ -1,0 +1,42 @@
+:host{
+	display: block;
+	padding: 2rem 0;
+}
+
+div {
+	text-align: center;
+	display: inline-block;
+	width: 9rem;
+	margin-bottom: 2rem;
+}
+
+i {
+	display: block;
+	font-size: 2rem;
+}
+
+@font-face {
+  font-family: "Lucca icons Previous";
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.lucca.fr/lucca-front/icons/latest/font/lucca-icons.eot');
+  src: url('//cdn.lucca.fr/lucca-front/icons/latest/font/lucca-icons.eot'),
+    url('//cdn.lucca.fr/lucca-front/icons/latest/font/lucca-icons.svg'),
+    url('//cdn.lucca.fr/lucca-front/icons/latest/font/lucca-icons.woff'),
+    url('//cdn.lucca.fr/lucca-front/icons/latest/font/lucca-icons.ttf');
+  /* Enable Ligatures ================ */
+  letter-spacing: normal;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga"1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+  /* Better Font Rendering =========== */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lucca-icon {
+	font-family: "Lucca icons Previous";
+}
