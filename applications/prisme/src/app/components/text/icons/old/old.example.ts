@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'pri-previous-example',
-	templateUrl: './previous.example.html',
-	styleUrls: ['./previous.example.scss']
+	selector: 'pri-old-example',
+	templateUrl: './old.example.html',
+	styleUrls: ['./old.example.scss']
 })
-export class PreviousExample {
+export class OldExample {
 	icons = [
 		'chevron_east',
 		'chevron_north',

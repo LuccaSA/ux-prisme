@@ -4,7 +4,7 @@ import { IconsFeature } from './icons.feature';
 import { BasicExampleComponent } from './basic/basic.example';
 import { ColorsExampleComponent } from './colors/colors.example';
 import { SizeExampleComponent } from './size/size.example';
-import { PreviousExample } from './previous/previous.example';
+import { OldExample } from './old/old.example';
 
 @NgModule({
 	imports: [CommonModule],
@@ -13,13 +13,13 @@ import { PreviousExample } from './previous/previous.example';
 		BasicExampleComponent,
 		ColorsExampleComponent,
 		SizeExampleComponent,
-		PreviousExample
+		OldExample
 	],
 	entryComponents: [
 		BasicExampleComponent,
 		ColorsExampleComponent,
 		SizeExampleComponent,
-		PreviousExample
+		OldExample
 	]
 })
 export class IconsModule { }

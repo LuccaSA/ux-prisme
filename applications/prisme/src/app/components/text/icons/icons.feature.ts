@@ -3,7 +3,7 @@ import { IFeatureInfos, ThemeDocumentationService } from '@prisme/common';
 import { BasicExampleComponent } from './basic/basic.example';
 import { ColorsExampleComponent } from './colors/colors.example';
 import { SizeExampleComponent } from './size/size.example';
-import { PreviousExample } from './previous/previous.example';
+import { OldExample } from './old/old.example';
 declare var require: any;
 
 @Component({
@@ -39,8 +39,8 @@ export class IconsFeature {
 			},
 			{
 				title: 'Anciennes icônes',
-				component: PreviousExample,
-				code: require('!!prismjs-loader?lang=markup!./previous/previous.example.html'),
+				component: OldExample,
+				code: require('!!prismjs-loader?lang=markup!./old/old.example.html'),
 				extra: `<a href="https://github.com/LuccaSA/lucca-front/pull/1007" target="_blank">Retrouvez la liste des icônes dépréciées et leurs remplacements ici</a>`
 			},
 		],
