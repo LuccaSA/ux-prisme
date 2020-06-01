@@ -65,7 +65,7 @@
     "tsickle": "^0.37.0",
     "tslib": "^1.9.3",
     "tslint": "~5.20.1",
-    "typescript": "^3.9.0",
+    "typescript": ">=3.6.4 <3.9.0",
     "unist-util-visit": "^2.0.1"
   }
 }
