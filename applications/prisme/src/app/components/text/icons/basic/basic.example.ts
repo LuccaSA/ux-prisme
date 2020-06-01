@@ -210,7 +210,6 @@ export class BasicExampleComponent {
 
 		'weight',
 		'iron',
-		'jumping_cc',
 		'credit_debit',
 		'home',
 		'planning',
