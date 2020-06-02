@@ -4,6 +4,7 @@ import { ModalsModule } from './modals';
 import { TooltipsModule } from './tooltips';
 import { PopoversModule } from './popovers';
 import { OverlaysGuidelinesModule } from './guidelines';
+import { DropdownModule } from './dropdown';
 
 @NgModule({
 	imports: [
@@ -12,6 +13,7 @@ import { OverlaysGuidelinesModule } from './guidelines';
 		TooltipsModule,
 		PopoversModule,
 		OverlaysGuidelinesModule,
+		DropdownModule,
 	],
 })
 export class OverlaysModule {}
