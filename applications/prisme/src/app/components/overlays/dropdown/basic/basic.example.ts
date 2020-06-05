@@ -1,0 +1,11 @@
+import { Component } from '@angular/core';
+
+@Component({
+	selector: 'pri-basic-example',
+	templateUrl: './basic.example.html'
+})
+export class BasicExample {
+	debug(num: number) {
+		console.log(`button ${num} clicked`);
+	}
+}
