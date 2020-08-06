@@ -5,5 +5,5 @@ export const labelsPage = new FeaturePage(
 	'labels',
 	'Labels',
 	LabelsFeature,
-	["labels", "tags"]
+	["labels", "tags", "numbers"]
 );

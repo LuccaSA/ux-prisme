@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IFeatureInfos, ThemeDocumentationService } from '@prisme/common';
 import { BasicExampleComponent } from './basic/basic.example';
+import { NumbersExample } from './numbers/numbers.example';
 declare var require: any;
 
 @Component({
@@ -18,6 +19,11 @@ export class LabelsFeature {
 				component: BasicExampleComponent,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
 				mod: 'white',
+			},
+			{
+				title: 'numbers',
+				component: NumbersExample,
+				code: require('!!prismjs-loader?lang=markup!./numbers/numbers.example.html'),
 			},
 		],
 		theme: this.docApi.get('label')
