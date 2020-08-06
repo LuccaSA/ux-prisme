@@ -1,4 +1,4 @@
-// $icons: (
-// 	font-path: unquote("//cdn.lucca.fr/lucca-front/icons/next/lucca-icons"),
-// );
-// $theme: _set($theme, "icons", $icons);
+$icons: (
+	font-path: unquote("//cdn.lucca.fr/lucca-front/icons/next/lucca-icons"),
+);
+$theme: _set($theme, "icons", $icons);
