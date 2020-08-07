@@ -4,6 +4,7 @@ import { DropdownFeature } from './dropdown.feature';
 import { BasicExample } from './basic/basic.example';
 import { LuDropdownModule } from '@lucca-front/ng/dropdown';
 import { RouterModule } from '@angular/router';
+import { DisabledExample } from './disabled/disabled.example';
 
 @NgModule({
 	imports: [
@@ -13,8 +14,10 @@ import { RouterModule } from '@angular/router';
 	],
 	declarations: [
 	DropdownFeature,
-	BasicExample],
+	BasicExample,
+	DisabledExample],
 	entryComponents: [
-	BasicExample]
+	BasicExample,
+	DisabledExample]
 })
 export class DropdownModule {}
