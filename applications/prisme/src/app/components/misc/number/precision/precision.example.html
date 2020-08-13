@@ -1,13 +1,13 @@
 <div class="form-group">
-	<div class="textfield">
+	<label class="textfield">
 		<input [(ngModel)]="number" class="textfield-input" type="number">
-		<label class="textfield-label">number</label>
-	</div>
+		<span class="textfield-label">number</span>
+	</label>
 </div>
 <div class="form-group">
-	<div class="textfield">
+	<label class="textfield">
 		<input [(ngModel)]="precision" class="textfield-input" type="number">
-		<label class="textfield-label">precision</label>
-	</div>
+		<span class="textfield-label">precision</span>
+	</label>
 </div>
 <code [innerHTML]="number | luNumber: precision"></code>

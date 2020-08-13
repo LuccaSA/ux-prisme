@@ -1,8 +1,12 @@
-<div class="textfield">
-	<input class="textfield-input" id="textfieldID0" type="text" placeholder="Défocusez-moi" (blur)="validationFocus($event.target)">
-	<label class="textfield-label" for="textfieldID0">Chargement > valide</label>
+<div>
+	<label class="textfield">
+		<input class="textfield-input" type="text" placeholder="Défocusez-moi" (blur)="validationFocus($event.target)">
+		<span class="textfield-label">Chargement > valide</span>
+	</label>
 </div>
-<div class="textfield">
-	<input class="textfield-input" id="textfieldID1" type="text" placeholder="Défocusez-moi" (blur)="unvalidationFocus($event.target)">
-	<label class="textfield-label" for="textfieldID1">Chargement > invalide</label>
+<div>
+	<label class="textfield">
+		<input class="textfield-input" type="text" placeholder="Défocusez-moi" (blur)="unvalidationFocus($event.target)">
+		<span class="textfield-label">Chargement > invalide</span>
+	</label>
 </div>
