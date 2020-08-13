@@ -4,6 +4,7 @@ import { TextfieldsFeature } from './textfields.feature';
 import { BasicExampleComponent } from './basic/basic.example';
 import { StylesExampleComponent } from './styles/styles.example';
 import { SizesExampleComponent } from './sizes/sizes.example';
+import { PalettesExampleComponent } from './palettes/palettes.example';
 import { MessagesExampleComponent } from './messages/messages.example';
 import { ValidationExampleComponent } from './validation/validation.example';
 import { SuffixExampleComponent } from './suffix/suffix.example';
@@ -21,6 +22,7 @@ import { FilterExample } from './filter/filter.example';
 		BasicExampleComponent,
 		StylesExampleComponent,
 		SizesExampleComponent,
+		PalettesExampleComponent,
 		MessagesExampleComponent,
 		ValidationExampleComponent,
 		SuffixExampleComponent,
@@ -35,6 +37,7 @@ import { FilterExample } from './filter/filter.example';
 		BasicExampleComponent,
 		StylesExampleComponent,
 		SizesExampleComponent,
+		PalettesExampleComponent,
 		MessagesExampleComponent,
 		ValidationExampleComponent,
 		SuffixExampleComponent,

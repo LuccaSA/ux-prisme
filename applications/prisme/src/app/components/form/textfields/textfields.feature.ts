@@ -3,6 +3,7 @@ import { IFeatureInfos, ThemeDocumentationService } from '@prisme/common';
 import { BasicExampleComponent } from './basic/basic.example';
 import { StylesExampleComponent } from './styles/styles.example';
 import { SizesExampleComponent } from './sizes/sizes.example';
+import { PalettesExampleComponent } from './palettes/palettes.example';
 import { StatusExampleComponent } from './status/status.example';
 import { SuffixExampleComponent } from './suffix/suffix.example';
 import { MessagesExampleComponent } from './messages/messages.example';
@@ -46,10 +47,21 @@ export class TextfieldsFeature {
 				description: `
 				Utilisez un des mods suivants pour changer la largeur du textfield :<br>
 				<code class="code">mod-shortest</code>,<code class="code">mod-shorter</code>,<code class="code">mod-short</code>,
-				<code class="code">mod-long</code>,<code class="code">mod-longer</code> or <code class="code">mod-longest</code>`,
+				<code class="code">mod-long</code>,<code class="code">mod-longer</code> ou <code class="code">mod-longest</code>`,
 				component: SizesExampleComponent,
 				code: require('!!prismjs-loader?lang=markup!./sizes/sizes.example.html'),
 				mod: 'white',
+			},
+			{
+				title: 'Palettes',
+				description: `
+				Utilisez une des palettes suivantes pour changer la couleur du textfield :<br>
+				<code class="code">palette-primary</code>,<code class="code">palette-secondary</code>,<code class="code">palette-grey</code>,
+				<code class="code">palette-success</code>,<code class="code">palette-warning</code> ou <code class="code">palette-error</code>.`,
+				component: PalettesExampleComponent,
+				code: require('!!prismjs-loader?lang=markup!./palettes/palettes.example.html'),
+				mod: 'white',
+				extra: `Il est bien sûr possible de combiner les différentes palettes avec les différents styles.`
 			},
 			{
 				title: 'Status',
