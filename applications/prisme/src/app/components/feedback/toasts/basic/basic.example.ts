@@ -17,7 +17,7 @@ export class BasicExampleComponent implements AfterViewInit {
 			'Oops, something looks wrong :(',
 			'Marked as done',
 			'Please check <a href="#">this thing</a>',
-			'Here <u>is</u> <i>some</i> <b>HTML</b>'
+			'Here <ins>is</ins> <em>some</em> <strong>HTML</strong>'
 		];
 		const r = Math.floor(Math.random() * Math.floor(toastsValues.length));
 		const newToast = this.toast.createEmbeddedView({text: toastsValues[r]});

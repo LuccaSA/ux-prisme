@@ -7,7 +7,7 @@
 Montant crédité sur un compte pour un collaborateur, à une fréquence définie, en général automatiquement. L'acquisition peut désigner à la fois le montant global à acquérir sur une période de référence (ex : 25 jours par an) et le montant à acquérir ou acquis sur une sous-période (ex : 2,5 jours par mois ou 17,5 jours depuis le début de l'acquisition). On parle en général d'acquisition pour les congés légaux récurrents (Congés payés, RTT, etc.).
 
 ### Arrêt de travail (AT)
-<div class="u-textLight u-textSmall"><b>AT</b> : Réservé aux pages administrateurs</div>
+<div class="u-textLight u-textSmall"><strong>AT</strong> : Réservé aux pages administrateurs</div>
 
 Type d'absence nécessitant de fournir à l'employeur un certificat (avis d'arrêt de travail) établi par un médecin. Spécifique à la France. Peut concerner de la maladie ou non (exemple : maladie, maternité, paternité, accident du travail...).
 
@@ -45,7 +45,7 @@ Regroupement de comptes millésimés (ex : la catégorie Congés payés contient
 Matérialisation dans Figgo du motif d'absence. Le terme "compte" fait référence à la logique comptable utilisée dans Figgo.
 
 ### Compte épargne-temps
-<div class="u-textLight u-textSmall"><b>CET</b> : Utilisable partout</div>
+<div class="u-textLight u-textSmall"><strong>CET</strong> : Utilisable partout</div>
 
 Compte permettant au salarié d'épargner des jours ou heures non utilisés, pour être monétisés ou utilisés plus tard. L'epargne-temps découle en général d'un accord d'entreprise.
 
@@ -53,7 +53,7 @@ Compte permettant au salarié d'épargner des jours ou heures non utilisés, pou
 Terme issu de la paie, assimilable dans Figgo au compte, lorsqu'il représente un compte avec acquisition.
 
 ### Congés payés
-<div class="u-textLight u-textSmall"><b>CP</b> : Utilisable partout</div>
+<div class="u-textLight u-textSmall"><strong>CP</strong> : Utilisable partout</div>
 
 Compte permettant au salarié d'accumuler des jours de congés annuels pendant lesquels il reste rémunéré.
 
@@ -80,7 +80,7 @@ Droit à congé rémunéré existant en France et à Monaco, en supplément des 
 Groupe de collaborateurs personnalisable par l'utilisateur, pour affichage dans le planning. Peut-être utilisé lorsque les notions de département, collaborateurs supervisés ne suffisent pas.
 
 ### Matricule paie
-<div class="u-textLight u-textSmall"><b>Matricule</b> : Réservé aux pages administrateurs</div>
+<div class="u-textLight u-textSmall"><strong>Matricule</strong> : Réservé aux pages administrateurs</div>
 
 Identifiant du collaborateur dans le logiciel de paie de l'entreprise.
 
@@ -210,7 +210,7 @@ Action de rembourser les frais engagés par le collaborateur.
 Ensemble des données comptables relatives à une entreprise.
 
 ### Reconnaissance Optique de Caractères
-<div class="u-textLight u-textSmall"><b>OCB</b> : Utilisable partout</div>
+<div class="u-textLight u-textSmall"><strong>OCB</strong> : Utilisable partout</div>
 
 Lecture informatisée des informations figurant sur un reçu papier pour en déduire : la nature, la date, le montant TTC, les montants de TVA.
 
@@ -309,7 +309,7 @@ Liste des jours fériés associée à une instance Figgo.
 
 ### Titre-restaurant
 
-<div class="u-textLight u-textSmall"><b>TR</b> : Réservé aux pages administrateurs</div>
+<div class="u-textLight u-textSmall"><strong>TR</strong> : Réservé aux pages administrateurs</div>
 
 Moyen de paiement destiné à payer des produits alimentaires dans les restaurants, la grande et la petite distribution.
 

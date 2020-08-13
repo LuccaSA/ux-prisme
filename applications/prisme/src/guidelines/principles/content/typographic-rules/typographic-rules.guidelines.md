@@ -58,8 +58,8 @@ L'apostrophe droite, ou apostrophe dactylographique, ne doit pas être utilisée
 
 <div class="callout mod-icon palette-info">
 	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon">info</span></div>
-	<b class="callout-title">Raccourci Windows</b> alt + 0146<br>
-	<b class="callout-title">Raccourci Mac</b> option + shift + ‘
+	<strong class="callout-title">Raccourci Windows</strong> alt + 0146<br>
+	<strong class="callout-title">Raccourci Mac</strong> option + shift + ‘
 </div>
 
 # Texte tronqué
