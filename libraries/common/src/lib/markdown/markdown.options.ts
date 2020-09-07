@@ -9,7 +9,7 @@ export class MarkedOptions extends NgxMarkedOptions {
 			return `
 			<div class="callout mod-icon palette-info">
 				<div class="callout-icon">
-					<i class="lucca-icon">info</i>
+					<span aria-hidden="true" class="lucca-icon">info</span>
 				</div>
 				<span class="extra-infos">${text}</span>
 			</div>`;
@@ -19,7 +19,7 @@ export class MarkedOptions extends NgxMarkedOptions {
 		};
 		this.renderer.image = (href: string, desc: string, title: string) => {
 			let imageReturn = `<figure class="markdown-image-container">
-				<a href="/${href}" target="_blank" class="markdown-image-link"><i class="lucca-icon icon-outside"></i></a>
+				<a href="/${href}" target="_blank" class="markdown-image-link"><span aria-hidden="true" class="lucca-icon icon-outside"></span></a>
 				<img src="/${href}" title="${title}" alt="${title}" class="markdown-image"/>`;
 			imageReturn += desc ? `<figcaption>${desc}</figcaption></figure>` : `</figure>`;
 			return imageReturn;

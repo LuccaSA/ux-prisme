@@ -22,7 +22,7 @@ export class IconsFeature {
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html'),
 				tsCode: require('!!prismjs-loader?lang=markup!./basic/basic.example.ts'),
 				extra: `
-				Si vous ne souhaitez pas utiliser de ligatures, vous pouvez appeler les icones en camelCase via le prefix <code class="code">icon-</code>. ex. <code class="code">&lt;i class="lucca-icon icon-chevronSouth"&gt;&lt;/i&gt;</code>
+				Si vous ne souhaitez pas utiliser de ligatures, vous pouvez appeler les icones en camelCase via le prefix <code class="code">icon-</code>. ex. <code class="code">&lt;span aria-hidden="true" class="lucca-icon icon-chevronSouth"&gt;&lt;/span&gt;</code>
 				`
 			},
 			{
