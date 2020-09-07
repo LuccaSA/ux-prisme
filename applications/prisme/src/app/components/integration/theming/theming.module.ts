@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, ThemeDocumentationService } from '@prisme/common';
 import { ThemingFeature } from './theming.feature';
-import { LuSelectModule, LuOptionFeederModule, LuOptionModule, LuInputModule } from '@lucca-front/ng';
+import { LuSelectModule } from '@lucca-front/ng/select';
+import { LuOptionModule } from '@lucca-front/ng/option';
+import { LuInputModule } from '@lucca-front/ng/input';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -10,7 +12,6 @@ import { FormsModule } from '@angular/forms';
 		CommonModule,
 		LuSelectModule,
 		LuInputModule,
-		LuOptionFeederModule,
 		LuOptionModule,
 	],
 	declarations: [

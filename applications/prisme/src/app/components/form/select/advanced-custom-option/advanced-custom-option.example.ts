@@ -1,5 +1,5 @@
 import { Component, forwardRef, Input, Output, EventEmitter, HostListener, ViewContainerRef, ElementRef } from '@angular/core';
-import { ALuOptionItem, ILuOptionItem } from '@lucca-front/ng';
+import { ALuOptionItem, ILuOptionItem } from '@lucca-front/ng/option';
 
 @Component({
 	selector: 'pri-advanced-custom-option-example',

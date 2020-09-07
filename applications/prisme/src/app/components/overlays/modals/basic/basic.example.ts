@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LuModal, ILuModalContent } from '@lucca-front/ng';
+import { LuModal, ILuModalContent } from '@lucca-front/ng/modal';
 
 @Component({
 	selector: 'pri-basic-example',
