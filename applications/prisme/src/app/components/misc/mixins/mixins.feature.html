@@ -45,4 +45,28 @@
 @include media_between("nom_breakpoint1", "nom_breakpoint2") &#123;&#125;
 </pre></code>
 	</section>
+
+	<section class="contentSection">
+		<h2>Masquage</h2>
+		<p>Vous pouvez utiliser la mixin mask pour masquer visuellement un élément sans pour autant le retirer de la couche sémantique du document.</p>
+<code class="code mod-block"><pre>
+@import "~@lucca-front/scss/src/mixins";
+@include mask;
+</pre></code>
+<div class="callout mod-icon palette-info">
+	<div class="callout-icon">
+		<i class="lucca-icon">info</i>
+	</div>
+	La classe .u-mask fait directement appel à cette mixin.
+</div>
+	</section>
+
+	<section class="contentSection">
+		<h2>IE 11</h2>
+		<p>La mixin ie11 permet de filtrer ce navigateur tout en étant explicite dans votre code malgré le hack CSS.</p>
+<code class="code mod-block"><pre>
+@import "~@lucca-front/scss/src/mixins";
+@include ie11 &#123; … &#125;
+</pre></code>
+	</section>
 </section>
