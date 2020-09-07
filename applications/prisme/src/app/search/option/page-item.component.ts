@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Output, HostListener, Input, EventEmitter, forwardRef, ElementRef, HostBinding } from '@angular/core';
-import { ILuOptionItem, ALuOptionItem } from '@lucca-front/ng';
+import { ILuOptionItem, ALuOptionItem } from '@lucca-front/ng/option';
 import { IPage } from '@prisme/common';
 
 @Component({
