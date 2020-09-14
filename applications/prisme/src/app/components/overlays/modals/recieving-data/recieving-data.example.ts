@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { of, Subject } from 'rxjs';
-import { LuModal, ILuModalContent } from '@lucca-front/ng';
+import { Subject } from 'rxjs';
+import { LuModal, ILuModalContent } from '@lucca-front/ng/modal';
 
 @Component({
 	selector: 'pri-recieving-data-example',

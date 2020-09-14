@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { LuModal, LU_MODAL_DATA, ILuModalContent } from '@lucca-front/ng';
+import { LuModal, LU_MODAL_DATA, ILuModalContent } from '@lucca-front/ng/modal';
 
 @Component({
 	selector: 'pri-sending-data-example',

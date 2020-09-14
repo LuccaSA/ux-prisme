@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@prisme/common';
 import { TooltipsFeature } from './tooltips.feature';
-import { LuTooltipModule } from '@lucca-front/ng';
+import { LuTooltipModule } from '@lucca-front/ng/tooltip';
 import { BasicExample } from './basic/basic.example';
 import { DisabledExample } from './disabled/disabled.example';
 import { HtmlExample } from './html/html.example';

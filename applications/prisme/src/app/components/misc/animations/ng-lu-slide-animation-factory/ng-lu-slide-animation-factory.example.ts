@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { luSlideAnimationFactory } from '@lucca-front/ng';
+import { luSlideAnimationFactory } from '@lucca-front/ng/animations';
 
 @Component({
 	selector: 'pri-ng-lu-slide-animation-factory-example',

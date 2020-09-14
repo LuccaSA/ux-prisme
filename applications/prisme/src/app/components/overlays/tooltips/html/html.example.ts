@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
 	templateUrl: './html.example.html'
 })
 export class HtmlExample {
-	tooltipContent = `Normal, <b>gras</b>, <i>italique</i>`;
+	tooltipContent = `Normal, <strong>gras</strong>, <em>italique</em>`;
 }

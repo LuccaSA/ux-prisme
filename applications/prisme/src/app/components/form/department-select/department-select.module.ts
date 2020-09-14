@@ -3,7 +3,7 @@ import { CommonModule } from '@prisme/common';
 import { DepartmentSelectFeature } from './department-select.feature';
 import { BasicExample } from './basic/basic.example';
 import { FormsModule } from '@angular/forms';
-import { LuDepartmentModule } from '@lucca-front/ng';
+import { LuDepartmentModule } from '@lucca-front/ng/department';
 import { MultipleExample } from './multiple/multiple.example';
 
 @NgModule({
