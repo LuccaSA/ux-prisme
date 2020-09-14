@@ -113,16 +113,16 @@ $palettes: (
 $colors: (
 	text: (
 		"dark": (
-			color: desaturate(darken(#88a0c3, 37%), 25%)
+			color: #14253e
 		),
 		"default": (
-			color: desaturate(darken(#88a0c3, 23%), 25%)
+			color: #2a3e5a
 		),
 		"light": (
-			color: desaturate(lighten(#88a0c3, 2%), 20%)
+			color: #88a0c3
 		),
 		"placeholder": (
-			color: desaturate(lighten(#88a0c3, 10%), 20%)
+			color: #ceddf3
 		),
 	),
 );
