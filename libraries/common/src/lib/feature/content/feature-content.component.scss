@@ -3,7 +3,7 @@
 	"~@lucca-front/scss/src/mixins";
 
 .feature-content {
-	padding: _theme("spacings.bigger") _theme("spacings.bigger");
+	padding: _theme("spacings.big") _theme("spacings.bigger");
 	max-width: 90rem;
 }
 

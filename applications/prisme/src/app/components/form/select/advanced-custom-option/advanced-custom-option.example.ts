@@ -15,7 +15,7 @@ export class AdvancedCustomOptionExample {
 
 @Component({
 	selector: 'color-option',
-	template: `<div [style.color]="value.name">{{value.name}}</div>`,
+	template: `<div class="u-paddingSmaller" [style.color]="value.name">{{value.name}}</div>`,
 	providers: [
 		{
 			provide: ALuOptionItem,

@@ -1,7 +1,7 @@
 <div>
 	<label class="textfield">
 		<lu-select [(ngModel)]="item" class="textfield-input">
-			<h4 *luDisplayer="let value">{{value.id}} - {{value.name}}</h4>
+			<h4 class="u-marginReset" *luDisplayer="let value">{{value.id}} - {{value.name}}</h4>
 			<lu-option-picker>
 				<lu-option [value]="green">{{green.name}}</lu-option>
 				<lu-option [value]="red">{{red.name}}</lu-option>
