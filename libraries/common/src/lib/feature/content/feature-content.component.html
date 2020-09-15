@@ -49,7 +49,7 @@
 					<a class="feature-quickNav-item" routerLink="./"
 						fragment="examples" queryParamsHandling="true">Design</a>
 						<a href="" class="feature-quickNav-item mod-subItem" *ngFor="let example of infos.examples" routerLink="./"
-						fragment="examples-{{example.title}}" queryParamsHandling="true">{{example.title}}</a>
+						fragment="examples-{{slugify(example.title)}}" queryParamsHandling="true">{{example.title}}</a>
 				</ng-container>
 
 				<a class="feature-quickNav-item" *ngIf="infos.guidelines" routerLink="./" fragment="guidelines"

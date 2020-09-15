@@ -7,7 +7,7 @@
 	</lu-select>
 </div> -->
 
-<div *ngFor="let selectedExample of examples" class="example-display" id="examples-{{selectedExample.title}}">
+<div *ngFor="let selectedExample of examples" class="example-display" id="examples-{{slugify(selectedExample.title)}}">
 	<h2>{{selectedExample.title}}</h2>
 	<p class="description" *ngIf="selectedExample.description" [innerHtml]="selectedExample.description | priSafeContent: 'html'"></p>
 	<pri-code-tabs [example]="selectedExample"></pri-code-tabs>
