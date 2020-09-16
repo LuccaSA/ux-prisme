@@ -1,12 +1,3 @@
-<!-- <div class="textfield mod-long" *ngIf="examples.length > 1">
-	<lu-select [(ngModel)]="selectedExample" (ngModelChange)="onModelChange()" class="textfield-input">
-		<div *luDisplayer="let value">{{value.title}}</div>
-		<lu-option-picker>
-			<lu-option *ngFor="let example of examples" [value]="example">{{example.title}}</lu-option>
-		</lu-option-picker>
-	</lu-select>
-</div> -->
-
 <div *ngFor="let selectedExample of examples" class="example-display" id="examples-{{slugify(selectedExample.title)}}">
 	<h2>{{selectedExample.title}}</h2>
 	<p class="description" *ngIf="selectedExample.description" [innerHtml]="selectedExample.description | priSafeContent: 'html'"></p>
