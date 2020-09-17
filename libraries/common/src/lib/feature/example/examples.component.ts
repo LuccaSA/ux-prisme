@@ -1,26 +1,17 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IExample } from './example.model';
-import { ExampleService } from './example.service';
 
 @Component({
 	selector: 'pri-examples',
 	templateUrl: './examples.component.html',
 	styleUrls: ['./examples.component.scss']
 })
-export class ExamplesComponent implements OnInit {
+export class ExamplesComponent {
 	@Input() examples: Array<IExample>;
-	selectedExample: IExample;
-
-	constructor(private exService: ExampleService) {}
-
-	ngOnInit() {
-		this.selectedExample = this.exService.getCurrentExample(this.examples);
+	slugify(text) {
+		let slug = text.toLowerCase().trim();
+		slug = slug.replace(/[^a-z0-9\s-]/g, ' ');
+		slug = slug.replace(/[\s-]+/g, '-');
+		return slug;
 	}
-
-	onModelChange() {
-		this.exService.setCurrentExample(this.selectedExample);
-	}
-
-
-
 }

@@ -8,4 +8,11 @@ import { IFeatureInfos } from '../feature-infos.model';
 })
 export class FeatureContentComponent {
 	@Input() infos: IFeatureInfos;
+
+	slugify(text) {
+		let slug = text.toLowerCase().trim();
+		slug = slug.replace(/[^a-z0-9\s-]/g, ' ');
+		slug = slug.replace(/[\s-]+/g, '-');
+		return slug;
+	}
 }
