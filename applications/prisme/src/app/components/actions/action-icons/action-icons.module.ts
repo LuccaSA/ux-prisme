@@ -6,9 +6,13 @@ import { StatusExampleComponent } from './status/status.example';
 import { LoadingExample } from './loading/loading.example';
 import { InvertedExample } from './inverted/inverted.example';
 import { PalettesExample } from './palettes/palettes.example';
+import { LuTooltipModule } from '@lucca-front/ng/tooltip';
 
 @NgModule({
-	imports: [ CommonModule ],
+	imports: [
+		CommonModule,
+		LuTooltipModule
+	],
 	declarations: [
 		ActionIconsFeature,
 		BasicExampleComponent,
@@ -26,4 +30,4 @@ import { PalettesExample } from './palettes/palettes.example';
 		PalettesExample
 	]
 })
-export class ActionIconsModule {}
+export class ActionIconsModule { }
