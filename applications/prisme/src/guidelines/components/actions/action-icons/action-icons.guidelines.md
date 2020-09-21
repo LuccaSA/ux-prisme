@@ -9,7 +9,7 @@ Une icône d’action doit systématiquement être associée d’un tooltip cour
 # Accessibilité
 
 Une icône véhicule de l’information : il faut y proposer une alternative textuelle pour ceux qui n’ont pas accès au visuel de la page (les robots, les aveugles, etc.). 
-+ L'icône doit posséder l'attribut `aria-hidden="true"` pour que les lecteurs d'écran l'ignore
++ L'icône doit posséder l'attribut `aria-hidden="true"` pour que les lecteurs d'écran l'ignorent.
 + Un texte masqué visuellement (classe `u-mask`) doit être placé dans le bouton afin de signifier la fonction de ce dernier
 
 # Nombres
