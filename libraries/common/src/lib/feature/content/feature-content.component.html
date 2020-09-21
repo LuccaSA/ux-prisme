@@ -45,19 +45,24 @@
 		</div>
 		<div class="grid-xxl4 u-paddingLeftBig">
 			<nav class="feature-quickNav">
-				<a class="feature-quickNav-item" *ngIf="infos.examples && infos.examples.length" routerLink="./"
-					fragment="examples" preserveQueryParams="true">Design</a>
+				<ng-container *ngIf="infos.examples && infos.examples.length">
+					<a class="feature-quickNav-item" routerLink="./"
+						fragment="examples" queryParamsHandling="true">Design</a>
+						<a class="feature-quickNav-item mod-subItem" *ngFor="let example of infos.examples" routerLink="./"
+						fragment="examples-{{slugify(example.title)}}" queryParamsHandling="true">{{example.title}}</a>
+				</ng-container>
+
 				<a class="feature-quickNav-item" *ngIf="infos.guidelines" routerLink="./" fragment="guidelines"
-					preserveQueryParams="true">Règles d’usage</a>
+					queryParamsHandling="preseve">Règles d’usage</a>
 				<!-- <a class="feature-quickNav-item">Composants similaires</a> -->
 				<a class="feature-quickNav-item" *ngIf="infos.theme" routerLink="./" fragment="theme"
-					preserveQueryParams="true">Thème</a>
+					queryParamsHandling="preseve">Thème</a>
 				<a class="feature-quickNav-item" *ngIf="infos.directive" routerLink="./" fragment="directive"
-					preserveQueryParams="true">Directive</a>
+					queryParamsHandling="preseve">Directive</a>
 				<a class="feature-quickNav-item" *ngIf="infos.component" routerLink="./" fragment="component"
-					preserveQueryParams="true">Component</a>
+					queryParamsHandling="preseve">Component</a>
 				<a class="feature-quickNav-item" *ngIf="infos.pipe" routerLink="./" fragment="pipe"
-					preserveQueryParams="true">Pipe</a>
+					queryParamsHandling="preseve">Pipe</a>
 			</nav>
 		</div>
 	</div>

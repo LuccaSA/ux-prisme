@@ -3,13 +3,13 @@
 	"~@lucca-front/scss/src/mixins";
 
 .feature-content {
-	padding: _theme("spacings.bigger") _theme("spacings.bigger");
+	padding: _theme("spacings.big") _theme("spacings.bigger");
 	max-width: 90rem;
 }
 
 .feature-quickNav {
 	position: sticky;
-	margin-top: 4rem;
+	margin-top: _theme("spacings.biggest");
 	right: 0;
 	top: 8rem;
 	width: 100%;
@@ -24,7 +24,7 @@
 }
 
 .feature-quickNav-item {
-	padding: .5rem 1rem;
+	padding: _theme("spacings.smaller") _theme("spacings.small");
 	position: relative;
 	display: block;
 	color: _color("text.default");
@@ -55,5 +55,12 @@
 		&::before {
 			transform: scaleY(1);
 		}
+	}
+
+	&.mod-subItem {
+		margin-left: _theme("spacings.small");
+		padding: _theme("spacings.smallest") _theme("spacings.smaller");
+		font-size: _theme("sizes.small.font-size");
+		color: _color("text.light");
 	}
 }

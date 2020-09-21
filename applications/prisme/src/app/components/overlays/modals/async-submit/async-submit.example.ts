@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Subject, of } from 'rxjs';
 import { delay } from 'rxjs/operators';
-import { LuModal, ILuModalContent } from '@lucca-front/ng';
+import { LuModal, ILuModalContent } from '@lucca-front/ng/modal';
 
 @Component({
 	selector: 'pri-async-submit-example',

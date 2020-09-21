@@ -50,7 +50,8 @@ export class ButtonsFeature {
 				title: 'Groupe',
 				component: GroupsExampleComponent,
 				code: require('!!prismjs-loader?lang=markup!./groups/groups.example.html'),
-				mod: 'white'
+				mod: 'white',
+				extra: 'Vous pouvez appliquer les couleurs des palettes ou groupes de boutons.'
 			},
 			{
 				title: 'Actions secondaires',

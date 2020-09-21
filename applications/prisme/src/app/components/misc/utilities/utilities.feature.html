@@ -2,10 +2,38 @@
 
 <section class="page-content u-animatedFadeIn">
 	<section class="contentSection">
+		<h2>Borders</h2>
+		<h4>All</h4>
+		<p>
+			<code class="code">u-borderReset</code>
+		</p>
+		<h4>Bottom</h4>
+		<p>
+			<code class="code">u-borderBottomReset</code>
+		</p>
+		<h4>Top</h4>
+		<p>
+			<code class="code">u-borderTopReset</code>
+		</p>
+		<h4>Right</h4>
+		<p>
+			<code class="code">u-borderRightReset</code>
+		</p>
+		<h4>Left</h4>
+		<p>
+			<code class="code">u-borderLeftReset</code>
+		</p>
+
 		<h2>Margins</h2>
-		<h4>Tout supprimer</h4>
+		<h4>All</h4>
 		<p>
 			<code class="code">u-marginReset</code>
+			<code class="code">u-marginSmaller</code>
+			<code class="code">u-marginSmall</code>
+			<code class="code">u-marginStandard</code>
+			<code class="code">u-marginBig</code>
+			<code class="code">u-marginBigger</code>
+			<code class="code">u-marginBiggest</code>
 		</p>
 		<h4>Bottom</h4>
 		<p>
@@ -51,9 +79,15 @@
 
 	<section class="contentSection">
 		<h2>Paddings</h2>
-		<h4>Tout supprimer</h4>
+		<h4>All</h4>
 		<p>
 			<code class="code">u-paddingReset</code>
+			<code class="code">u-paddingSmaller</code>
+			<code class="code">u-paddingSmall</code>
+			<code class="code">u-paddingStandard</code>
+			<code class="code">u-paddingBig</code>
+			<code class="code">u-paddingBigger</code>
+			<code class="code">u-paddingBiggest</code>
 		</p>
 		<h4>Bottom</h4>
 		<p>
@@ -95,6 +129,20 @@
 			<code class="code">u-paddingLeftBigger</code>
 			<code class="code">u-paddingLeftBiggest</code>
 		</p>
+	</section>
+
+	<section class="contentSection">
+		<h2>Reset</h2>
+		<p>Vous pouvez réinitialiser l’affichage des listes et des boutons.</p>
+
+		<ul class="u-listReset">
+			<li>u-listReset</li>
+			<li><button class="u-buttonReset">u-buttonReset</button></li>
+		</ul>
+
+		<code class="code">u-buttonReset</code>
+		<code class="code">u-listReset</code>
+
 	</section>
 
 	<section class="contentSection">
@@ -165,7 +213,7 @@
 			<code class="code">u-textError</code>
 		</p>
 		<div class="callout mod-icon palette-info">
-			<div class="callout-icon"><i class="lucca-icon">info</i></div>
+			<div class="callout-icon"><span aria-hidden="true" class="lucca-icon">info</span></div>
 			Les couleurs de votre palette sont éditables via votre <a href="https://github.com/LuccaSA/lucca-front/#palettes" target="_blank">thème</a>
 		</div>
 	</section>
@@ -175,6 +223,11 @@
 		<p>Vous pouvez empêcher le retour à la ligne. Cela peut être utile pour forcer l'affichage en une ligne dans un tableau.</p>
 		<p>
 			<code class="code">u-nowrap</code>
+		</p>
+
+		<p>Vous pouvez autriser les retours à la ligne. Cela peut être utilisé en surcharge de la classe .button.</p>
+		<p>
+			<code class="code">u-wrap</code>
 		</p>
 	</section>
 
@@ -201,15 +254,26 @@
 		<h2>Spin Buttons</h2>
 		<p>Vous pouvez retirer les flèches incrémentales d'un input number.</p>
 		<div class="form-group">
-			<div class="textfield mod-inline">
-				<input class="textfield-input" id="textfieldID" type="number" value="1234">
-				<label class="textfield-label" for="textfieldID">Spin buttons</label>
+			<div>
+				<label class="textfield mod-inline">
+					<input class="textfield-input" type="number" value="1234">
+					<span class="textfield-label">Spin buttons</span>
+				</label>
 			</div>
-			<div class="textfield mod-inline">
-				<input class="textfield-input u-noSpinButtons" id="textfieldID" type="number" value="1234">
-				<label class="textfield-label" for="textfieldID">Pas de spin buttons</label>
+			<div>
+				<label class="textfield mod-inline">
+					<input class="textfield-input u-noSpinButtons" type="number" value="1234">
+					<span class="textfield-label">Pas de spin buttons</span>
+				</label>
 			</div>
 		</div>
 		<code class="code">u-noSpinButtons</code>
+	</section>
+
+	<section class="contentSection">
+		<h2>Masquage</h2>
+		<p>Pour masquer un élément visuellement sans le supprimer de la couche sémantique. Ceci est très souvent utilisé pour aider à rendre accessible des contenus.</p>
+		<p>Un,  <span class="u-mask">deux,</span> trois, <span class="u-mask">quatre,</span> et cinq.</p>
+		<code class="code">u-mask</code>
 	</section>
 </section>

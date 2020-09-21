@@ -1,0 +1,18 @@
+<button class="button" [luDropdown]="dropdown">click me</button>
+<lu-dropdown #dropdown>
+	<li class="lu-dropdown-options-item " >
+		<a routerLink="." fragment="link1" class="lu-dropdown-options-item-action is-disabled" luDropdownItem>Link 1</a>
+	</li>
+	<li class="lu-dropdown-options-item">
+		<a routerLink="." fragment="link2" class="lu-dropdown-options-item-action is-disabled" luDropdownItem>Link 2</a>
+	</li>
+	<li class="lu-dropdown-options-item" >
+		<a routerLink="." fragment="link3"  class="lu-dropdown-options-item-action" luDropdownItem>Link 3</a>
+	</li>
+	<li class="lu-dropdown-options-item" >
+		<button class="lu-dropdown-options-item-action" luDropdownItem (click)="debug(4)">Button 4</button>
+	</li>
+	<li class="lu-dropdown-options-item" >
+		<div role="button" tabindex="0" class="lu-dropdown-options-item-action" (click)="debug(5)" luDropdownItem>Div 5</div> <!-- this doesnt work with divs-->
+	</li>
+</lu-dropdown>

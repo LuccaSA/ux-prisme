@@ -1,28 +1,32 @@
-<div class="textfield">
-	<lu-select [(ngModel)]="items" class="textfield-input" multiple>
-		<span class="chip mod-unkillable" *luDisplayer="let value">{{value.name}}</span>
-		<lu-option-picker>
-			<lu-option [value]="green">{{green.name}}</lu-option>
-			<lu-option [value]="red">{{red.name}}</lu-option>
-			<lu-option [value]="yellow">{{yellow.name}}</lu-option>
-			<lu-option [value]="blue">{{blue.name}}</lu-option>
-		</lu-option-picker>
-		<lu-input-clearer></lu-input-clearer>
-	</lu-select>
-	<label class="textfield-label" for="itemOptions">Afficher tous les élements sélectionnés</label>
+<div class="u-marginRightStandard">
+	<label class="textfield">
+		<lu-select [(ngModel)]="items" class="textfield-input" multiple>
+			<span class="chip mod-unkillable" *luDisplayer="let value">{{value.name}}</span>
+			<lu-option-picker>
+				<lu-option [value]="green">{{green.name}}</lu-option>
+				<lu-option [value]="red">{{red.name}}</lu-option>
+				<lu-option [value]="yellow">{{yellow.name}}</lu-option>
+				<lu-option [value]="blue">{{blue.name}}</lu-option>
+			</lu-option-picker>
+			<lu-input-clearer></lu-input-clearer>
+		</lu-select>
+		<span class="textfield-label">Afficher tous les élements sélectionnés</span>
+	</label>
 </div>
-<div class="textfield">
-	<lu-select [(ngModel)]="items" class="textfield-input" multiple>
-		<ng-container *luDisplayer="let values; multiple: true">
-			<span class="label">{{values?.length || 0}}</span> colors selected
-		</ng-container>
-		<lu-option-picker>
-			<lu-option [value]="green">{{green.name}}</lu-option>
-			<lu-option [value]="red">{{red.name}}</lu-option>
-			<lu-option [value]="yellow">{{yellow.name}}</lu-option>
-			<lu-option [value]="blue">{{blue.name}}</lu-option>
-		</lu-option-picker>
-		<lu-input-clearer></lu-input-clearer>
-	</lu-select>
-	<label class="textfield-label" for="itemOptions">Afficher un résumé de la sélection</label>
+<div>
+	<label class="textfield">
+		<lu-select [(ngModel)]="items" class="textfield-input" multiple>
+			<ng-container *luDisplayer="let values; multiple: true">
+				<span class="label">{{values?.length || 0}}</span> colors selected
+			</ng-container>
+			<lu-option-picker>
+				<lu-option [value]="green">{{green.name}}</lu-option>
+				<lu-option [value]="red">{{red.name}}</lu-option>
+				<lu-option [value]="yellow">{{yellow.name}}</lu-option>
+				<lu-option [value]="blue">{{blue.name}}</lu-option>
+			</lu-option-picker>
+			<lu-input-clearer></lu-input-clearer>
+		</lu-select>
+		<span class="textfield-label">Afficher un résumé de la sélection</span>
+	</label>
 </div>

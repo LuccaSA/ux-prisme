@@ -1,7 +1,45 @@
+<h3>1 - Standard</h3>
 <div class="file mod-small">
-	<i class="file-icon lucca-icon icon-cloudUpload"></i>
+	<span aria-hidden="true" class="file-icon lucca-icon icon-cloudUpload"></span>
 	<div class="file-title">Drag and drop your file here</div>
-	<div class="file-or">Or</div>
-	<a>browse file</a>
+	<button class="button mod-outline mod-small">browse file</button>
+	<input class="file-input" type="file">
+</div>
+
+<h3>2 - Droppable</h3>
+<div class="file mod-small is-droppable">
+	<div class="file-title">Drag and drop your file here</div>
+	<button class="button mod-outline mod-small">Browse file</button>
+	<input class="file-input" type="file">
+</div>
+
+<h3>3 - Whitout button</h3>
+<div class="file mod-small">
+	<div class="file-title">Uploading your file...</div>
+	<div class="file-progress progress">
+		<div class="progress-bar" style="width: 50%"></div>
+	</div>
+	<input class="file-input" type="file">
+</div>
+
+<h3>4 - Success</h3>
+<div class="file mod-small mod-icon">
+	<i class="file-icon lucca-icon icon-success u-textSuccess"></i>
+	<div class="file-title">
+		<div class="u-textSuccess">File uploaded</div>
+		<div class="u-textSmall u-textLight">file_name</div>
+	</div>
+	<button class="button mod-outline mod-small">Select another file</button>
+	<input class="file-input" type="file">
+</div>
+
+<h3>5 - Error</h3>
+<div class="file mod-small mod-icon">
+	<i class="file-icon lucca-icon icon-error u-textError"></i>
+	<div class="file-title">
+		<div class="u-textError">File uploaded</div>
+		<div class="u-textSmall u-textLight">file_name</div>
+	</div>
+	<button class="button mod-outline mod-small">browse file</button>
 	<input class="file-input" type="file">
 </div>

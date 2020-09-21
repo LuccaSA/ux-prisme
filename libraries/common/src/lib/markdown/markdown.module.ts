@@ -26,7 +26,7 @@ export class MarkdownRootModule {}
 	],
 })
 export class MarkdownModule {
-	public static forRoot(): ModuleWithProviders {
+	public static forRoot(): ModuleWithProviders<MarkdownRootModule> {
 		return {
 			ngModule: MarkdownRootModule,
 		};

@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@prisme/common';
 import { SelectFeature } from './select.feature';
 import { BasicExample } from './basic/basic.example';
-import { LuUserSelectModule } from '@lucca-front/ng';
+import { LuUserModule } from '@lucca-front/ng/user';
 import { FormsModule } from '@angular/forms';
 import { RedirectModule } from '../../../redirect';
 
 @NgModule({
 	imports: [
 		CommonModule,
-		LuUserSelectModule,
+		LuUserModule,
 		FormsModule,
 		RedirectModule,
 	],

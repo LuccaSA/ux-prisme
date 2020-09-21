@@ -1,6 +1,8 @@
-<div class="textfield">
-	<lu-date-select class="textfield-input" [(ngModel)]="date"></lu-date-select>
-	<label class="textfield-label">date</label>
+<div>
+	<label class="textfield">
+		<lu-date-select class="textfield-input" [(ngModel)]="date"></lu-date-select>
+		<span class="textfield-label">date</span>
+	</label>
 </div>
 <code>
 	{{ date | luDate: 'longDate' }}

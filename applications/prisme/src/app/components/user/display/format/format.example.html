@@ -1,11 +1,13 @@
-<div class="textfield">
-	<lu-select class="textfield-input" [(ngModel)]="selectedFormat">
-		<span *luDisplayer="let format">{{format.name}}</span>
-		<lu-option-picker>
-			<lu-option *ngFor="let format of availableFormats" [value]="format">{{format.name}}</lu-option>
-		</lu-option-picker>
-	</lu-select>
-	<label class="textfield-label">Format</label>
+<div>
+	<label class="textfield">
+		<lu-select class="textfield-input" [(ngModel)]="selectedFormat">
+			<span *luDisplayer="let format">{{format.name}}</span>
+			<lu-option-picker>
+				<lu-option *ngFor="let format of availableFormats" [value]="format">{{format.name}}</lu-option>
+			</lu-option-picker>
+		</lu-select>
+		<span class="textfield-label">Format</span>
+	</label>
 </div>
 <p>
 	{{ user | luUserDisplay: selectedFormat.id }}

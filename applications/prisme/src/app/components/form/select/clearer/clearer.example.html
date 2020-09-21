@@ -1,14 +1,16 @@
-<div class="textfield">
-	<lu-select [(ngModel)]="item" class="textfield-input">
-		<ng-container *luDisplayer="let value">{{value.name}}</ng-container>
-		<lu-option-picker>
-			<lu-option [value]="green">{{green.name}}</lu-option>
-			<lu-option [value]="red">{{red.name}}</lu-option>
-			<lu-option [value]="yellow">{{yellow.name}}</lu-option>
-			<lu-option [value]="blue">{{blue.name}}</lu-option>
-		</lu-option-picker>
-		<!-- pass the clearer as a content child -->
-		<lu-input-clearer></lu-input-clearer>
-	</lu-select>
-	<label class="textfield-label" for="itemOptions">my label</label>
+<div>
+	<label class="textfield">
+		<lu-select [(ngModel)]="item" class="textfield-input">
+			<ng-container *luDisplayer="let value">{{value.name}}</ng-container>
+			<lu-option-picker>
+				<lu-option [value]="green">{{green.name}}</lu-option>
+				<lu-option [value]="red">{{red.name}}</lu-option>
+				<lu-option [value]="yellow">{{yellow.name}}</lu-option>
+				<lu-option [value]="blue">{{blue.name}}</lu-option>
+			</lu-option-picker>
+			<!-- pass the clearer as a content child -->
+			<lu-input-clearer></lu-input-clearer>
+		</lu-select>
+		<span class="textfield-label">my label</span>
+	</label>
 </div>
