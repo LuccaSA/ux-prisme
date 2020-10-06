@@ -21,7 +21,7 @@ export class FramedExample {
 						{
 							type: 'input',
 							key: 'lastName',
-							className: 'form-group-line-md6',
+							className: 'form-group-line-col mod-md6',
 
 							templateOptions: {
 								label: 'Nom',
@@ -31,7 +31,7 @@ export class FramedExample {
 						{
 							type: 'input',
 							key: 'firstName',
-							className: 'form-group-line-md6',
+							className: 'form-group-line-col mod-md6',
 							templateOptions: {
 								label: 'Prenom',
 							}
