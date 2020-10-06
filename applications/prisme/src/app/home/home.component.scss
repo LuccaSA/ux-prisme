@@ -3,7 +3,9 @@
 
 .card.mod-visual {
   min-height: 17.5rem;
-  @include media_between("lg", "xl") {
-    min-height: 21rem;
+  @include media_larger_than("lg") {
+    @include media_smaller_than("xl") {
+      min-height: 21rem;
+    }
   }
 }

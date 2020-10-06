@@ -17,7 +17,7 @@ const content = sourceFiles.reduce((soFar, file) => {
 	fileContent = fileContent.replace(/: [^\(](.*?)$/gm, singleQuoteValues);
 
 	// Remove all comments
-	fileContent = fileContent.replace(/\/\*[\s\S]*?\*\/|([^:"]|^)\/\/.*$/gm, "");
+	// fileContent = fileContent.replace(/\/\*[\s\S]*?\*\/|([^:"]|^)\/\/.*$/gm, "");
 
 	// Format content
 	fileContent = fileContent.replace(/,(\s*?)(?=\))/gm, "");
