@@ -66,6 +66,7 @@
     "tslib": "^2.0.1",
     "tslint": "~5.20.1",
     "typescript": ">=3.9.0 <3.10.0",
-    "unist-util-visit": "^2.0.1"
+    "unist-util-visit": "^2.0.1",
+    "webpack-subresource-integrity": "1.5.0"
   }
 }
