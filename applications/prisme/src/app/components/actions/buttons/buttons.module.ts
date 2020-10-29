@@ -7,6 +7,7 @@ import { StatusExampleComponent } from './status/status.example';
 import { GroupsExampleComponent } from './groups/groups.example';
 import { SizesExampleComponent } from './sizes/sizes.example';
 import { MoreActionsExample } from './more-actions/more-actions.example';
+import { WithIconExample } from './with-icon/with-icon.example';
 @NgModule({
 	imports: [ CommonModule ],
 	declarations: [
@@ -16,7 +17,8 @@ import { MoreActionsExample } from './more-actions/more-actions.example';
 		StatusExampleComponent,
 		GroupsExampleComponent,
 		SizesExampleComponent,
-		MoreActionsExample
+		MoreActionsExample,
+		WithIconExample
 	],
 	entryComponents: [
 		BasicExampleComponent,
@@ -24,7 +26,8 @@ import { MoreActionsExample } from './more-actions/more-actions.example';
 		StatusExampleComponent,
 		GroupsExampleComponent,
 		SizesExampleComponent,
-		MoreActionsExample
+		MoreActionsExample,
+		WithIconExample
 	]
 })
 export class ButtonsModule {}

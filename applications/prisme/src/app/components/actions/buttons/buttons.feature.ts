@@ -6,6 +6,7 @@ import { StatusExampleComponent } from './status/status.example';
 import { GroupsExampleComponent } from './groups/groups.example';
 import { SizesExampleComponent } from './sizes/sizes.example';
 import { MoreActionsExample } from './more-actions/more-actions.example';
+import { WithIconExample } from './with-icon/with-icon.example';
 declare var require: any;
 
 @Component({
@@ -57,6 +58,11 @@ export class ButtonsFeature {
 				title: 'Actions secondaires',
 				component: MoreActionsExample,
 				code: require('!!prismjs-loader?lang=markup!./more-actions/more-actions.example.html'),
+			},
+			{
+				title: 'Icônes et compteur',
+				component: WithIconExample,
+				code: require('!!prismjs-loader?lang=markup!./with-icon/with-icon.example.html'),
 			},
 		],
 		theme: this.themeService.get('button')
