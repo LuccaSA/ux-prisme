@@ -4,7 +4,7 @@ import { BasicExampleComponent } from './basic/basic.example';
 import { InlineExampleComponent } from './inline/inline.example';
 import { PalettesExampleComponent } from './palettes/palettes.example';
 import { PartialExampleComponent } from './partial/partial.example';
-import { BigExample } from './big/big.example';
+import { SizesExample } from './sizes/sizes.example';
 declare var require: any;
 
 @Component({
@@ -43,18 +43,17 @@ export class CheckboxesFeature {
 				mod: 'white',
 			},
 			{
-				title: 'Big',
-				component: BigExample,
-				code: require('!!prismjs-loader?lang=markup!./big/big.example.html'),
-				mod: 'white',
-			},
-			{
 				title: 'Palettes',
 				component: PalettesExampleComponent,
 				code: require('!!prismjs-loader?lang=markup!./palettes/palettes.example.html'),
 				mod: 'white',
 				extra: `Les couleurs de votre palette sont éditables via votre
 				<a href="https://github.com/LuccaSA/lucca-front/#palettes" target="_blank">thème</a>`
+			},
+			{
+				title: 'Tailles',
+				component: SizesExample,
+				code: require('!!prismjs-loader?lang=markup!./sizes/sizes.example.html'),
 			},
 		],
 		theme: this.docApi.get('checkbox')
