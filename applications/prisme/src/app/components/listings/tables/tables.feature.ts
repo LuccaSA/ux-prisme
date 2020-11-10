@@ -12,6 +12,7 @@ import { SizesExample } from './sizes/sizes.example';
 import { VerticalAlignmentExample } from './vertical-alignment/vertical-alignment.example';
 import { HorizontalAlignmentExample } from './horizontal-alignment/horizontal-alignment.example';
 import { BorderlessExample } from './borderless/borderless.example';
+import { TwoLinesExample } from './twoLines/twoLines.example';
 declare var require: any;
 
 @Component({
@@ -31,6 +32,12 @@ export class TablesFeature {
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.component.html'),
 				mod: 'white',
 				extra: `Vous pouvez aligner en haut le contenu des cellules via le mod <code class="code">table mod-alignTop</code>`
+			},
+			{
+				title: 'Header sur deux lignes',
+				component: TwoLinesExample,
+				mod: 'white',
+				code: require('!!prismjs-loader?lang=markup!./twoLines/twoLines.example.html'),
 			},
 			{
 				title: 'Zèbre',
