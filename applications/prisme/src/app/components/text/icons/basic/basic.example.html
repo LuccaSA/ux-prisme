@@ -1,4 +1,4 @@
 <div *ngFor="let icon of icons">
-	<span aria-hidden="true" class="lucca-icon">{{icon}}</span>
-	<code class="code">{{icon}}</code>
+	<span aria-hidden="true" class="lucca-icon icon-{{camelize(icon)}}"></span>
+	<code class="code">icon-{{camelize(icon)}}</code>
 </div>
