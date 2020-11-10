@@ -24,6 +24,29 @@
 			<code class="code">u-borderLeftReset</code>
 		</p>
 
+		<h2>Display</h2>
+		<h4>Block</h4>
+		<p>
+			<code class="code">u-displayBlock</code>
+		</p>
+		<h4>Inline-block</h4>
+		<p>
+			<code class="code">u-displayInlineBlock</code>
+		</p>
+		<h4>Flex</h4>
+		<p>
+			<code class="code">u-displayFlex</code>
+		</p>
+		<h4>Inline-flex</h4>
+		<p>
+			<code class="code">u-displayInlineFlex</code>
+		</p>
+		<h4>None</h4>
+		<p>
+			<code class="code">u-displayNone</code>
+		</p>
+		
+
 		<h2>Margins</h2>
 		<h4>All</h4>
 		<p>
@@ -75,6 +98,67 @@
 			<code class="code">u-marginLeftBigger</code>
 			<code class="code">u-marginLeftBiggest</code>
 		</p>
+	</section>
+
+	<section class="contentSection">
+		<h2>Flex</h2>
+		<h4>Direction</h4>
+		<p>
+			<code class="code">u-flexDirectionColumn</code>
+			<code class="code">u-flexDirectionColumnReverse</code>
+			<code class="code">u-flexDirectionRow</code>
+			<code class="code">u-flexDirectionRowReverse</code>
+		</p>
+		<h4>Wrap</h4>
+		<p>
+			<code class="code">u-flexWrapWrap</code>
+			<code class="code">u-flexWrapNoWrap</code>
+			<code class="code">u-flexWrapReverse</code>
+		</p>
+		<h4>Justify Content</h4>
+		<p>
+			<code class="code">u-justifyContentFlexStart</code>
+			<code class="code">u-justifyContentFlexEnd</code>
+			<code class="code">u-justifyContentSpaceAround</code>
+			<code class="code">u-justifyContentSpaceBetween</code>
+			<code class="code">u-justifyContentSpaceEvenly</code>
+		</p>
+		<h4>Align Items</h4>
+		<p>
+			<code class="code">u-alignItemsFlexStart</code>
+			<code class="code">u-alignItemsFlexEnd</code>
+			<code class="code">u-alignItemsBaseline</code>
+			<code class="code">u-alignItemsCenter</code>
+			<code class="code">u-alignItemsStretch</code>
+		</p>
+		<h4>Align Self</h4>
+		<p>
+			<code class="code">u-alignSelfFlexStart</code>
+			<code class="code">u-alignSelfFlexEnd</code>
+			<code class="code">u-alignSelfBaseline</code>
+			<code class="code">u-alignSelfCenter</code>
+			<code class="code">u-alignSelfStretch</code>
+		</p>
+		<h4>Flex Grow/Shrink</h4>
+		<p>
+			<code class="code">u-flexGrow0</code>
+			<code class="code">u-flexGrow1</code>
+			<code class="code">u-flexShrink0</code>
+			<code class="code">u-flexShrink1</code>
+		</p>
+		<h4>Flex Basis</h4>
+		<p>Vous pouvez utiliser u-flexBasis[0-12] pour vous baser sur une grille de 12</p>
+		<p>
+			<code class="code">u-flexBasis0</code>
+			<code class="code">u-flexBasis1</code>
+			<code class="code">u-flexBasisAuto</code>
+		</p>
+		<h4>Order</h4>
+		<p>
+			<code class="code">u-order1</code>
+			<code class="code">u-order-1</code>
+		</p>
+
 	</section>
 
 	<section class="contentSection">
@@ -143,6 +227,16 @@
 		<code class="code">u-buttonReset</code>
 		<code class="code">u-listReset</code>
 
+	</section>
+
+	<section class="contentSection">
+		<h2>Listes séparée par des virgules</h2>
+		<p>Rajouter la classe <code class="code">u-comma</code> vous permet d'ajouter une virgule à un élément si ce n'est pas le dernier d'une liste</p>
+
+		<ul class="u-listReset u-displayFlex">
+			<li class="u-comma">élément 1</li>
+			<li class="u-comma">élément 2</li>
+		</ul>
 	</section>
 
 	<section class="contentSection">
@@ -251,6 +345,18 @@
 	</section>
 
 	<section class="contentSection">
+		<h2>Ombres</h2>
+		<p>Vous pouvez utiliser ces utilities pour ajouter les différents niveau d'élévation (1-6).</p>
+
+		<div class="u-elevate1" style="width:200px">u-elevate1</div>
+		<div class="u-elevate2" style="width:200px">u-elevate2</div>
+		<div class="u-elevate3" style="width:200px">u-elevate3</div>
+		<div class="u-elevate4" style="width:200px">u-elevate4</div>
+		<div class="u-elevate5" style="width:200px">u-elevate5</div>
+		<div class="u-elevate6" style="width:200px">u-elevate6</div>
+	</section>
+
+	<section class="contentSection">
 		<h2>Spin Buttons</h2>
 		<p>Vous pouvez retirer les flèches incrémentales d'un input number.</p>
 		<div class="form-group">
@@ -275,5 +381,12 @@
 		<p>Pour masquer un élément visuellement sans le supprimer de la couche sémantique. Ceci est très souvent utilisé pour aider à rendre accessible des contenus.</p>
 		<p>Un,  <span class="u-mask">deux,</span> trois, <span class="u-mask">quatre,</span> et cinq.</p>
 		<code class="code">u-mask</code>
+	</section>
+
+	<section class="contentSection">
+		<h2>Aide</h2>
+		<p>Cet utilitaire permet de créer le style et l'espacement nécessaire aux icônes d'aide inline</p>
+		<p>J'ai besoin d'aide <span class="lucca-icon icon-help u-help" aria-hidden="true"></span><span class="u-mask">Infos supplémentaire</span></p>
+		<code class="code">u-help</code>
 	</section>
 </section>
