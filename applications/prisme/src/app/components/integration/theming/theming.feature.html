@@ -4,10 +4,6 @@
 <section class="page-content">
 	<div class="grid">
 		<div class="grid-xxl8">
-			<section id="guidelines" class="contentSection u-animatedFadeIn">
-				<h1>Fonctionnement</h1>
-				<markdown [src]="infos.guidelines"></markdown>
-			</section>
 			<section id="theme" class="contentSection u-animatedFadeIn">
 				<h1>Parcourir les thèmes</h1>
 				<div class="textfield">
@@ -22,6 +18,10 @@
 					</lu-select>
 				</div>
 				<pri-theme *ngIf="selectedTheme" [documentation]="selectedTheme"></pri-theme>
+			</section>
+			<section id="guidelines" class="contentSection u-animatedFadeIn">
+				<h1>Fonctionnement</h1>
+				<markdown [src]="infos.guidelines"></markdown>
 			</section>
 		</div>
 	</div>
