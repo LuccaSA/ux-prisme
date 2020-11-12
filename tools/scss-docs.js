@@ -9,15 +9,26 @@ const distDir = './documentation/scss';
 const fileName = 'scss-docs.ts';
 const fullFilePath = `${distDir}/${fileName}`;
 const sourceFiles = glob.sync("node_modules/@lucca-front/**/{theming,theme}/**/*.scss", {
-	ignore: ['**/_components.scss', '**/_get-set.scss', '**/_utils.scss', '**/utilities/*.scss']
+	ignore: [
+		'**/_components.scss',
+		'**/_get-set.scss',
+		'**/_utils.scss',
+		'**/utilities/*.scss',
+
+		// these files have inline comments and it makes the script go banana
+		'**/_main.theme.scss',
+		'**/_field.theme.scss',
+		'**/_icons.scss',
+	]
 });
 
 const content = sourceFiles.reduce((soFar, file) => {
+
 	let fileContent = fs.readFileSync(file).toString();
 	fileContent = fileContent.replace(/: [^\(](.*?)$/gm, singleQuoteValues);
 
 	// Remove all comments
-	// fileContent = fileContent.replace(/\/\*[\s\S]*?\*\/|([^:"]|^)\/\/.*$/gm, "");
+	fileContent = fileContent.replace(/\/\*[\s\S]*?\*\/|([^:"]|^)\/\/.*$/gm, "");
 
 	// Format content
 	fileContent = fileContent.replace(/,(\s*?)(?=\))/gm, "");
@@ -29,22 +40,18 @@ const content = sourceFiles.reduce((soFar, file) => {
 
 const scssContent = sast.parse(content, {syntax : 'scss'});
 
-let finalContent = 'const SCSS_DOCS = {';
+const stuff = {};
 
 visit(scssContent, 'declaration', (n) => {
 	const decl = (sast.jsonify(n));
-	if(typeof decl.value === "string") {
+	if(decl.name === "theme") {
 		return visit.SKIP;
 	}
-	finalContent += JSON.stringify(decl.name);
-	finalContent += ':';
-	finalContent += JSON.stringify(forgeNode(decl.name, decl.value));
-	finalContent += ',';
+	stuff[decl.name] = decl.value;
 	return visit.SKIP;
 });
 
-finalContent += '}; export default SCSS_DOCS;';
-
+const finalContent = `const SCSS_DOCS = ${JSON.stringify(stuff)}; export default SCSS_DOCS;`
 if (!fs.existsSync(distDir)) {
 	fs.mkdirSync(distDir);
 }
