@@ -40,7 +40,7 @@ export class BasicExampleComponent {
 		'chevron_south',
 		'arrow_west',
 		'chevron_west',
-		'attachment',
+		'attach',
 		'banking_card',
 		'bill',
 		'birthday',
@@ -198,5 +198,12 @@ export class BasicExampleComponent {
 		'weather_storm',
 		'weather_sun',
 		'weight'
-	]
+	];
+
+	public camelize(str): string{
+		let arr = str.split('_');
+		let capital = arr.map((item, index) => index ? item.charAt(0).toUpperCase() + item.slice(1).toLowerCase() : item.toLowerCase());
+		let capitalString = capital.join("");
+		return capitalString;
+	  }
 }

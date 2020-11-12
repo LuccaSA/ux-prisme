@@ -10,7 +10,7 @@ export class BasicExample {
 		"firstName": "Chloe",
 		"lastName": "Alibert",
 		"picture": {
-			"href": "https://demo-ux1.ilucca.net/getFile.ashx?id=5e73eabb-a24e-4590-a4c2-6c5de9893185"
+			"href": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Ana%C3%AFs_Demoustier_Cabourg_2015.jpg"
 		}
 	};
 }

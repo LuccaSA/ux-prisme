@@ -13,6 +13,7 @@ import { SizesExample } from './sizes/sizes.example';
 import { VerticalAlignmentExample } from './vertical-alignment/vertical-alignment.example';
 import { HorizontalAlignmentExample } from './horizontal-alignment/horizontal-alignment.example';
 import { BorderlessExample } from './borderless/borderless.example';
+import { TwoLinesExample } from './twoLines/twoLines.example';
 
 @NgModule({
 	imports: [
@@ -32,6 +33,7 @@ import { BorderlessExample } from './borderless/borderless.example';
 		VerticalAlignmentExample,
 		HorizontalAlignmentExample,
 		BorderlessExample,
+		TwoLinesExample,
 	],
 	entryComponents: [
 		BasicExampleComponent,
@@ -46,6 +48,7 @@ import { BorderlessExample } from './borderless/borderless.example';
 		VerticalAlignmentExample,
 		HorizontalAlignmentExample,
 		BorderlessExample,
+		TwoLinesExample,
 	]
 })
 export class TablesModule { }
