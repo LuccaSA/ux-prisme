@@ -40,18 +40,22 @@ const content = sourceFiles.reduce((soFar, file) => {
 
 const scssContent = sast.parse(content, {syntax : 'scss'});
 
-const stuff = {};
+let finalContent = 'const SCSS_DOCS = {';
 
 visit(scssContent, 'declaration', (n) => {
 	const decl = (sast.jsonify(n));
-	if(decl.name === "theme") {
+	if(typeof decl.value === "string") {
 		return visit.SKIP;
 	}
-	stuff[decl.name] = decl.value;
+	finalContent += JSON.stringify(decl.name);
+	finalContent += ':';
+	finalContent += JSON.stringify(forgeNode(decl.name, decl.value));
+	finalContent += ',';
 	return visit.SKIP;
 });
 
-const finalContent = `const SCSS_DOCS = ${JSON.stringify(stuff)}; export default SCSS_DOCS;`
+finalContent += '}; export default SCSS_DOCS;';
+
 if (!fs.existsSync(distDir)) {
 	fs.mkdirSync(distDir);
 }
