@@ -9,10 +9,21 @@ const distDir = './documentation/scss';
 const fileName = 'scss-docs.ts';
 const fullFilePath = `${distDir}/${fileName}`;
 const sourceFiles = glob.sync("node_modules/@lucca-front/**/{theming,theme}/**/*.scss", {
-	ignore: ['**/_components.scss', '**/_get-set.scss', '**/_utils.scss', '**/utilities/*.scss']
+	ignore: [
+		'**/_components.scss',
+		'**/_get-set.scss',
+		'**/_utils.scss',
+		'**/utilities/*.scss',
+
+		// these files have inline comments and it makes the script go banana
+		'**/_main.theme.scss',
+		'**/_field.theme.scss',
+		'**/_icons.scss',
+	]
 });
 
 const content = sourceFiles.reduce((soFar, file) => {
+
 	let fileContent = fs.readFileSync(file).toString();
 	fileContent = fileContent.replace(/: [^\(](.*?)$/gm, singleQuoteValues);
 

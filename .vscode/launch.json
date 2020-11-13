@@ -5,6 +5,15 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"name": "generatescss",
+			"program": "${workspaceFolder}/tools/scss-docs.js",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "pwa-node"
+		},
+		{
 			"type": "node",
 			"request": "launch",
 			"name": "test feature schematic",
