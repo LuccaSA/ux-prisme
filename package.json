@@ -31,9 +31,9 @@
     "@angular/platform-browser": "^10.2.0",
     "@angular/platform-browser-dynamic": "^10.2.0",
     "@angular/router": "^10.2.0",
-    "@lucca-front/icons": "^5.1.1",
-    "@lucca-front/ng": "^5.1.1",
-    "@lucca-front/scss": "^5.1.1",
+    "@lucca-front/icons": "^5.1.2",
+    "@lucca-front/ng": "^5.1.2",
+    "@lucca-front/scss": "^5.1.2",
     "@ngx-formly/core": "^5.10.6",
     "core-js": "^3.7.0",
     "marked": "^1.2.3",
@@ -65,7 +65,7 @@
     "tsickle": "^0.39.0",
     "tslib": "^2.0.3",
     "tslint": "~5.20.1",
-    "typescript": "~3.9.0",
+    "typescript": "~4.0.0",
     "unist-util-visit": "^2.0.1"
   }
 }
