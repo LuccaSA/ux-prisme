@@ -14,11 +14,6 @@ const sourceFiles = glob.sync("node_modules/@lucca-front/**/{theming,theme}/**/*
 		'**/_get-set.scss',
 		'**/_utils.scss',
 		'**/utilities/*.scss',
-
-		// these files have inline comments and it makes the script go banana
-		'**/_main.theme.scss',
-		'**/_field.theme.scss',
-		'**/_icons.scss',
 	]
 });
 
