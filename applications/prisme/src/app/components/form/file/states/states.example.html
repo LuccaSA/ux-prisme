@@ -1,51 +1,99 @@
 <h3>1 - Default</h3>
-<div class="file">
-	<span aria-hidden="true" class="file-icon lucca-icon icon-cloudUpload"></span>
-	<div class="file-title">Drag and drop your file here</div>
-	<div class="file-or">Or</div>
-	<button class="button">browse file</button>
-	<input class="file-input" type="file">
-</div>
+<label class="file">
+	<input class="file-input" type="file" title="" accept=".xls,.xlsx,.csv" />
+	<span role="text" class="file-content">
+		<span aria-hidden="true" class="file-icon lucca-icon icon-success u-textSuccess"></span>
+		<span aria-hidden="true" class="file-icon lucca-icon icon-error u-textError"></span>
+		<span class="file-titleName">
+			<span class="file-title u-marginBottomReset">Drag and drop your file here</span>
+			<span class="file-name"></span>
+		</span>
+		<span class="file-or">or</span>
+		<span class="file-button button mod-outline">browse files</span>
+		<span class="u-mask"> – </span>
+		<span class="file-formats u-marginTopSmaller">Supported file formats: .xls, .xlsx .csv</span>
+		<span class="file-progress progress">
+			<span class="progress-bar" style="width: 50%"></span>
+		</span>
+	</span>
+</label>
 
 <h3>2 - Droppable</h3>
-<div class="file is-droppable">
-	<span aria-hidden="true" class="file-icon lucca-icon icon-cloudUpload"></span>
-	<div class="file-title">Drag and drop your file here</div>
-	<div class="file-or">Or</div>
-	<button class="button">browse file</button>
-	<input class="file-input" type="file">
-</div>
+<label class="file">
+	<input class="file-input is-droppable" type="file" title="" accept=".xls,.xlsx,.csv" />
+	<span role="text" class="file-content">
+		<span aria-hidden="true" class="file-icon lucca-icon icon-success u-textSuccess"></span>
+		<span aria-hidden="true" class="file-icon lucca-icon icon-error u-textError"></span>
+		<span class="file-titleName">
+			<span class="file-title u-marginBottomReset">Drag and drop your file here</span>
+			<span class="file-name"></span>
+		</span>
+		<span class="file-or">or</span>
+		<span class="file-button button mod-outline">browse files</span>
+		<span class="u-mask"> – </span>
+		<span class="file-formats u-marginTopSmaller">Supported file formats: .xls, .xlsx .csv</span>
+		<span class="file-progress progress">
+			<span class="progress-bar" style="width: 50%"></span>
+		</span>
+	</span>
+</label>
 
 <h3>3 - Uploading</h3>
-<div class="file">
-	<span aria-hidden="true" class="file-icon lucca-icon icon-cloudUpload"></span>
-	<div class="file-title">Uploading your file...</div>
-	<div class="file-progress progress">
-		<div class="progress-bar" style="width: 50%"></div>
-	</div>
-	<input class="file-input" type="file">
-</div>
+<label class="file">
+	<input class="file-input is-uploading" type="file" title="" accept=".xls,.xlsx,.csv" />
+	<span role="text" class="file-content">
+		<span aria-hidden="true" class="file-icon lucca-icon icon-success u-textSuccess"></span>
+		<span aria-hidden="true" class="file-icon lucca-icon icon-error u-textError"></span>
+		<span class="file-titleName">
+			<span class="file-title u-marginBottomReset">Uploading your file…</span>
+			<span class="file-name"></span>
+		</span>
+		<span class="file-or"></span>
+		<span class="file-button button mod-outline"></span>
+		<span class="u-mask"></span>
+		<span class="file-formats u-marginTopSmaller"></span>
+		<span class="file-progress progress">
+			<span class="progress-bar" style="width: 50%"></span>
+		</span>
+	</span>
+</label>
 
 <h3>4 - Success</h3>
-<div class="file">
-	<span aria-hidden="true" class="file-icon lucca-icon icon-tick u-textSuccess"></span>
-	<div class="file-title">File uploaded</div>
-	file_name <button class="actionIcon"><span aria-hidden="true" class="lucca-icon">trash</span></button>
-	<div class="file-title">File uploaded</div>
-	<div class="u-textLight">file_name</div>
-	<div class="file-or u-marginTopSmall">It's the wrong file?</div>
-	<button class="button mod-outline">Select another file</button>
-	<div class="u-marginTopSmaller u-textLight">Supported file formats : .xls, .xlsx, .csv</div>
-	<input class="file-input" type="file">
-</div>
+<label class="file">
+	<input class="file-input is-uploaded" type="file" title="" accept=".xls,.xlsx,.csv" />
+	<span role="text" class="file-content">
+		<span aria-hidden="true" class="file-icon lucca-icon icon-success u-textSuccess"></span>
+		<span aria-hidden="true" class="file-icon lucca-icon icon-error u-textError"></span>
+		<span class="file-titleName">
+			<span class="file-title u-marginBottomReset">File uploaded</span>
+			<span class="file-name">filename.xls</span>
+		</span>
+		<span class="file-or">It’s the wrong file?</span>
+		<span class="file-button button mod-outline">Select another file</span>
+		<span class="u-mask"> – </span>
+		<span class="file-formats u-marginTopSmaller">Supported file formats: .xls, .xlsx .csv</span>
+		<span class="file-progress progress">
+			<span class="progress-bar" style="width: 50%"></span>
+		</span>
+	</span>
+</label>
 
 <h3>4 - Error</h3>
-<div class="file">
-  <span aria-hidden="true" class="file-icon lucca-icon icon-error u-textError"></span>
-	<div class="file-title u-textError">File uploaded</div>
-	<div class="u-textLight">file_name</div>
-	<div class="file-or u-marginTopSmall">It's the wrong file?</div>
-	<button class="button mod-outline">Select another file</button>
-	<div class="u-marginTopSmaller u-textLight">Supported file formats : .xls, .xlsx .csv</div>
-	<input class="file-input" type="file">
-</div>
+<label class="file">
+	<input class="file-input" type="file" title="" accept=".xls,.xlsx,.csv" aria-invalid="true" />
+	<span role="text" class="file-content">
+		<span aria-hidden="true" class="file-icon lucca-icon icon-success u-textSuccess"></span>
+		<span aria-hidden="true" class="file-icon lucca-icon icon-error u-textError"></span>
+		<span class="file-titleName">
+			<span class="file-title u-marginBottomReset">File not supported</span>
+			<span class="file-name">filename.xls</span>
+		</span>
+		<span class="file-or">It’s the wrong file?</span>
+		<span class="file-button button mod-outline">Select another file</span>
+		<span class="u-mask"> – </span>
+		<span class="file-formats u-marginTopSmaller">Supported file formats: .xls, .xlsx .csv</span>
+		<span class="file-progress progress">
+			<span class="progress-bar" style="width: 50%"></span>
+		</span>
+	</span>
+</label>
