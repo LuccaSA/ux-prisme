@@ -197,7 +197,20 @@ export class BasicExampleComponent {
 		'weather_cloudy',
 		'weather_storm',
 		'weather_sun',
-		'weight'
+		'weight',
+		'unlink',
+		'api_sync',
+		'postpone',
+		'pay_period',
+		'play',
+		'contract',
+		'unlink',
+		'timesheet',
+		'format_strikethrough',
+		'thumbnail',
+		'thumb_up',
+		'thumb_down',
+		'format_justify'
 	];
 
 	public camelize(str): string{
