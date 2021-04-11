@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BasicExampleComponent } from './basic/basic.example';
 import { IFeatureInfos, ThemeDocumentationService } from '@prisme/common';
+import { CompactExampleComponent } from './compact/compact.example';
 declare var require: any;
 
 @Component({
@@ -17,6 +18,12 @@ export class BreadcrumbsFeature {
 				title: 'Basique',
 				component: BasicExampleComponent,
 				code: require('!!prismjs-loader?lang=markup!./basic/basic.example.html')
+			},
+			{
+				title: 'Compact',
+				component: CompactExampleComponent,
+				code: require('!!prismjs-loader?lang=markup!./compact/compact.example.html'),
+				extra: "Le <code class='code'>.mod-compact</code> permet de réduire le fil d'Ariane lorsqu'il n'est que sur un seul niveau, ce qui fonctionne bien lorsque le titre de la page est repris par la suite."
 			},
 		],
 	};

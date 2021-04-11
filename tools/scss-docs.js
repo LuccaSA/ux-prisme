@@ -6,7 +6,7 @@ let visit = require('unist-util-visit');
 let glob = require('glob');
 
 const distDir = './documentation/scss';
-const fileName = 'scss-docs.ts';
+const fileName = 'scss-docs.js';
 const fullFilePath = `${distDir}/${fileName}`;
 const sourceFiles = glob.sync("node_modules/@lucca-front/**/{theming,theme}/**/*.scss", {
 	ignore: [

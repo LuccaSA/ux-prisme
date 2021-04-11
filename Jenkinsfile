@@ -116,11 +116,11 @@ node {
 							// continuous deploy of branch rc and master
 							if (isRc) {
 								echo "deploying prisme-rc"
-								bat "npx cpx ${publishDirectoryName}\\** \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme-rc"
+								bat "npx cpy ${publishDirectoryName}\\** \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme-rc"
 							}
 							if (isMaster) {
 								echo "deploying prisme"
-								bat "npx cpx ${publishDirectoryName}\\** \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme"
+								bat "npx cpy ${publishDirectoryName}\\** \\\\labs2.lucca.local\\c\$\\d\\sites\\prisme"
 							}
 						},
 						failFast: true
