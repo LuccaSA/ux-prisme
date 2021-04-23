@@ -1,3 +1,73 @@
+# Accessibilité
+## Tableaux simples
+
+- Si on a un tableau sans fusion de cellules ou de sous-contexte (pas de changement du header en cours de lecture) : il est recommandé par le RGAA d'ajouer l'attribut "scope=col" ou "scope=row" sur les th des en-tête de lignes ou colonnes.
+<br/>
+<a href="https://www.w3.org/WAI/tutorials/tables/irregular/" target="_blank">Exemples de tableaux validés en RGAA</a>
+<br/>
+
+```mod-code
+&lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; scope="col"&gt;Équipements&lt;/th&gt;
+      &lt;th&gt; scope="col"&gt;Nombre de lignes&lt;/th&gt;
+      &lt;th&gt; scope="col"&gt;Pourcentage du total de lignes&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Rampe d'accès&lt;/td&gt;
+      &lt;td&gt;260&lt;/td&gt;
+      &lt;td&gt;70,46 %&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/tbody&gt;
+```
+```mod-code
+   &lt;tr&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+      &lt;th scope="col"&gt;Paris&lt;/th&gt;
+      &lt;th scope="col"&gt;Marseille&lt;/th&gt;
+      &lt;th scope="col"&gt;Lyon&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;th scope="row"&gt;Juin&lt;/th&gt;
+      &lt;td&gt;22°C&lt;/td&gt;
+      &lt;td&gt;28°C&lt;/td&gt;
+      &lt;td&gt;26°C&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;th scope="row"&gt;Juillet&lt;/th&gt;
+      &lt;td&gt;24°C&lt;/td&gt;
+      &lt;td&gt;30°C&lt;/td&gt;
+      &lt;td&gt;28°C&lt;/td&gt;
+   &lt;/tr&gt;
+```
+## Tableaux complexes
+
+- Si on a un tableau avec une fusion de cellules ou un collapse par exemple (changement du header en cours de lecture) : il est recommandé par le RGAA de lier les en-tête des colonnes par l'attribut "headers=id de l'en-tête"
+<br/>
+<a href="https://www.w3.org/WAI/tutorials/tables/multi-level/" target="_blank">Exemples de tableaux validés en RGAA</a>
+<br/>
+
+```mod-code
+&lt;tr&gt;
+    &lt;th id="malvoyant" colspan="2"&gt;Malvoyants&lt;/th&gt;
+    &lt;th id="aveugle" colspan="2"&gt;Aveugles&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;th id="data1" headers="malvoyant"&gt;Obstacles contrastés&lt;/th&gt;
+    &lt;th id="data2" headers="malvoyant"&gt;Portes contrastées&lt;/th&gt;
+    &lt;th id="data3" headers="aveugle"&gt;Obstacles détectables à la canne&lt;/th&gt;
+    &lt;th id="data4" headers="aveugle"&gt;Guidage en braille&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td headers="malvoyant data1"&gt;73&lt;/td&gt;
+    &lt;td headers="malvoyant data2"&gt;65&lt;/td&gt;
+    &lt;td headers="aveugle data3"&gt;103&lt;/td&gt;
+    &lt;td headers="aveugle data4"&gt;0&lt;/td&gt;
+&lt;/tr>
+```
+
 # Alignement
 ## Horizontal
 
