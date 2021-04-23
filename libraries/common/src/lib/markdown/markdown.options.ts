@@ -9,7 +9,7 @@ export class MarkedOptions extends NgxMarkedOptions {
 			return `
 			<div class="callout mod-icon palette-info">
 				<div class="callout-icon">
-					<span aria-hidden="true" class="lucca-icon">info</span>
+					<span aria-hidden="true" class="lucca-icon icon-info"></span>
 				</div>
 				<span class="extra-infos">${text}</span>
 			</div>`;

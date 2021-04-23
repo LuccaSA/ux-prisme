@@ -4,7 +4,7 @@
 	<pri-code-tabs [example]="selectedExample"></pri-code-tabs>
 	<div class="callout mod-icon palette-info" *ngIf="selectedExample.extra != null">
 		<div class="callout-icon">
-			<span aria-hidden="true" class="lucca-icon">info</span>
+			<span aria-hidden="true" class="lucca-icon icon-info"></span>
 		</div>
 		<span class="extra-infos" [innerHtml]="selectedExample.extra | priSafeContent: 'html'"></span>
 	</div>

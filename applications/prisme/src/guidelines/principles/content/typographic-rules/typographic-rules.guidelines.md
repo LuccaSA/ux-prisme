@@ -17,7 +17,7 @@
 </div>
 
 <div class="callout mod-icon palette-info">
-	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon">info</span></div>
+	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
 	En anglais, ces signes de ponctuation ne sont pas précédés d’un espace.
 </div>
 
@@ -57,7 +57,7 @@ L'apostrophe droite, ou apostrophe dactylographique, ne doit pas être utilisée
 </div>
 
 <div class="callout mod-icon palette-info">
-	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon">info</span></div>
+	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
 	<strong class="callout-title">Raccourci Windows</strong> alt + 0146<br>
 	<strong class="callout-title">Raccourci Mac</strong> option + shift + ‘
 </div>
@@ -100,7 +100,7 @@ Dans tous les cas, un texte dont la lecture complète est importante à la compr
 </div>
 
 <div class="callout mod-icon palette-info">
-	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon">info</span></div>
+	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
 	En anglais, les milliers, millions, etc. sont séparés d’une virgule et les nombres décimaux sont séparés d’un point.
 </div>
 
