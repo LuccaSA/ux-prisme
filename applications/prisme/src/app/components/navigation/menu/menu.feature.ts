@@ -11,6 +11,7 @@ export class MenuFeature {
 	infos: IFeatureInfos = {
 		title: 'Menu',
 		packages: ['SCSS'],
+		guidelines: 'guidelines/components/navigation/menu/menu.guidelines.md',
 		description: "Le menu sert à subdiviser du contenu en plusieurs pages ou sections afin de limiter la quantité d'information affichée.",
 		examples: [
 			{

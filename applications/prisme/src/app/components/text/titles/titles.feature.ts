@@ -11,6 +11,7 @@ export class TitlesFeature {
 	infos: IFeatureInfos = {
 		title: 'Titres',
 		packages: ['SCSS'],
+		guidelines: 'guidelines/components/texte/titres/titres.guidelines.md',
 		examples: [
 			{
 				title: 'Basique',
