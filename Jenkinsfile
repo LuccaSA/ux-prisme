@@ -63,18 +63,9 @@ node {
 			}
 
 			stage('Prepare') {
-
-				parallel (
-					node: {
-						bat "node --version"
-						bat "npm --version"
-					},
-					checkout: {
-						scmVars = checkout scm
-					},
-					failFast: true,
-				)
+				scmVars = checkout scm
 			}
+
 			stage('Restore') {
 				parallel (
 					prisme: {
