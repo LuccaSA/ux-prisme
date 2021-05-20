@@ -63,20 +63,9 @@ node {
 			}
 
 			stage('Prepare') {
-
-				parallel (
-					node: {
-						env.NODEJS_HOME = "${tool 'Node LTS v10.13.x'}"
-						env.PATH="${env.NODEJS_HOME};${env.PATH}"
-						bat "node --version"
-						bat "npm --version"
-					},
-					checkout: {
-						scmVars = checkout scm
-					},
-					failFast: true,
-				)
+				scmVars = checkout scm
 			}
+
 			stage('Restore') {
 				parallel (
 					prisme: {
