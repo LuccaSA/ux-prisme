@@ -92,8 +92,9 @@ L'apostrophe droite, ou apostrophe dactylographique, ne doit pas être utilisée
 
 # Espaces
 
-- La virgule et le point sont suivis d’un espace
-- La plupart des autres signes de ponctuation (point-virgule, deux-points, etc.) sont précédés d’un espace insécable et suivis d’un espace
+- La virgule et le point sont suivis d’une espace après mais pas avant
+- La plupart des autres signes de ponctuation (point-virgule, deux-points, etc.) sont précédés d’une espace insécable et suivis d’une espace
+- Les parenthèses sont précédés et suivis d'une espace mais pas à l‘intérieur.
 
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
@@ -113,6 +114,21 @@ L'apostrophe droite, ou apostrophe dactylographique, ne doit pas être utilisée
 	En anglais, ces signes de ponctuation ne sont pas précédés d’un espace.
 </div>
 
+- Pour les parenthèses ou crochets, la poncutation est inclue dedans si la phrase est complète.
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+- [Il tend sa main.] Parle à ma main.
+
+</div>
+<div class="markdown-block mod-negative">
+
+- [Il tend sa main]. Parle à ma main.
+
+</div>
+</div>
+
 <div class="callout mod-icon palette-info">
 	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
 	<span>Raccourci pour ajouter une espace insécable :</span><br>
@@ -122,7 +138,8 @@ L'apostrophe droite, ou apostrophe dactylographique, ne doit pas être utilisée
 
 # Accentuation des lettres capitales
 
-Les lettres capitales doivent être accentuées
+- Les lettres capitales doivent être accentuées
+- Les diacritiques son conservés (Ç)
 
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
@@ -166,6 +183,7 @@ Dans tous les cas, un texte dont la lecture complète est importante à la compr
 
 - Les milliers, millions, etc. sont séparés d’un espace insécable
 - Les nombres décimaux sont séparés d’une virgule
+- Les nombres cardinaux et ordinaux (quantité, distance, classement, hiérarchisation) s‘écrivent en chiffres
 
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
@@ -198,6 +216,143 @@ Les nombres ordinaux doivent être utilisés grâce à balise HTML <code class="
 <div class="markdown-block mod-negative">
 
 - 1er, 1ère, 2e
+
+</div>
+</div>
+
+# Les valeurs
+
+- Un nombre en début de phrase s‘écrit toujours en toutes lettres.
+- Les nombres inférieurs ou égaux à dix s‘écrivent en toutes lettres.
+- Les valeurs (%, $…) sont toujours séparées de leurs unités par une espace insécable.
+- Il ne faut pas utiliser le symbole des degrés pour faire un exposant o mais `<sup>o</sup>`
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+n<sup>o</sup> 8
+
+</div>
+<div class="markdown-block mod-negative">
+
+n°8 
+
+</div>
+</div>
+
+# Les listes
+
+Les éléments de listes sont séparés par des points-virgules, des virgules et/ou des points
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+— Je crois en : <br>
+– la mort,<br>
+– la destruction,<br>
+– le chaos,<br>
+– et la cupidité.
+
+</div>
+<div class="markdown-block mod-negative">
+
+— Je crois en :<br>
+– la mort<br>
+– la destruction<br>
+– le chaos<br>
+– et la cupidité.
+
+</div>
+</div>
+
+# Les ligatures
+
+- Les ligatures linguistiques sont obligatoires
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+Mon œuvre, æquo
+
+</div>
+<div class="markdown-block mod-negative">
+
+Mon oeuvre, aequo
+
+</div>
+</div>
+
+<div class="callout mod-icon palette-info">
+	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
+	Raccourci pour le œ :<br>
+	<strong class="callout-title">Raccourci Windows</strong> alt + 0156<br>
+	<strong class="callout-title">Raccourci Mac</strong> option (Alt) + o<br>
+	<br>
+	Raccourci pour le æ : <br>
+	<strong class="callout-title">Raccourci Windows</strong> alt + 0198<br>
+	<strong class="callout-title">Raccourci Mac</strong> option (Alt) + a
+</div>
+
+- Les ligatures esthétiques sont optionnelles
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+Oﬀrir
+
+</div>
+<div class="markdown-block mod-negative">
+
+Offrir
+
+</div>
+</div>
+
+- La ligature du « & » est réservée aux noms commerciaux.
+
+# Les traits d‘union et les tirets
+
+- Le trait d’union (—) sert à unir (les mots, les dates, les lignes).
+- Le tiret moyen (–) sert à signaler les changements d’éléments.
+- Le tiret long (-) sert à signaler les changements de tons.
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+— Bonjour, Monsieur.<br>
+— Voici les ingrédients requis : <br>
+– tomates <br>
+– oignons <br>
+— Êtes-vous satisfait ?
+
+</div>
+<div class="markdown-block mod-negative">
+
+– Bonjour, Monsieur.<br>
+– Voici les ingrédients requis : <br>
+– tomates <br>
+– oignons <br>
+– Êtes–vous satisfait ?
+
+</div>
+</div>
+
+# LOKALISE
+
+- Pas d’espace avant ou après les chaines
+- Pas d’espace à l’intérieur des doubles accolades
+
+<div class="markdown-dualDisplay">
+<div class="markdown-block mod-positive">
+
+Mon texte sans espace avant ou après<br>
+{{voici mon texte sans espaces}}
+
+</div>
+<div class="markdown-block mod-negative">
+
+&#8199;Mon texte avec un espace avant et après&#8199;<br>
+{{ voici mon texte avec espaces }}
 
 </div>
 </div>
