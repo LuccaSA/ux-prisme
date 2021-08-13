@@ -1,7 +1,8 @@
 # Les guillemets
 ## Premier niveau
 
-- En français on utilise les guillemets « ma phrase »
+- En français on utilise les guillemets « ma phrase »<br>
+Il faut également utiliser des espaces insécables entre les guillemets qui vont interdire un saut de ligne entre les caractères.
 
 <div class="callout mod-icon palette-info">
 	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
@@ -35,7 +36,8 @@
 
 ## Second niveau
 
-- En français on utilise les guillemets ‹ ma phrase ›
+- En français on utilise les guillemets ‹ ma phrase ›<br>
+Il faut également utiliser des espaces insécables entre les guillemets qui vont interdire un saut de ligne entre les caractères.
 
 <div class="callout mod-icon palette-info">
 	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
@@ -69,7 +71,7 @@
 
 # Apostrophes et guillemets typographiques
 
-L'apostrophe droite, ou apostrophe dactylographique, ne doit pas être utilisée dans des textes destinés à être lus. On utilise à la place les apostrophes typographiques.
+L‘apostrophe droite, ou apostrophe dactylographique, ne doit pas être utilisée dans des textes destinés à être lus. On utilise à la place les apostrophes typographiques.
 
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
@@ -87,7 +89,7 @@ L'apostrophe droite, ou apostrophe dactylographique, ne doit pas être utilisée
 <div class="callout mod-icon palette-info">
 	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
 	<strong class="callout-title">Raccourci Windows</strong> alt + 0146<br>
-	<strong class="callout-title">Raccourci Mac</strong> option + shift + ‘
+	<strong class="callout-title">Raccourci Mac</strong> option + shift + '
 </div>
 
 # Espaces
@@ -111,7 +113,7 @@ L'apostrophe droite, ou apostrophe dactylographique, ne doit pas être utilisée
 
 <div class="callout mod-icon palette-info">
 	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
-	En anglais, ces signes de ponctuation ne sont pas précédés d’un espace.
+	En anglais, ces signes de ponctuation ne sont pas précédés d’une espace.
 </div>
 
 - Pour les parenthèses ou crochets, la poncutation est inclue dedans si la phrase est complète.
@@ -119,12 +121,12 @@ L'apostrophe droite, ou apostrophe dactylographique, ne doit pas être utilisée
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
 
-- [Il tend sa main.] Parle à ma main.
+[Il tend sa main.] Prends ma main avant de tomber.
 
 </div>
 <div class="markdown-block mod-negative">
 
-- [Il tend sa main]. Parle à ma main.
+[Il tend sa main]. Prends ma main avant de tomber.
 
 </div>
 </div>
@@ -139,7 +141,7 @@ L'apostrophe droite, ou apostrophe dactylographique, ne doit pas être utilisée
 # Accentuation des lettres capitales
 
 - Les lettres capitales doivent être accentuées
-- Les diacritiques son conservés (Ç)
+- Les diacritiques sont conservés (Ç)
 
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
@@ -247,20 +249,20 @@ Les éléments de listes sont séparés par des points-virgules, des virgules et
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
 
-— Je crois en : <br>
-– la mort,<br>
-– la destruction,<br>
-– le chaos,<br>
-– et la cupidité.
+— J'ai besoin : <br>
+– du nom,<br>
+– du prénom,<br>
+– du département,<br>
+– et du site.
 
 </div>
 <div class="markdown-block mod-negative">
 
-— Je crois en :<br>
-– la mort<br>
-– la destruction<br>
-– le chaos<br>
-– et la cupidité.
+— J'ai besoin :<br>
+– du nom<br>
+– du prénom<br>
+– du département<br>
+– et du site
 
 </div>
 </div>
@@ -272,12 +274,16 @@ Les éléments de listes sont séparés par des points-virgules, des virgules et
 <div class="markdown-dualDisplay">
 <div class="markdown-block mod-positive">
 
-Mon œuvre, æquo
+Mon œuvre, æquo.<br>
+Œuvre<br>
+Æquo
 
 </div>
 <div class="markdown-block mod-negative">
 
-Mon oeuvre, aequo
+Mon oeuvre, aequo.<br>
+Oeuvre<br>
+Aequo
 
 </div>
 </div>
@@ -289,23 +295,16 @@ Mon oeuvre, aequo
 	<strong class="callout-title">Raccourci Mac</strong> option (Alt) + o<br>
 	<br>
 	Raccourci pour le æ : <br>
-	<strong class="callout-title">Raccourci Windows</strong> alt + 0198<br>
+	<strong class="callout-title">Raccourci Windows</strong> alt + 145<br>
 	<strong class="callout-title">Raccourci Mac</strong> option (Alt) + a
-</div>
-
-- Les ligatures esthétiques sont optionnelles
-
-<div class="markdown-dualDisplay">
-<div class="markdown-block mod-positive">
-
-Oﬀrir
-
-</div>
-<div class="markdown-block mod-negative">
-
-Offrir
-
-</div>
+	<br>
+	Raccourci pour le Œ :<br>
+	<strong class="callout-title">Raccourci Windows</strong> alt + 0140<br>
+	<strong class="callout-title">Raccourci Mac</strong> option (Alt) + maj + o<br>
+	<br>
+	Raccourci pour le Æ : <br>
+	<strong class="callout-title">Raccourci Windows</strong> alt + 146<br>
+	<strong class="callout-title">Raccourci Mac</strong> option (Alt) + maj + a
 </div>
 
 - La ligature du « & » est réservée aux noms commerciaux.
@@ -315,26 +314,12 @@ Offrir
 - Le trait d’union (—) sert à unir (les mots, les dates, les lignes).
 - Le tiret moyen (–) sert à signaler les changements d’éléments.
 - Le tiret long (-) sert à signaler les changements de tons.
+- Le signe négatif (−) sert à signaler une chiffre négatif et sera lu "moins" par le lecteur d'écran.
 
-<div class="markdown-dualDisplay">
-<div class="markdown-block mod-positive">
-
-— Bonjour, Monsieur.<br>
-— Voici les ingrédients requis : <br>
-– tomates <br>
-– oignons <br>
-— Êtes-vous satisfait ?
-
-</div>
-<div class="markdown-block mod-negative">
-
-– Bonjour, Monsieur.<br>
-– Voici les ingrédients requis : <br>
-– tomates <br>
-– oignons <br>
-– Êtes–vous satisfait ?
-
-</div>
+<div class="callout mod-icon palette-info">
+	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
+	<strong class="callout-title">Raccourci Windows</strong> alt + 8722<br>
+	<strong class="callout-title">Raccourci Mac</strong> copier le signe −
 </div>
 
 # LOKALISE
