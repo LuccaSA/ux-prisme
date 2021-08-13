@@ -6,8 +6,16 @@ Il faut également utiliser des espaces insécables entre les guillemets qui von
 
 <div class="callout mod-icon palette-info">
 	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
+	Raccourci pour les guillemets<br>
 	<strong class="callout-title">Raccourci Windows</strong> alt + 0171 et alt + 0187<br>
 	<strong class="callout-title">Raccourci Mac</strong> option (Alt) + 7 et option (Alt) + maj + 7;
+</div>
+
+<div class="callout mod-icon palette-info">
+	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
+	Raccourci pour une espace insécable<br>
+	<strong class="callout-title">Raccourci Windows</strong> alt + 0160 ou alt + espace<br>
+	<strong class="callout-title">Raccourci Mac</strong> option + espace
 </div>
 
 - En anglais on utilise les guillemets “my sentence”
@@ -41,8 +49,16 @@ Il faut également utiliser des espaces insécables entre les guillemets qui von
 
 <div class="callout mod-icon palette-info">
 	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
+	Raccourci pour les guillemets<br>
 	<strong class="callout-title">Raccourci Windows</strong> alt + 0139 et alt + 0155<br>
 	<strong class="callout-title">Raccourci Mac</strong> option (Alt) + w et option (Alt) + maj + w;
+</div>
+
+<div class="callout mod-icon palette-info">
+	<div class="callout-icon"><span aria-hidden="true" class="lucca-icon icon-info"></span></div>
+	Raccourci pour une espace insécable<br>
+	<strong class="callout-title">Raccourci Windows</strong> alt + 0160 ou alt + espace<br>
+	<strong class="callout-title">Raccourci Mac</strong> option + espace
 </div>
 
 - En anglais on utilise les guillemets ‘my sentence’
