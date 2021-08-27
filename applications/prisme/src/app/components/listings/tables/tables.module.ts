@@ -14,6 +14,11 @@ import { VerticalAlignmentExample } from './vertical-alignment/vertical-alignmen
 import { HorizontalAlignmentExample } from './horizontal-alignment/horizontal-alignment.example';
 import { BorderlessExample } from './borderless/borderless.example';
 import { TwoLinesExample } from './twoLines/twoLines.example';
+import { StickyHeaderExample } from './sticky-header/sticky-header.example';
+import { FixedLayoutColumnsExample } from './fixed-layout-columns/fixed-layout-columns.example';
+import { ResponsiveFixedLayoutColumnsExample } from './responsive-fixed-layout-columns/responsive-fixed-layout-columns.example';
+import { StickyColumnsExample } from './sticky-columns/sticky-columns.example';
+import { StickyColumnsShadowExample } from './sticky-columns-shadow/sticky-columns-shadow.example';
 
 @NgModule({
 	imports: [
@@ -34,6 +39,10 @@ import { TwoLinesExample } from './twoLines/twoLines.example';
 		HorizontalAlignmentExample,
 		BorderlessExample,
 		TwoLinesExample,
+		StickyHeaderExample,
+		FixedLayoutColumnsExample,
+		StickyColumnsExample,
+		StickyColumnsShadowExample,
 	],
 	entryComponents: [
 		BasicExampleComponent,
@@ -49,6 +58,8 @@ import { TwoLinesExample } from './twoLines/twoLines.example';
 		HorizontalAlignmentExample,
 		BorderlessExample,
 		TwoLinesExample,
+		StickyHeaderExample,
+		StickyColumnsShadowExample,
 	]
 })
 export class TablesModule { }
