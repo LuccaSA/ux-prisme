@@ -39,6 +39,10 @@
       background: linear-gradient(30deg, #FFB900 0%, #FF9900 100%);
     }
   }
+
+  h3 .lucca-icon {
+    line-height: _theme("sizes.big.font-size");
+  }
 }
 
 .splash-content {
