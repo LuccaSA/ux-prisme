@@ -3,7 +3,7 @@ import { CommonModule } from '@prisme/common';
 import { SwitchesFeature } from './switches.feature';
 import { BasicExampleComponent } from './basic/basic.example';
 import { InlineExampleComponent } from './inline/inline.example';
-import { PalettesExampleComponent } from './palettes/palettes.example';
+import { SizesComponent } from './sizes/sizes.example';
 
 @NgModule({
 	imports: [CommonModule],
@@ -11,12 +11,12 @@ import { PalettesExampleComponent } from './palettes/palettes.example';
 		SwitchesFeature,
 		BasicExampleComponent,
 		InlineExampleComponent,
-		PalettesExampleComponent,
+		SizesComponent,
 	],
 	entryComponents: [
 		BasicExampleComponent,
 		InlineExampleComponent,
-		PalettesExampleComponent,
+		SizesComponent,
 	]
 })
 export class SwitchesModule { }
