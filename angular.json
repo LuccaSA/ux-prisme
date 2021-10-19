@@ -74,7 +74,12 @@
             },
             "scripts": [
               "node_modules/marked/lib/marked.js"
-            ]
+            ],
+            "optimization": {
+              "fonts": false,
+              "scripts": true,
+              "styles": true
+            }
           },
           "configurations": {
             "production": {
@@ -84,7 +89,11 @@
                   "with": "applications/prisme/src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+                "fonts": false,
+                "scripts": true,
+                "styles": true
+              },
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,

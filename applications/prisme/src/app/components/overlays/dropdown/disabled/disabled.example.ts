@@ -5,4 +5,5 @@ import { Component } from '@angular/core';
 	templateUrl: './disabled.example.html'
 })
 export class DisabledExample {
+	debug(int: number): void {}
 }

@@ -5,4 +5,5 @@ import { Component } from '@angular/core';
 	templateUrl: './basic.example.html'
 })
 export class BasicExample {
+	section = null;
 }
