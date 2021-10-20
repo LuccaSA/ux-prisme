@@ -12,6 +12,7 @@ import { formGuidelinesPage } from './guidelines/guidelines.page';
 import { departmentSelectPage } from './department-select/department-select.page';
 import { formlyPage } from './formly/formly.page';
 import { datePage } from './date/date.page';
+import { QualificationSelectPage } from './qualification-select';
 
 export const formPage = new GroupPage(
 	'form',
@@ -23,6 +24,7 @@ export const formPage = new GroupPage(
 	formGuidelinesPage,
 	apiSelectPage,
 	selectPage,
+	QualificationSelectPage,
 		textfieldsPage,
 		checkboxesPage,
 		radiosPage,
