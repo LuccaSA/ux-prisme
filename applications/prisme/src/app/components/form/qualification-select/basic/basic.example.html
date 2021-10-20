@@ -1,0 +1,14 @@
+<div class="grid">
+	<div class="grid-md4">
+		<label class="textfield">
+			<lu-qualification-select [(ngModel)]="qualification" class="textfield-input"></lu-qualification-select>
+			<span class="textfield-label">Qualification</span>
+		</label>
+	</div>
+	<div class="grid-md8">
+		Sortie:
+		<code>
+			{{qualification | json}}
+		</code>
+	</div>
+</div>

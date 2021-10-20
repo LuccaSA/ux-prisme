@@ -13,6 +13,7 @@ import { FormGuidelinesModule } from './guidelines';
 import { DepartmentSelectModule } from './department-select';
 import { FormlyModule } from './formly';
 import { DateModule } from './date';
+import { QualificationSelectModule } from './qualification-select';
 
 @NgModule({
 	imports: [
@@ -25,6 +26,7 @@ import { DateModule } from './date';
 		FileModule,
 		RadioButtonsModule,
 		SelectModule,
+		QualificationSelectModule,
 		ApiSelectModule,
 		FormGuidelinesModule,
 		DepartmentSelectModule,
