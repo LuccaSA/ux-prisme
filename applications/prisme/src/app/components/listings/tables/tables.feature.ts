@@ -13,6 +13,9 @@ import { VerticalAlignmentExample } from './vertical-alignment/vertical-alignmen
 import { HorizontalAlignmentExample } from './horizontal-alignment/horizontal-alignment.example';
 import { BorderlessExample } from './borderless/borderless.example';
 import { TwoLinesExample } from './twoLines/twoLines.example';
+import { StickyHeaderExampleComponent } from './sticky/sticky-header.component';
+import { StickyColumnExampleComponent } from './sticky/sticky-column.component';
+import { StickyAllInExampleComponent } from './sticky/sticky-allin.component';
 declare var require: any;
 
 @Component({
@@ -63,6 +66,32 @@ export class TablesFeature {
 				component: ActionsExampleComponent,
 				code: require('!!prismjs-loader?lang=markup!./actions/actions.component.html'),
 				mod: 'white',
+			},
+			{
+				title: 'Sticky Header',
+				component: StickyHeaderExampleComponent,
+				code: require('!!prismjs-loader?lang=markup!./sticky/sticky-header.component.html'),
+				mod: 'white',
+				extra: `<p>Vous devez préciser sur la première ligne du corps du tableau la hauteur de votre header sous ce format&nbsp;: <code class="code">style="--sticky-header-shadow-offset-top: XXpx"</code></p>
+				<p>Cette taille peut être injectée via du JS pour répondre aux problématiques de responsive.</p>
+				<p>Vous pouvez omettre la présence de l'ombre en retirant la classe <code class="code">mod-stickyHeader-shadow</code> à la première ligne de votre corps de tableau</p>`
+			},
+			{
+				title: 'Sticky Column',
+				component: StickyColumnExampleComponent,
+				code: require('!!prismjs-loader?lang=markup!./sticky/sticky-column.component.html'),
+				mod: 'white',
+				extra: `<p>Pour cumuler plusieurs colonnes sticky, celles-ci doivent être de largeur fixe. Vous pouvez fixer cette taille en ajoutant au <code class="code">th</code> de votre colonne la classe <code class="code">mod-layoutFixed-X</code> où X est la taille en <code class="code">rem</code> de votre colonne.</p>
+				<p>Pour rendre une colonne sticky, il faut ajouter sur chacune des cellules (header inclus) la classe <code class="code">mod-stickyColumn-leftOffsetX</code> où X est la somme des largeurs en <code class="code">rem</code> des colonnes précédentes.</p>
+				<p>Si vous souhaitez rendre des colonnes sticky depuis la droite, il suffit d'utiliser la class <code class="code">mod-stickyColumn-rightOffsetX</code> où X est la somme des largeurs en <code class="code">rem</code> des colonnes suivantes.</p>`
+			},
+			{
+				title: 'Sticky Column & Header + gestion des breakpoints',
+				component: StickyAllInExampleComponent,
+				code: require('!!prismjs-loader?lang=markup!./sticky/sticky-allin.component.html'),
+				mod: 'white',
+				extra: `<p>Si vous utilisez des colonnes et des lignes sticky en même temps, il faut ajouter la classe <code class="code">mod-stickyColumn-shadowMask</code> aux premiers/derniers<code class="code">th/td</code> non-sticky.</p>
+				<p>Si vous souhaitez désactiver le sticky en dessous d'un breakpoint, il faut suffixer la classe <code class="code">mod-layoutFixed</code> des <code class="code">table/th/td</code> avec le breakpoint visé&nbsp;: <code class="code">mod-layoutFixed-$bp</code></p>`
 			},
 			{
 				title: 'Draggable',

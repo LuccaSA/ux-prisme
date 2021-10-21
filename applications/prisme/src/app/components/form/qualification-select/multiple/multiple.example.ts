@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
 	templateUrl: './multiple.example.html'
 })
 export class MultipleExample {
-	sections = [];
+	qualifications = [];
 }
