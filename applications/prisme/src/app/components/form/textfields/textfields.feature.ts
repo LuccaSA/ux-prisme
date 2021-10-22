@@ -13,6 +13,7 @@ import { TextareaExampleComponent } from './textarea/textarea.example';
 import { InvertedExample } from './inverted/inverted.example';
 import { ClearExample } from './clear/clear.example';
 import { FilterExample } from './filter/filter.example';
+import { WidthExampleComponent } from './width/width.example';
 
 declare var require: any;
 
@@ -44,11 +45,17 @@ export class TextfieldsFeature {
 			},
 			{
 				title: 'Tailles',
+				component: SizesExampleComponent,
+				code: require('!!prismjs-loader?lang=markup!./sizes/sizes.example.html'),
+				mod: 'white',
+			},
+			{
+				title: 'Largeur du champ',
 				description: `
 				Utilisez un des mods suivants pour changer la largeur du textfield :<br>
 				<code class="code">mod-shortest</code>,<code class="code">mod-shorter</code>,<code class="code">mod-short</code>,
 				<code class="code">mod-long</code>,<code class="code">mod-longer</code> ou <code class="code">mod-longest</code>`,
-				component: SizesExampleComponent,
+				component: WidthExampleComponent,
 				code: require('!!prismjs-loader?lang=markup!./sizes/sizes.example.html'),
 				mod: 'white',
 			},
