@@ -36,7 +36,7 @@
     "@lucca-front/scss": "^7.1.0",
     "@ngx-formly/core": "^5.10.14",
     "core-js": "^3.9.0",
-    "marked": "^2.0.1",
+    "marked": "^4.0.10",
     "ngx-markdown": "^11.1.0",
     "prismjs-loader": "^0.0.4",
     "rxjs": "^6.6.6",
